@@ -4,7 +4,7 @@ import { IoLanguage } from 'react-icons/io5'
 export const LanguageSelector = () => {
   return (
     <div className='flex items-center '>
-      <IoLanguage className="m-1 text-2xl hover:text-green-300" />
+      <IoLanguage className="m-1 ml-8 text-2xl hover:text-green-300" />
     </div>
   )
 }
