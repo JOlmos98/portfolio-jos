@@ -1,6 +1,5 @@
 import { Navbar } from "../../components";
 
-
 export default function GeneralLayout({
     children,
   }: Readonly<{
@@ -11,7 +10,6 @@ export default function GeneralLayout({
         <Navbar />
         <div>
             <h1>
-                
                 {children}
             </h1>
         </div>
