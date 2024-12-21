@@ -1,4 +1,8 @@
 export {Navbar} from './navbar/Navbar';
-export {ThemeButton} from './ThemeButton/ThemeButton';
-export {Providers} from './ThemeButton/Providers';
-export {LanguageSelector} from './LanguageSelector/LanguageSelector';
+
+export {ThemeButton} from './theme-button/ThemeButton';
+export {Providers} from './theme-button/Providers';
+
+export {ParticlesBackground} from './particles-background/ParticlesBackground';
+
+export {LanguageSelector} from './language-selector/LanguageSelector';

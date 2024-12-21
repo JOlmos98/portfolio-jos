@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import { IoCodeSlash } from 'react-icons/io5'
-import { LanguageSelector } from '../LanguageSelector/LanguageSelector'
-import { ThemeButton } from '../ThemeButton/ThemeButton'
+import { LanguageSelector } from '../language-selector/LanguageSelector'
+import { ThemeButton } from '../theme-button/ThemeButton'
 
 export const Navbar = () => {
     return (
-        <nav className="fixed w-full bg-indigo-400 bg-opacity-30 p-3 flex items-center">
+        <nav className="fixed w-full bg-white/10 backdrop-blur-md shadow-md p-4 flex items-center">
             <Link href={'/home'} className="flex items-center relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100">
-                <IoCodeSlash className="mr-2 ml-1 text-3xl" />
+                <IoCodeSlash className="mr-2 ml-1 text-4xl" />
                 <span className="text-2xl">Jesús Olmos</span>
             </Link>
 
