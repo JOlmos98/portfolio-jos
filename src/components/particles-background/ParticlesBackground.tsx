@@ -21,14 +21,14 @@ export const ParticlesBackground = () => {             // Define un componente f
     },
     particles: {                                       // Configuración de las partículas
       number: {                                        // Configuración de cantidad de partículas
-        value: 50,                                     // Número inicial de partículas
+        value: 100,                                     // Número inicial de partículas
         density: {                                     // Configuración de densidad
           enable: true,                                // Habilita la densidad
           area: 800,                                   // Área donde las partículas se distribuyen
         },
       },
       color: {                                         // Configuración del color de las partículas
-        value: "#ffffff",                              // Define el color blanco para las partículas
+        value: "#7d7d7d",                              // Define el color blanco para las partículas
       },
       shape: {                                         // Configuración de la forma de las partículas
         type: "circle",                                // Establece la forma como círculos

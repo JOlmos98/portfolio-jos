@@ -31,7 +31,6 @@ export default function RootLayout({
         <Providers>
           <ParticlesBackground />
           <div>{children}</div>
-          
         </Providers>
       </body>
     </html>
