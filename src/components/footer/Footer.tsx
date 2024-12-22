@@ -13,10 +13,10 @@ export const Footer = () => {
 
     return (
 
-        <footer className="bg-gray-100 dark:bg-gray-900 py-2">
+        <footer className="bg-gray-100 dark:bg-zinc-900 py-2">
             <div className="mx-auto w-full max-w-screen-xl">
 
-                <div className="bg-gray-300 dark:bg-gray-800 p-6 m-6 rounded-2xl w-2/4 mx-auto">
+                <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl w-2/4 mx-auto">
                 <h2 className='text-xl font-bold mb-4'>Newsletter</h2>
                     <div className="flex items-center justify-center">
                         <p>
