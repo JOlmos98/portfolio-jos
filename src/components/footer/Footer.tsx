@@ -1,8 +1,15 @@
+"use client";
+
 import React from 'react'
 import Link from 'next/link'
-import { IoCloudDownloadOutline, IoDownload, IoDownloadOutline, IoDownloadSharp, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5'
+import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5'
+import toast from 'react-hot-toast'
 
 export const Footer = () => {
+
+    const emailSent = () => {
+        toast.success("Email sent successfully!");
+    }
 
     return (
 
@@ -10,6 +17,7 @@ export const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl">
 
                 <div className="bg-gray-300 dark:bg-gray-800 p-6 m-6 rounded-2xl w-2/4 mx-auto">
+                <h2 className='text-xl font-bold mb-4'>Newsletter</h2>
                     <div className="flex items-center justify-center">
                         <p>
                             Leave me your email if you want to receive my weekly <span className="font-bold">newsletter</span> in which I talk about the world of development:
@@ -17,7 +25,7 @@ export const Footer = () => {
                     </div>
                     <div className="flex items-center justify-center pt-5">
                         <input type="text" className='text-cyan-500 min-w-24 px-4 py-2 rounded-2xl' placeholder="Your email" />
-                        <button className='ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl'>
+                        <button onClick={emailSent} className='ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl'>
                             Subscribe
                         </button>
                     </div>
@@ -118,7 +126,6 @@ export const Footer = () => {
                 <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>Copyright © 2024 Jesús Olmos. All rights reserved.</p>
             </div>
         </footer>
-
     )
 }
 

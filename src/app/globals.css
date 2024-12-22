@@ -6,12 +6,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --toast-bg: #f9f9f9; /* Fondo claro */
+  --toast-color: #333; /* Texto oscuro */
 }
 
 /* Colores del darkmode */
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --toast-bg: #333; /* Fondo oscuro */
+  --toast-color: #f9f9f9; /* Texto claro */
 }
 
 body {

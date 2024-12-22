@@ -28,13 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
 
+      <Toaster position="bottom-right" reverseOrder={false} gutter={8} toastOptions={{ duration: 3000, style: { background: "var(--toast-bg)", color: "var(--toast-color)", }, }} />
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <Toaster position="bottom-center" />
         <Providers>
           <ParticlesBackground />
           <div>{children}</div>
         </Providers>
-
         <Footer />
       </body>
     </html>
