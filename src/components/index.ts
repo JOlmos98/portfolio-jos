@@ -5,4 +5,6 @@ export {Providers} from './theme-button/Providers';
 
 export {ParticlesBackground} from './particles-background/ParticlesBackground';
 
+export {Footer} from './footer/Footer';
+
 export {LanguageSelector} from './language-selector/LanguageSelector';

@@ -1,4 +1,4 @@
-"use client";                                           // Habilita el modo cliente en Next.js para usar funcionalidades específicas del navegador
+"use client";
 
 import { useCallback } from "react";                   // Importa useCallback para memorizar funciones y evitar recrearlas en cada renderizado
 import Particles from "react-tsparticles";             // Importa el componente Particles para renderizar las partículas
@@ -11,7 +11,7 @@ export const ParticlesBackground = () => {             // Define un componente f
   }, []);                                              // Memoriza la función para que no se recree en cada renderizado
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    console.log("Particles loaded:", container);       // Muestra en consola cuando las partículas se han cargado correctamente
+    console.log("Particles loaded:", container);       // Muestra en consola (cliente) cuando las partículas se han cargado correctamente
   }, []);                                              // Memoriza la función para evitar recrearla en cada renderizado
 
   const particlesOptions = {                           // Configuración para las partículas
@@ -21,27 +21,27 @@ export const ParticlesBackground = () => {             // Define un componente f
     },
     particles: {                                       // Configuración de las partículas
       number: {                                        // Configuración de cantidad de partículas
-        value: 100,                                     // Número inicial de partículas
+        value: 100,                                    // Número inicial de partículas
         density: {                                     // Configuración de densidad
           enable: true,                                // Habilita la densidad
           area: 800,                                   // Área donde las partículas se distribuyen
         },
       },
       color: {                                         // Configuración del color de las partículas
-        value: "#7d7d7d",                              // Define el color blanco para las partículas
+        value: "#00aeff",                              // Define el color blanco para las partículas 7d7d7d
       },
       shape: {                                         // Configuración de la forma de las partículas
         type: "circle",                                // Establece la forma como círculos
       },
       opacity: {                                       // Configuración de opacidad
-        value: 0.5,                                    // Define una opacidad del 50%
+        value: 0.8,                                    // Define una opacidad en %
       },
       size: {                                          // Configuración del tamaño de las partículas
-        value: { min: 1, max: 5 },                     // Define un tamaño aleatorio entre 1 y 5
+        value: { min: 1, max: 3 },                     // Define un tamaño aleatorio entre 1 y 5
       },
       move: {                                          // Configuración del movimiento
         enable: true,                                  // Habilita el movimiento de las partículas
-        speed: 2,                                      // Velocidad del movimiento
+        speed: 0.5,                                    // Velocidad del movimiento
         direction: "none" as const,                    // Define que no hay una dirección específica
         outModes: {                                    // Configuración de salida de partículas
           default: "bounce" as const,                  // Las partículas rebotan en los bordes
@@ -52,18 +52,18 @@ export const ParticlesBackground = () => {             // Define un componente f
       events: {                                        // Eventos de interacción
         onHover: {                                     // Evento al pasar el ratón sobre las partículas
           enable: true,                                // Habilita la interacción al pasar el ratón
-          mode: "repulse",                             // Las partículas se repelen al pasar el ratón
+          mode: "repulse",                             // Las partículas se repelen al pasar el ratón 
         },
         onClick: {                                     // Evento al hacer clic en las partículas
           enable: true,                                // Habilita la interacción al hacer clic
-          mode: "push",                                // Añade partículas al hacer clic
+          mode: "push",                                // Añade partículas al hacer clic ()
         },
       },
       modes: {                                        // Configuración de modos de interacción
-        repulse: {                                    // Configuración del modo de repulsión
-          distance: 100,                              // Define la distancia de repulsión
+        repulse: {                                    
+          distance: 100,                              // Define la distancia de repulsión (al hacer click)
         },
-        push: {                                       // Configuración del modo de empuje
+        push: {                                       
           quantity: 4,                                // Cantidad de partículas añadidas al hacer clic
         },
       },
