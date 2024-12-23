@@ -16,15 +16,15 @@ export const Footer = () => {
         <footer className="bg-gray-100 dark:bg-zinc-900 py-2">
             <div className="mx-auto w-full max-w-screen-xl">
 
-                <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl w-2/4 mx-auto">
-                <h2 className='text-xl font-bold mb-4'>Newsletter</h2>
+                <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
+                <h2 className='text-xl font-bold mb-4'>Subscribe to my <span className="text-blue-500 dark:text-blue-400 font-bold">newsletter</span></h2>
                     <div className="flex items-center justify-center">
                         <p>
-                            Leave me your email if you want to receive my weekly <span className="font-bold">newsletter</span> in which I talk about the world of development:
+                            Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development:
                         </p>
                     </div>
                     <div className="flex items-center justify-center pt-5">
-                        <input type="text" className='text-cyan-500 min-w-24 px-4 py-2 rounded-2xl' placeholder="Your email" />
+                        <input type="text" className='text-cyan-600 dark:text-cyan-500 min-w-24 px-4 py-2 rounded-2xl' placeholder="Your email" />
                         <button onClick={emailSent} className='ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl'>
                             Subscribe
                         </button>

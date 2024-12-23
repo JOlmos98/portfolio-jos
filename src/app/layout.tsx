@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <Toaster position="bottom-right" reverseOrder={false} gutter={8} toastOptions={{ duration: 3000, style: { background: "var(--toast-bg)", color: "var(--toast-color)", }, }} />
+        <Toaster position="bottom-right" reverseOrder={false} gutter={8} toastOptions={{ duration: 3000, style: { background: "var(--toast-bg)", color: "var(--toast-color)", }, }} />
         <Providers>
           <ParticlesBackground />
           <div>{children}</div>
