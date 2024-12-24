@@ -1,6 +1,6 @@
 import { Navbar } from "../../components";
 
-export default function GeneralLayout({
+export default function SectionsLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
