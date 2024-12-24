@@ -2,8 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5'
+import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import toast from 'react-hot-toast'
+import { FaGoodreads, FaSquareXTwitter } from 'react-icons/fa6';
 
 export const Footer = () => {
 
@@ -17,7 +18,7 @@ export const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl">
 
                 <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
-                <h2 className='text-xl font-bold mb-4'>Subscribe to my <span className="text-blue-500 dark:text-blue-400 font-bold">newsletter</span></h2>
+                    <h2 className='text-xl font-bold mb-4'>Subscribe to my <span className="text-blue-500 dark:text-blue-400 font-bold">newsletter</span></h2>
                     <div className="flex items-center justify-center">
                         <p>
                             Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development:
@@ -50,20 +51,26 @@ export const Footer = () => {
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className='mb-3'>
                                 <Link href="https://github.com/JOlmos98" className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    <IoLogoGithub className='mr-2' />
+                                    <IoLogoGithub className='mr-2 text-xl' />
                                     <span>Github</span>
                                 </Link>
                             </li>
                             <li className='mb-3'>
                                 <Link href="https://www.linkedin.com/in/jes%C3%BAs-olmos-soler-62549018b/" className="flex items-center hover:text-blue-500 hover:scale-105 transform origin-left">
-                                    <IoLogoLinkedin className='mr-2' />
+                                    <IoLogoLinkedin className='mr-2 text-xl' />
                                     <span>LinkedIn</span>
                                 </Link>
                             </li>
                             <li className='mb-3'>
                                 <Link href="https://x.com/yeezusc_" className="flex items-center hover:text-cyan-400 hover:scale-105 transform origin-left">
-                                    <IoLogoTwitter className='mr-2' />
+                                    <FaSquareXTwitter className='mr-2 text-xl' />
                                     <span>Twitter</span>
+                                </Link>
+                            </li>
+                            <li className='mb-3'>
+                                <Link href="https://www.goodreads.com/user/show/84061216-jes-s-olmos-soler" className="flex items-center hover:text-yellow-400 hover:scale-105 transform origin-left">
+                                    <FaGoodreads className='mr-2 text-xl' />
+                                    <span>Goodreads</span>
                                 </Link>
                             </li>
                         </ul>
@@ -119,6 +126,8 @@ export const Footer = () => {
                             </li>
                             <li className="mb-3">
                                 <Link href="https://ionic.io/ionicons" className="hover:underline">Ionicons 5</Link>
+                                <span>/</span>
+                                <Link href="https://fontawesome.com/" className="hover:underline">Font Awesome</Link>
                             </li>
                         </ul>
                     </div>
