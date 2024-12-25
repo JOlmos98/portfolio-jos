@@ -36,7 +36,7 @@ export const Footer = () => {
 
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            ABOUT THIS WEB
+                            ABOUT THIS WEBSITE
                         </h2>
                         <p className="mb-4 text-gray-500 dark:text-gray-400">This web has been developed by Jesús Olmos for a final project in the Higher Degree in Multiplatform Application Development at IES José Luís Martínez Palomo, Murcia.</p>
                         <a href="/cv.pdf" download="cv_jesus_olmos.pdf" className='flex items-center mb-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'>
@@ -77,7 +77,7 @@ export const Footer = () => {
                     </div>
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            CONTENTS
+                            SECTIONS
                         </h2>
                         <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                             <li className='mb-2'>
