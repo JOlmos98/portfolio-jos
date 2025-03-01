@@ -77,7 +77,7 @@ export const Footer = () => {
                     </div>
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            SECTIONS
+                            TABLE OF CONTENTS
                         </h2>
                         <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                             <li className='mb-2'>
@@ -124,15 +124,10 @@ export const Footer = () => {
                             <li className="mb-3">
                                 <Link href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</Link>
                             </li>
-                            <li className="mb-3">
-                                <Link href="https://ionic.io/ionicons" className="hover:underline">Ionicons 5</Link>
-                                <span>/</span>
-                                <Link href="https://fontawesome.com/" className="hover:underline">Font Awesome</Link>
-                            </li>
                         </ul>
                     </div>
                 </div>
-                <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>Copyright © 2024 Jesús Olmos. All rights reserved.</p>
+                <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>© 2024 Jesús Olmos. <Link href="https://github.com/JOlmos98/portfolio-jos" className="hover:underline">This site is open source.</Link></p>
             </div>
         </footer>
     )
