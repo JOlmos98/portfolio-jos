@@ -1,10 +1,11 @@
-import { Navbar } from "../../components";
+import { Navbar } from "@/components";
 
-export default function SectionsLayout({
+export default async function SectionsLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <>
       <Navbar />
