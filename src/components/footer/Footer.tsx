@@ -1,10 +1,10 @@
 "use client";
 
 import React from 'react'
-import Link from 'next/link'
 import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import toast from 'react-hot-toast'
 import { FaGoodreads, FaSquareXTwitter } from 'react-icons/fa6';
+import { Link } from '@/i18n/navigation';
 
 export const Footer = () => {
 

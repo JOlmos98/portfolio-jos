@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
 import { IoCodeSlash } from 'react-icons/io5'
 import { LanguageSelector } from '../language-selector/LanguageSelector'
 import { ThemeButton } from '../theme-button/ThemeButton'
+import { Link } from '@/i18n/navigation'
 
 export const Navbar = () => {
     return (
