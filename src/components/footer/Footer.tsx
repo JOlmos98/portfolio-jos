@@ -21,7 +21,7 @@ export const Footer = () => {
                     <h2 className='text-xl font-bold mb-4'>Subscribe to my <span className="text-blue-500 dark:text-blue-400 font-bold">newsletter</span></h2>
                     <div className="flex items-center justify-center">
                         <p>
-                            Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development:
+                            Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development and I show you my favorite articles of the week:
                         </p>
                     </div>
                     <div className="flex items-center justify-center pt-5">
