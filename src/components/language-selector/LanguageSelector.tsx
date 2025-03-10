@@ -13,7 +13,7 @@ export const LanguageSelector = () => {
         <IoLanguage className="m-1 ml-8 text-2xl hover:text-green-400" />
       </MenuButton>
 
-      <MenuItems className="absolute left-0 mt-2 w-24 bg-gray-800 text-white rounded-md shadow-lg border border-gray-700">
+      <MenuItems className="absolute left-0 mt-2 w-20 bg-gray-800 text-white rounded-md shadow-lg border border-gray-700">
         <MenuItem>
           <Link href={pathname} locale="en" className="block text-center px-4 py-2 rounded-md hover:bg-blue-500">EN</Link>
         </MenuItem>

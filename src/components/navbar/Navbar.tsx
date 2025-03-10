@@ -1,10 +1,15 @@
+"use client";
+
 import React from 'react'
 import { IoCodeSlash } from 'react-icons/io5'
 import { LanguageSelector } from '../language-selector/LanguageSelector'
 import { ThemeButton } from '../theme-button/ThemeButton'
-import { Link } from '@/i18n/navigation'
+import { Link, usePathname } from '@/i18n/navigation'
 
 export const Navbar = () => {
+
+    const pathname = usePathname();
+
     return (
         <nav className="fixed w-full bg-white/10 backdrop-blur-md shadow-md p-5 flex flex-wrap items-center justify-between">
             <Link href='/home' className="flex items-center relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100">
@@ -13,10 +18,13 @@ export const Navbar = () => {
             </Link>
 
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-7 mt-4 lg:mt-0">
-                <Link href="/moreAboutMe" className="relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100 text-center">More about me</Link>
-                <Link href="/projects" className="relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100 text-center">Projects</Link>
-                <Link href="/articles" className="relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100 text-center">Articles</Link>
-                <Link href="/contact" className="relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100 text-center">Contact</Link>
+
+                <div className='space-x-6 mr-10'>
+                    <Link href="/moreAboutMe" className={pathname.includes("moreAboutMe") ? `text-xl text-blue-400 text-center` : `text-xl hover:text-blue-400 text-center`}>More about me</Link>
+                    <Link href="/projects" className={pathname.includes("projects") ? `text-xl text-blue-400 text-center` : `text-xl hover:text-blue-400 text-center`}>Projects</Link>
+                    <Link href="/articles" className={pathname.includes("articles") ? `text-xl text-blue-400 text-center` : `text-xl hover:text-blue-400 text-center`}>Articles</Link>
+                    <Link href="/contact" className={pathname.includes("contact") ? `text-xl text-blue-400 text-center` : `text-xl hover:text-blue-400 text-center`}>Contact</Link>
+                </div>
 
                 <div className="flex space-x-4 items-center justify-center">
                     <Link href="/login" className="border-2 border-black dark:border-white rounded-2xl px-3 py-1 text-xl hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition duration-200 text-center">Login</Link>
