@@ -46,14 +46,16 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
-        <Toaster position="bottom-right" reverseOrder={false} gutter={8} toastOptions={{ duration: 3000, style: { background: "var(--toast-bg)", color: "var(--toast-color)", }, }} />
+
         <NextIntlClientProvider messages={messages}>
           <Providers>
+            <Toaster position="bottom-right" reverseOrder={false} gutter={8} toastOptions={{ duration: 3000, style: { background: "var(--toast-bg)", color: "var(--toast-color)", }, }} />
             <ParticlesBackground />
             <div>{children}</div>
+            <Footer />
           </Providers>
         </NextIntlClientProvider>
-        <Footer />
+
       </body>
     </html>
   );

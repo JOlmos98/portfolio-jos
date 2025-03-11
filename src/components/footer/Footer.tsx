@@ -5,12 +5,14 @@ import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5
 import toast from 'react-hot-toast'
 import { FaGoodreads, FaSquareXTwitter } from 'react-icons/fa6';
 import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 export const Footer = () => {
 
-    const emailSent = () => {
-        toast.success("Email sent successfully!");
-    }
+    const t = useTranslations('Footer');
+
+    const stringToast: string = t("Email sent successfully!");
+    const emailSent = () => { toast.success(stringToast); }
 
     return (
 
@@ -18,16 +20,16 @@ export const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl">
 
                 <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
-                    <h2 className='text-xl font-bold mb-4'>Subscribe to my <span className="text-blue-500 dark:text-blue-400 font-bold">newsletter</span></h2>
+                    <h2 className='text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-500 dark:text-blue-400 font-bold">{t('newsletter')}</span></h2>
                     <div className="flex items-center justify-center">
                         <p>
-                            Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development and I show you my favorite articles of the week:
+                            {t('Leave me your email if')}
                         </p>
                     </div>
                     <div className="flex items-center justify-center pt-5">
-                        <input type="text" className='text-cyan-600 dark:text-cyan-500 min-w-24 px-4 py-2 rounded-2xl' placeholder="Your email" />
+                        <input type="text" className='text-cyan-600 dark:text-cyan-500 min-w-24 px-4 py-2 rounded-2xl' placeholder={t('Your email')} />
                         <button onClick={emailSent} className='ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl'>
-                            Subscribe
+                            {t('Subscribe')}
                         </button>
                     </div>
                 </div>
@@ -36,17 +38,17 @@ export const Footer = () => {
 
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            ABOUT THIS WEBSITE
+                            {t('ABOUT THIS WEBSITE')}
                         </h2>
-                        <p className="mb-4 text-gray-500 dark:text-gray-400">This web has been developed by Jesús Olmos for a final project in the Higher Degree in Multiplatform Application Development at IES José Luís Martínez Palomo, Murcia.</p>
+                        <p className="mb-4 text-gray-500 dark:text-gray-400">{t('This web has been developed by Jesús Olmos for')}</p>
                         <a href="/cv.pdf" download="cv_jesus_olmos.pdf" className='flex items-center mb-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'>
-                            <span>Download CV</span>
+                            <span>{t('Download CV')}</span>
                             <IoDownloadOutline className='text-xl ml-3' />
                         </a>
                     </div>
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            FOLLOW ME
+                            {t('FOLLOW ME')}
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className='mb-3'>
@@ -77,39 +79,39 @@ export const Footer = () => {
                     </div>
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            TABLE OF CONTENTS
+                            {t('TABLE OF CONTENTS')}
                         </h2>
                         <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                             <li className='mb-2'>
                                 <Link href='/home' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    • Home
+                                    • {t('home')}
                                 </Link>
                             </li>
                             <li className='mb-2'>
                                 <Link href='/moreAboutMe' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    • More about me
+                                    • {t('moreAboutMe')}
                                 </Link>
                             </li>
                             <li className='mb-2'>
                                 <Link href='/projects' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    • Projects
+                                    • {t('projects')}
                                 </Link>
                             </li>
                             <li className='mb-2'>
                                 <Link href='/articles' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    • Articles
+                                    • {t('articles')}
                                 </Link>
                             </li>
                             <li className='mb-2'>
                                 <Link href='/contact' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    • Contact
+                                    • {t('contact')}
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h2 className='text-xl font-bold mb-5'>
-                            DEVELOPED WITH
+                            {t('DEVELOPED WITH')}
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-3">
@@ -127,7 +129,7 @@ export const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>© 2024 Jesús Olmos. <Link href="https://github.com/JOlmos98/portfolio-jos" className="hover:underline">This site is open source.</Link></p>
+                <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>© 2024 Jesús Olmos.&nbsp;<Link href="https://github.com/JOlmos98/portfolio-jos" className="hover:underline">{t('This site is open source')}</Link></p>
             </div>
         </footer>
     )

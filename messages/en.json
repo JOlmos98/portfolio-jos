@@ -2,5 +2,35 @@
     "HomePage": {
         "intro": "Hello, I am Jesús Olmos, a developer specialized in Next.js, passionate about technology, logic, and problem-solving. My approach goes beyond writing code: I am fascinated by building efficient, scalable, and well-structured solutions where every line has a clear purpose. My journey in development is not limited to JavaScript and TypeScript; Rust is another of my great passions, a language that has taught me the value of performance, security, and efficient resource management. I enjoy exploring new technologies, optimizing systems, and tackling challenges that require logical and structured thinking. Here you will find some of my projects, where I combine modern architectures, performance, and best practices, always striving to create solid and efficient experiences.",
         "ejemplo": "tal"
+    },
+    "Navbar": {
+        "moreAboutMe": "More about me",
+        "projects": "Projects",
+        "articles": "Articles",
+        "contact": "Contact",
+        "login": "Login",
+        "signUp": "Sign Up"
+    },
+    "Footer":{
+        "Email sent successfully": "Email sent successfully!",
+        "Subscribe to my ": "Subscribe to my ",
+        "newsletter": "newsletter",
+        "Leave me your email if": "Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development and I show you my favorite articles of the week:",
+        "Your email": "Your email",
+        "Subscribe": "Subscribe",
+        "ABOUT THIS WEBSITE": "ABOUT THIS WEBSITE",
+        "Download CV": "Download CV",
+        "FOLLOW ME": "FOLLOW ME",
+        "TABLE OF CONTENTS": "TABLE OF CONTENTS",
+        "DEVELOPED WITH": "DEVELOPED WITH",
+        "This web has been developed by Jesús Olmos for": "This web has been developed by Jesús Olmos for a final project in the Higher Degree in Multiplatform Application Development at IES José Luís Martínez Palomo, Murcia.",
+        "Table of Contents": "Table of Contents",
+        "Developed with": "Developed with",
+        "This site is open source": "This site is open source.",
+        "home": "Home",
+        "moreAboutMe": "More about me",
+        "projects": "Projects",
+        "articles": "Articles",
+        "contact": "Contact"
     }
 }
