@@ -11,7 +11,7 @@ export const Footer = () => {
 
     const t = useTranslations('Footer');
 
-    const stringToast: string = t("Email sent successfully!");
+    const stringToast: string = t("Email sent successfully");
     const emailSent = () => { toast.success(stringToast); }
 
     return (
