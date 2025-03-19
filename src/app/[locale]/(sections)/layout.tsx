@@ -1,5 +1,3 @@
-import { Navbar } from "@/components";
-
 export default async function SectionsLayout({
   children,
 }: Readonly<{
@@ -8,7 +6,6 @@ export default async function SectionsLayout({
 
   return (
     <>
-      <Navbar />
       <div>
         <h1>
           {children}

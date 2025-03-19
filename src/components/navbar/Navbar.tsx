@@ -14,7 +14,7 @@ export const Navbar = () => {
 
     return (
         <nav className="fixed w-full bg-white/10 backdrop-blur-md shadow-md p-5 flex flex-wrap items-center justify-between">
-            <Link href='/home' className="flex items-center relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100">
+            <Link href='/' className="flex items-center relative transform hover:scale-105 text-xl hover:text-blue-400 transition duration-100">
                 <IoCodeSlash className="mr-2 ml-1 text-4xl" />
                 <span className="text-2xl">Jesús Olmos</span>
             </Link>

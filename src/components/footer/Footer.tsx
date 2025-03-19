@@ -83,7 +83,7 @@ export const Footer = () => {
                         </h2>
                         <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                             <li className='mb-2'>
-                                <Link href='/home' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
+                                <Link href='/' className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
                                     • {t('home')}
                                 </Link>
                             </li>

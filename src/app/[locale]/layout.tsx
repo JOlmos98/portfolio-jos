@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import { Footer, ParticlesBackground, Providers } from "@/components";
+import { Footer, Navbar, ParticlesBackground, Providers } from "@/components";
 import { Toaster } from "react-hot-toast";
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -49,6 +49,7 @@ export default async function RootLayout({
 
         <NextIntlClientProvider messages={messages}>
           <Providers>
+          <Navbar />
             <Toaster position="bottom-right" reverseOrder={false} gutter={8} toastOptions={{ duration: 3000, style: { background: "var(--toast-bg)", color: "var(--toast-color)", }, }} />
             <ParticlesBackground />
             <div>{children}</div>
