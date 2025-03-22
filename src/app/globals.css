@@ -2,11 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: rgb(20, 20, 20);
+  color: #16cdee; 
+}
+
+::-webkit-selection {
+  background-color: rgb(20, 20, 20);
+  color: #16cdee; 
+}
+
 :root {
   --background: #f0f0f0;
   --foreground: #171717;
   --toast-bg: #f9f9f9;
   --toast-color: #333;
+
+  --blue-cyan: #15c4e3;
 }
 
 .dark {
@@ -14,6 +26,8 @@
   --foreground: #ededed;
   --toast-bg: #333;
   --toast-color: #f9f9f9;
+
+  --blue-cyan: #16cdee;
 }
 
 body {

@@ -28,7 +28,7 @@ export const ParticlesBackground = () => {             // Define un componente f
         },
       },
       color: {                                         // Configuración del color de las partículas
-        value: "#00aeff",                              // Define el color blanco para las partículas 7d7d7d
+        value: "#13dbff",                              // Define el color blanco para las partículas 7d7d7d
       },
       shape: {                                         // Configuración de la forma de las partículas
         type: "circle",                                // Establece la forma como círculos

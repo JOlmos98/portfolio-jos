@@ -46,7 +46,7 @@ export const LanguageSelector = () => {
   return (
     <Menu as="div" className="relative">
       <MenuButton className="flex items-center cursor-pointer">
-        <IoLanguage className="m-1 ml-8 text-2xl hover:text-green-400" />
+        <IoLanguage className="text-2xl hover:text-green-400" />
       </MenuButton>
 
       <MenuItems className="absolute left-0 mt-2 w-20 dark:bg-gray-800 bg-gray-200 dark:text-white rounded-md shadow-lg border dark:border-gray-700 z-50">

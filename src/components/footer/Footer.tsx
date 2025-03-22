@@ -20,15 +20,15 @@ export const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl">
 
                 <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
-                    <h2 className='text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-500 dark:text-blue-400 font-bold">{t('newsletter')}</span></h2>
+                    <h2 className='text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-cyan dark:text-blue-cyan font-bold">{t('newsletter')}</span></h2>
                     <div className="flex items-center justify-center">
                         <p>
                             {t('Leave me your email if')}
                         </p>
                     </div>
                     <div className="flex items-center justify-center pt-5">
-                        <input type="text" className='text-cyan-600 dark:text-cyan-500 min-w-24 px-4 py-2 rounded-2xl' placeholder={t('Your email')} />
-                        <button onClick={emailSent} className='ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl'>
+                        <input type="text" className='text-blue-cyan dark:text-blue-cyan min-w-24 px-4 py-2 rounded-2xl' placeholder={t('Your email')} />
+                        <button onClick={emailSent} className='ml-4 bg-cyan-600 hover:bg-blue-cyan text-white font-bold py-2 px-4 rounded-2xl'>
                             {t('Subscribe')}
                         </button>
                     </div>
@@ -129,7 +129,7 @@ export const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>© 2024 Jesús Olmos.&nbsp;<Link href="https://github.com/JOlmos98/portfolio-jos" className="hover:underline">{t('This site is open source')}</Link></p>
+                <p className='flex items-center justify-center pb-5 text-gray-500 dark:text-gray-400 text-sm'>© 2025 Jesús Olmos.&nbsp;<Link href="https://github.com/JOlmos98/portfolio-jos" className="hover:underline">{t('This site is open source')}</Link></p>
             </div>
         </footer>
     )
