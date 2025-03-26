@@ -1,8 +1,9 @@
+"use server";
+
 import { ExperienceItem } from "@/components/experience-item/ExperienceItem";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
-import { EducationItem } from '../../components/education-item/EducationItem';
 import { Link } from "@/i18n/navigation";
+import { Home } from "@/components/home/Home";
 
 export default async function HomePage() {
 
@@ -13,12 +14,8 @@ export default async function HomePage() {
 
       <div className="flex flex-col row-start-2 items-center sm:items-start mt-20">
         <h1 className="text-4xl font-bold bg-transparent"></h1>
-        <div className="flex flex-col sm:flex-row items-center gap-8"> {/* div que ajusta la imagen a la izquierda y texto a la derecha. */}
-          <Image className="" src="/jos.png" alt="jos" width={360} height={76} priority />
-          <p className="text-lg sm:max-w-xl">{t('intro')}</p>
-
-
-
+        <div>
+          <Home />
         </div>
         <div>
           <h1 className="text-4xl bg-transparent mt-44 mb-8">Experience</h1>
@@ -38,3 +35,10 @@ export default async function HomePage() {
   );
 }
 //Entre otras cosas, aprendí todo lo relacionado con las bases de datos, modelos entidad relación, SQL, PL/SQL, por otro lado profundicé en Java manejando hilos con semáforos, multihilo, etc. También aprendí a manejar ciertosmódulos de Spring Boot como Spring Data JPA.
+
+/*
+        <div className="flex flex-col sm:flex-row items-center gap-8"> 
+        <Image className="" src="/jos.png" alt="jos" width={360} height={76} priority />
+        <p className="text-lg sm:max-w-xl">{t('intro')}</p>
+      </div>
+*/
