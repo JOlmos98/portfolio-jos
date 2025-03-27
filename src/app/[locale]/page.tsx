@@ -18,18 +18,44 @@ export default async function HomePage() {
           <Home />
         </div>
         <div>
-          <h1 className="text-4xl bg-transparent mt-44 mb-8">Experience</h1>
-          <ExperienceItem dates="2024 - Present" originDirection="left" tech1="Next.js" tech2="TypeScript" tech3="Tailwind CSS" title="Desarrollador backend junior · CTICONTROL" description="Desarrollo de software agrícola y ganadero para control de clima basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C. " />
+          <h1 className="text-4xl bg-transparent mt-44 mb-8">{t("experienceTitle")}</h1>
 
-          <ExperienceItem dates="2026 - Present" originDirection="right" tech1="Unity" tech2="C#" tech3="Blender" title="Desarrollador de videojuegos indie · Wolf King Studios" description="Desarrollo de videojuegos indie de corta duración con Unity." />
+          <ExperienceItem
+            dates={t("experience1.dates")}
+            originDirection="left"
+            tech1={t("experience1.tech1")}
+            tech2={t("experience1.tech2")}
+            tech3={t("experience1.tech3")}
+            title={t("experience1.title")}
+            description={t("experience1.description")}
+          />
 
-          <ExperienceItem dates="2026 - Present" originDirection="left" tech1="Spring Boot" tech2="Java" title="Desarrollador backend · NTT Data" description="Desarrollo backend de aplicaciones web." />
+          <ExperienceItem
+            dates={t("experience2.dates")}
+            originDirection="right"
+            tech1={t("experience2.tech1")}
+            tech2={t("experience2.tech2")}
+            tech3={t("experience2.tech3")}
+            title={t("experience2.title")}
+            description={t("experience2.description")}
+          />
 
-          {/* <ExperienceItem dates="2022 - Present" originDirection="left" title="Inginiero de software junior · CTICONTROL" description="Desarrollo de software agrícola y ganadero basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C." />
-          <ExperienceItem dates="2022 - Present" originDirection="right" title="Inginiero de software junior · CTICONTROL" description="Desarrollo de software agrícola y ganadero basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C." /> */}
-
+          <ExperienceItem
+            dates={t("experience3.dates")}
+            originDirection="left"
+            tech1={t("experience3.tech1")}
+            tech2={t("experience3.tech2")}
+            title={t("experience3.title")}
+            description={t("experience3.description")}
+          />
         </div>
-        <p className="text-3xl mt-32 mb-8">Puedes saber más cosas sobre mí, completamente innecesarias, <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">aquí</Link>.</p>
+
+        <p className="text-3xl mt-32 mb-8">
+          {t("toMoreAboutMe")}{" "}
+          <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">
+            aquí
+          </Link>.
+        </p>
       </div>
     </div>
   );
