@@ -5,4 +5,4 @@ export {ParticlesBackground} from './particles/ParticlesBackground';
 export {Footer} from './footer/Footer';
 export {LanguageSelector} from './language-selector/LanguageSelector';
 export {ExperienceItem} from './experience-item/ExperienceItem';
-export {EducationItem} from './education-item/EducationItem';
+export {ProjectItem} from './project-item/ProjectItem';
