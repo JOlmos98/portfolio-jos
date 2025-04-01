@@ -1,61 +1,61 @@
 {
-    "HomePage": {
-        "intro": "Hola, soy Jesús Olmos, desarrollador especializado en Next.js, apasionado por la tecnología, la lógica y la resolución de problemas. Mi enfoque va más allá de escribir código: me fascina construir soluciones eficientes, escalables y bien estructuradas, donde cada línea tenga un propósito claro. Mi viaje en el desarrollo no se limita a JavaScript y TypeScript; Rust es otra de mis grandes pasiones, un lenguaje que me ha enseñado el valor del rendimiento, la seguridad y la gestión eficiente de recursos. Disfruto explorando nuevas tecnologías, optimizando sistemas y enfrentándome a desafíos que requieren pensamiento lógico y estructurado. Aquí encontrarás algunos de mis proyectos, donde combino arquitecturas modernas, rendimiento y buenas prácticas, siempre buscando crear experiencias sólidas y eficientes.",
-        "experienceTitle": "Experiencia",
-        "experience1": {
-          "dates": "2024 - Presente",
-          "title": "Desarrollador backend junior · CTICONTROL",
-          "description": "Desarrollo de software agrícola y ganadero para control de clima basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C.",
-          "tech1": "Next.js",
-          "tech2": "TypeScript",
-          "tech3": "Tailwind CSS"
-        },
-        "experience2": {
-          "dates": "2024 - Presente",
-          "title": "Desarrollador de videojuegos indie · Wolf King Studios",
-          "description": "Desarrollo de videojuegos indie de corta duración con Unity.",
-          "tech1": "Unity",
-          "tech2": "C#",
-          "tech3": "Blender"
-        },
-        "experience3": {
-          "dates": "2022 - 2024",
-          "title": "Desarrollador backend · NTT Data",
-          "description": "Desarrollo backend de aplicaciones web.",
-          "tech1": "Spring Boot",
-          "tech2": "Java"
-        },
-        
-        "toMoreAboutMe": "Puedes saber más cosas sobre mí, completamente innecesarias,"
+  "HomePage": {
+    "intro": "Hola, soy Jesús Olmos, desarrollador especializado en Next.js, apasionado por la tecnología, la lógica y la resolución de problemas. Mi enfoque va más allá de escribir código: me fascina construir soluciones eficientes, escalables y bien estructuradas, donde cada línea tenga un propósito claro. Mi viaje en el desarrollo no se limita a JavaScript y TypeScript; Rust es otra de mis grandes pasiones, un lenguaje que me ha enseñado el valor del rendimiento, la seguridad y la gestión eficiente de recursos. Disfruto explorando nuevas tecnologías, optimizando sistemas y enfrentándome a desafíos que requieren pensamiento lógico y estructurado. Aquí encontrarás algunos de mis proyectos, donde combino arquitecturas modernas, rendimiento y buenas prácticas, siempre buscando crear experiencias sólidas y eficientes.",
+    "experienceTitle": "Experiencia",
+    "experience1": {
+      "dates": "2024 - Presente",
+      "title": "Desarrollador backend junior · CTICONTROL",
+      "description": "Desarrollo de software agrícola y ganadero para control de clima basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C.",
+      "tech1": "Next.js",
+      "tech2": "TypeScript",
+      "tech3": "Tailwind CSS"
     },
-    "Navbar": {
-        "moreAboutMe": "Más sobre mí",
-        "projects": "Proyectos",
-        "articles": "Artículos",
-        "contact": "Contacto",
-        "login": "Iniciar sesión",
-        "signUp": "Registrarse"
+    "experience2": {
+      "dates": "2024 - Presente",
+      "title": "Desarrollador de videojuegos indie · Wolf King Studios",
+      "description": "Desarrollo de videojuegos indie de corta duración con Unity.",
+      "tech1": "Unity",
+      "tech2": "C#",
+      "tech3": "Blender"
     },
-    "Footer": {
-        "Email sent successfully": "Email enviado con éxito!",
-        "Subscribe to my ": "Suscríbete a mi ",
-        "newsletter": "newsletter",
-        "Leave me your email if": "Déjame tu correo electrónico si quieres recibir mi newsletter semanal en la que hablo sobre el mundo del desarrollo y te muestro mis artículos favoritos de la semana:",
-        "Your email": "Tu email",
-        "Subscribe": "Suscribirse",
-        "ABOUT THIS WEBSITE": "SOBRE ESTA WEB",
-        "Download CV": "Descargar CV",
-        "FOLLOW ME": "SÍGUEME",
-        "TABLE OF CONTENTS": "TABLA DE CONTENIDOS",
-        "DEVELOPED WITH": "DESARROLLADO CON",
-        "This web has been developed by Jesús Olmos for": "Este sitio web ha sido desarrollado por Jesús Olmos para un proyecto final en el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en el IES José Luís Martínez Palomo, Murcia.",
-        "Table of Contents": "Tabla de contenidos",
-        "Developed with": "Desarrollado con",
-        "This site is open source": "Esta web es open source.",
-        "home": "Inicio",
-        "moreAboutMe": "Más sobre mí",
-        "projects": "Proyectos",
-        "articles": "Artículos",
-        "contact": "Contacto"
-    }
+    "experience3": {
+      "dates": "2022 - 2024",
+      "title": "Desarrollador backend · NTT Data",
+      "description": "Desarrollo backend de aplicaciones web.",
+      "tech1": "Spring Boot",
+      "tech2": "Java"
+    },
+    "toMoreAboutMe": "Para ver todos los proyectos y certificaciones, ",
+    "linkMoreAboutMe": "más sobre mí."
+  },
+  "Navbar": {
+    "moreAboutMe": "Más sobre mí",
+    "projects": "Proyectos",
+    "articles": "Artículos",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "signUp": "Registrarse"
+  },
+  "Footer": {
+    "Email sent successfully": "Email enviado con éxito!",
+    "Subscribe to my ": "Suscríbete a mi ",
+    "newsletter": "newsletter",
+    "Leave me your email if": "Déjame tu correo electrónico si quieres recibir mi newsletter semanal en la que hablo sobre el mundo del desarrollo y te muestro mis artículos favoritos de la semana:",
+    "Your email": "Tu email",
+    "Subscribe": "Suscribirse",
+    "ABOUT THIS WEBSITE": "SOBRE ESTA WEB",
+    "Download CV": "Descargar CV",
+    "FOLLOW ME": "SÍGUEME",
+    "TABLE OF CONTENTS": "TABLA DE CONTENIDOS",
+    "DEVELOPED WITH": "DESARROLLADO CON",
+    "This web has been developed by Jesús Olmos for": "Este sitio web ha sido desarrollado por Jesús Olmos para un proyecto final en el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en el IES José Luís Martínez Palomo, Murcia.",
+    "Table of Contents": "Tabla de contenidos",
+    "Developed with": "Desarrollado con",
+    "This site is open source": "Esta web es open source.",
+    "home": "Inicio",
+    "moreAboutMe": "Más sobre mí",
+    "projects": "Proyectos",
+    "articles": "Artículos",
+    "contact": "Contacto"
+  }
 }

@@ -25,7 +25,8 @@
       "tech1": "Spring Boot",
       "tech2": "Java"
     },
-    "toMoreAboutMe": "You can find out more about me, completely unnecessarily,"
+    "toMoreAboutMe": "To see all the projects and certifications, ",
+    "linkMoreAboutMe": "more about me."
   },
   "Navbar": {
     "moreAboutMe": "More about me",

@@ -88,10 +88,10 @@ export default async function HomePage() {
           imgUrl="https://i.imgur.com/jQDP8Ka.png"
         />
 
-        <p className="w-full text-2xl mt-5 mb-8 text-center">
+        <p className="w-full text-xl mt-5 mb-8 text-center">
           {t("toMoreAboutMe")}{" "}
           <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">
-            aquí
+          {t("linkMoreAboutMe")}
           </Link>.
         </p>
       </div>
