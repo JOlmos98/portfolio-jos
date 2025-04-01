@@ -22,12 +22,6 @@ export const ExperienceItem = ({ dates, title, description, originDirection, tec
 
   const initialX = originDirection === "left" ? -300 : 300;
 
-  if (tech1 || tech2 || tech3 || tech4 || tech5) {
-    switch (tech1) {
-      case "nextjs":
-
-    }
-  }
   return (
     <div>
       <Link href={link ? link : "#"}>
@@ -58,3 +52,4 @@ export const ExperienceItem = ({ dates, title, description, originDirection, tec
     </div>
   );
 };
+
