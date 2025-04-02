@@ -88,7 +88,7 @@ export default async function HomePage() {
           imgUrl="https://i.imgur.com/jQDP8Ka.png"
         />
 
-        <p className="w-full text-xl mt-5 mb-8 text-center">
+        <p className="w-full text-xl mt-5 mb-8 text-center px-4 sm:px-8">
           {t("toMoreAboutMe")}{" "}
           <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">
           {t("linkMoreAboutMe")}
