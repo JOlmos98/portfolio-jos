@@ -2,20 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Colores del light que sería el default */
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --toast-bg: #f9f9f9; /* Fondo claro */
-  --toast-color: #333; /* Texto oscuro */
+::selection {
+  background-color: rgb(20, 20, 20);
+  color: #16cdee; 
 }
 
-/* Colores del darkmode */
+::-webkit-selection {
+  background-color: rgb(20, 20, 20);
+  color: #16cdee; 
+}
+
+:root {
+  --background: #f0f0f0;
+  --foreground: #171717;
+  --toast-bg: #f9f9f9;
+  --toast-color: #333;
+
+  --blue-cyan: #1397af;
+}
+
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --toast-bg: #333; /* Fondo oscuro */
-  --toast-color: #f9f9f9; /* Texto claro */
+  --toast-bg: #333;
+  --toast-color: #f9f9f9;
+
+  --blue-cyan: #16cdee;
 }
 
 body {

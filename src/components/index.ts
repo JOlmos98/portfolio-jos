@@ -1,10 +1,8 @@
 export {Navbar} from './navbar/Navbar';
-
 export {ThemeButton} from './theme-button/ThemeButton';
 export {Providers} from './theme-button/Providers';
-
-export {ParticlesBackground} from './particles-background/ParticlesBackground';
-
+export {ParticlesBackground} from './particles/ParticlesBackground';
 export {Footer} from './footer/Footer';
-
 export {LanguageSelector} from './language-selector/LanguageSelector';
+export {ExperienceItem} from './experience-item/ExperienceItem';
+export {ProjectItem} from './project-item/ProjectItem';

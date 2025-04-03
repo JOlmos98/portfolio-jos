@@ -28,7 +28,7 @@ export const ParticlesBackground = () => {             // Define un componente f
         },
       },
       color: {                                         // Configuración del color de las partículas
-        value: "#00aeff",                              // Define el color blanco para las partículas 7d7d7d
+        value: "#13dbff",                              // Define el color blanco para las partículas 7d7d7d
       },
       shape: {                                         // Configuración de la forma de las partículas
         type: "circle",                                // Establece la forma como círculos
@@ -41,7 +41,7 @@ export const ParticlesBackground = () => {             // Define un componente f
       },
       move: {                                          // Configuración del movimiento
         enable: true,                                  // Habilita el movimiento de las partículas
-        speed: 0.5,                                    // Velocidad del movimiento
+        speed: 0.3,                                    // Velocidad del movimiento
         direction: "none" as const,                    // Define que no hay una dirección específica
         outModes: {                                    // Configuración de salida de partículas
           default: "bounce" as const,                  // Las partículas rebotan en los bordes
@@ -51,7 +51,7 @@ export const ParticlesBackground = () => {             // Define un componente f
     interactivity: {                                   // Configuración de interactividad
       events: {                                        // Eventos de interacción
         onHover: {                                     // Evento al pasar el ratón sobre las partículas
-          enable: true,                                // Habilita la interacción al pasar el ratón
+          enable: false,                                // Habilita la interacción al pasar el ratón
           mode: "repulse",                             // Las partículas se repelen al pasar el ratón 
         },
         onClick: {                                     // Evento al hacer clic en las partículas
