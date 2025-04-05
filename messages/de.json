@@ -3,27 +3,31 @@
     "intro": "Hallo, ich bin Jesús Olmos, ein auf Next.js spezialisierter Entwickler mit einer Leidenschaft für Technologie, Logik und Problemlösung. Mein Fokus geht über das bloße Schreiben von Code hinaus: Ich liebe es, effiziente, skalierbare und gut strukturierte Lösungen zu entwickeln, bei denen jede Zeile einen klaren Zweck hat. Meine Reise in der Entwicklung beschränkt sich nicht nur auf JavaScript und TypeScript; Rust ist eine weitere große Leidenschaft von mir – eine Sprache, die mir den Wert von Leistung, Sicherheit und effizientem Ressourcenmanagement beigebracht hat. Ich genieße es, neue Technologien zu erforschen, Systeme zu optimieren und Herausforderungen zu meistern, die logisches und strukturiertes Denken erfordern. Hier findest du einige meiner Projekte, in denen ich moderne Architekturen, Performance und Best Practices kombiniere, immer mit dem Ziel, solide und effiziente Erfahrungen zu schaffen.",
     "experienceTitle": "Berufserfahrung",
     "experience1": {
-      "dates": "2024 – Heute",
+      "dates": "2024 - Heute",
       "title": "Junior Backend-Entwickler · CTICONTROL",
-      "description": "Entwicklung von Software für die Landwirtschaft und Tierhaltung zur Klimasteuerung, basierend auf älteren internen Modellen mit Mikrocontrollern in C.",
-      "tech1": "Next.js",
-      "tech2": "TypeScript",
-      "tech3": "Tailwind CSS"
+      "description": "Entwicklung von landwirtschaftlicher und tierhaltungsbezogener Software zur Klimasteuerung auf Basis firmeneigener älterer Modelle mit C-Mikrocontrollern."
     },
     "experience2": {
-      "dates": "2024 – Heute",
-      "title": "Indie-Spieleentwickler · Wolf King Studios",
-      "description": "Entwicklung von kurzen Indie-Spielen mit Unity.",
-      "tech1": "Unity",
-      "tech2": "C#",
-      "tech3": "Blender"
+      "dates": "2024 - Heute",
+      "title": "Indie-Spielentwickler · Wolf King Studios",
+      "description": "Entwicklung von kurzen Indie-Videospielen mit Unity."
     },
     "experience3": {
-      "dates": "2022 – 2024",
+      "dates": "2022 - 2024",
       "title": "Backend-Entwickler · NTT Data",
-      "description": "Backend-Entwicklung von Webanwendungen.",
-      "tech1": "Spring Boot",
-      "tech2": "Java"
+      "description": "Backend-Entwicklung von Webanwendungen."
+    },
+    "project1": {
+      "title": "Web-Portfolio",
+      "description": "Entwicklung eines professionellen Web-Portfolios mit Next.js. Abschlussprojekt (TFG) für den höheren Abschluss in Multiplattform-Anwendungsentwicklung am IES JLMP."
+    },
+    "project2": {
+      "title": "Datenbanksystem für Kunstgalerie",
+      "description": "Datenbankmanagementsystem für eine Kunstgalerie. Backend in Rust (Tauri) und Frontend mit Next.js unter Verwendung von shadcn."
+    },
+    "project3": {
+      "title": "Taschenrechner",
+      "description": "Einfache funktionale Taschenrechner-App, entwickelt mit Android Studio. Projekt im Rahmen einer Unterrichtsaufgabe im höheren DAM-Abschluss."
     },
     "toMoreAboutMe": "Um alle Projekte und Zertifikate zu sehen, ",
     "linkMoreAboutMe": "mehr über mich."

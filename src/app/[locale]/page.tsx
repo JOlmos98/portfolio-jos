@@ -23,32 +23,32 @@ export default async function HomePage() {
 
           <ExperienceItem
             dates={t("experience1.dates")}
-            originDirection="left"
-            tech1={t("experience1.tech1")}
-            tech2={t("experience1.tech2")}
-            tech3={t("experience1.tech3")}
             title={t("experience1.title")}
             description={t("experience1.description")}
+            originDirection="left"
+            tech1="Next.js"
+            tech2="TypeScript"
+            tech3="Tailwind CSS"
             link="https://www.cticontrol.com/en/"
           />
 
           <ExperienceItem
             dates={t("experience2.dates")}
-            originDirection="right"
-            tech1={t("experience2.tech1")}
-            tech2={t("experience2.tech2")}
-            tech3={t("experience2.tech3")}
             title={t("experience2.title")}
             description={t("experience2.description")}
+            originDirection="right"
+            tech1="Unity"
+            tech2="C#"
+            tech3="Blender"
           />
 
           <ExperienceItem
             dates={t("experience3.dates")}
-            originDirection="left"
-            tech1={t("experience3.tech1")}
-            tech2={t("experience3.tech2")}
             title={t("experience3.title")}
             description={t("experience3.description")}
+            originDirection="left"
+            tech1="Spring Boot"
+            tech2="Java"
             link="https://es.nttdata.com/"
           />
         </div>
@@ -57,19 +57,20 @@ export default async function HomePage() {
 
         <ProjectItem
           year="2025"
-          title="Portfolio web"
-          description="Desarrollo de un portfolio web profesional con Next.js. Proyecto de gin de grado (TFG) para el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en IES JLMP."
+          title={t("project1.title")}
+          description={t("project1.description")}
           tech1="Nextj.js"
           tech2="TypeScript"
           tech3="Tailwind CSS"
           tech4="Supabase"
           imgUrl="https://i.imgur.com/omXb83c.png"
+          link="https://github.com/JOlmos98/portfolio-jos"
         />
 
         <ProjectItem
           year="2025"
-          title="SGBD Galería de Arte"
-          description="Sistema gestor de base de datos para una galería de arte. Backend en Rust (Tauri) y frontend con Next.js usando shadcn."
+          title={t("project2.title")}
+          description={t("project2.description")}
           tech1="Nextj.js"
           tech2="TypeScript"
           tech3="Tailwind CSS"
@@ -77,15 +78,17 @@ export default async function HomePage() {
           tech5="Rust"
           tech6="SQLite"
           imgUrl="https://i.imgur.com/9e65ODL.png"
+          link="https://github.com/JOlmos98/dbms-art-gallery"
         />
 
         <ProjectItem
           year="2024"
-          title="Calculadora"
-          description="Calculadora funcional básica desarrollada en Android Studio. Proyecto realizado como tarea de una de las asignaturas del Grado Superior en DAM."
+          title={t("project3.title")}
+          description={t("project3.description")}
           tech1="Java"
           tech2="Android Studio"
           imgUrl="https://i.imgur.com/jQDP8Ka.png"
+          link="https://github.com/JOlmos98/calculator-androidstudio"
         />
 
         <p className="w-full text-xl mt-5 mb-8 text-center px-4 sm:px-8">
