@@ -33,7 +33,7 @@ export const ExperienceItem = ({ dates, title, description, originDirection, tec
           whileHover={{ scale: 1.2 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: "some" }}
-          className={`bg-white dark:bg-neutral-800 rounded-2xl shadow p-6 mb-6 w-full lg:w-3/5 ${originDirection === "right" ? "ml-auto" : ""}`}
+          className={`bg-white dark:bg-neutral-800 rounded-2xl shadow p-6 mb-6 w-full lg:w-3/5 ${originDirection === "right" ? "ml-auto" : ""} disable-motion-sm`}
 
         >
           <p className="text-sm text-neutral-600 dark:text-neutral-300">{dates}</p>

@@ -37,3 +37,16 @@ body {
 
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
+
+/* Con este bloque desactivamos Framer Motion en pantallas pequeñas */
+@media (max-width: 640px) {
+  .disable-motion-sm {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+  
+  .disable-motion-sm:hover {
+    transform: none !important;
+  }
+}
