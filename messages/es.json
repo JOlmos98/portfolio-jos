@@ -5,25 +5,29 @@
     "experience1": {
       "dates": "2024 - Presente",
       "title": "Desarrollador backend junior · CTICONTROL",
-      "description": "Desarrollo de software agrícola y ganadero para control de clima basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C.",
-      "tech1": "Next.js",
-      "tech2": "TypeScript",
-      "tech3": "Tailwind CSS"
+      "description": "Desarrollo de software agrícola y ganadero para control de clima basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C."
     },
     "experience2": {
       "dates": "2024 - Presente",
       "title": "Desarrollador de videojuegos indie · Wolf King Studios",
-      "description": "Desarrollo de videojuegos indie de corta duración con Unity.",
-      "tech1": "Unity",
-      "tech2": "C#",
-      "tech3": "Blender"
+      "description": "Desarrollo de videojuegos indie de corta duración con Unity."
     },
     "experience3": {
       "dates": "2022 - 2024",
       "title": "Desarrollador backend · NTT Data",
-      "description": "Desarrollo backend de aplicaciones web.",
-      "tech1": "Spring Boot",
-      "tech2": "Java"
+      "description": "Desarrollo backend de aplicaciones web."
+    },
+    "project1": {
+      "title": "Portfolio web",
+      "description": "Desarrollo de un portfolio web profesional con Next.js. Proyecto de gin de grado (TFG) para el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en IES JLMP."
+    },
+    "project2": {
+      "title": "SGBD Galería de Arte",
+      "description": "Sistema gestor de base de datos para una galería de arte. Backend en Rust (Tauri) y frontend con Next.js usando shadcn."
+    },
+    "project3": {
+      "title": "Calculadora",
+      "description": "Calculadora funcional básica desarrollada en Android Studio. Proyecto realizado como tarea de una de las asignaturas del Grado Superior en DAM."
     },
     "toMoreAboutMe": "Para ver todos los proyectos y certificaciones, ",
     "linkMoreAboutMe": "más sobre mí."

@@ -33,7 +33,18 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .disable-motion-sm {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+  
+  .disable-motion-sm:hover {
+    transform: none !important;
+  }
 }

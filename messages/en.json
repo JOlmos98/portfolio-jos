@@ -5,25 +5,29 @@
     "experience1": {
       "dates": "2024 - Present",
       "title": "Junior Backend Developer · CTICONTROL",
-      "description": "Development of agricultural and livestock software for climate control, based on old in-house models built on C microcontrollers.",
-      "tech1": "Next.js",
-      "tech2": "TypeScript",
-      "tech3": "Tailwind CSS"
+      "description": "Development of agricultural and livestock software for climate control based on the company’s legacy models built on C microcontrollers."
     },
     "experience2": {
       "dates": "2024 - Present",
       "title": "Indie Game Developer · Wolf King Studios",
-      "description": "Development of short indie games using Unity.",
-      "tech1": "Unity",
-      "tech2": "C#",
-      "tech3": "Blender"
+      "description": "Development of short indie video games using Unity."
     },
     "experience3": {
       "dates": "2022 - 2024",
       "title": "Backend Developer · NTT Data",
-      "description": "Backend development for web applications.",
-      "tech1": "Spring Boot",
-      "tech2": "Java"
+      "description": "Backend development of web applications."
+    },
+    "project1": {
+      "title": "Web portfolio",
+      "description": "Development of a professional web portfolio with Next.js. Final degree project (TFG) for the Higher Degree in Multiplatform Application Development at IES JLMP."
+    },
+    "project2": {
+      "title": "Art Gallery DBMS",
+      "description": "Database management system for an art gallery. Backend in Rust (Tauri) and frontend with Next.js using shadcn."
+    },
+    "project3": {
+      "title": "Calculator",
+      "description": "Basic functional calculator developed in Android Studio. Project created as a class assignment for the Higher Degree in DAM."
     },
     "toMoreAboutMe": "To see all the projects and certifications, ",
     "linkMoreAboutMe": "more about me."
