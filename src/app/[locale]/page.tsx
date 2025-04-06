@@ -95,7 +95,7 @@ export default async function HomePage() {
           {t("toMoreAboutMe")}{" "}
           <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">
           {t("linkMoreAboutMe")}
-          </Link>.
+          </Link>
         </p>
       </div>
     </div>
