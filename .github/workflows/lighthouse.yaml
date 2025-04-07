@@ -1,4 +1,4 @@
-name: Lighthouse Audit Vercel deploy
+name: Lighthouse Audit on Vercel
 
 on:
   push:
@@ -6,23 +6,26 @@ on:
       - main
 
 jobs:
-  audit:
+  lighthouse:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Instalar Lighthouse
+      - name: Install dependencies
         run: npm install -g lighthouse
 
-      - name: Ejecutar Lighthouse en Vercel
+      - name: Run Lighthouse on Vercel deployment
         run: |
           lighthouse https://portfolio-jos.vercel.app \
             --output html \
             --output-path ./lighthouse-report.html \
-            --quiet \
-            --chrome-flags="--headless"
+            --chrome-flags="--headless" \
+            --quiet
 
-      - name: Mostrar resumen del reporte
-        run: cat ./lighthouse-report.html | head -n 20
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: lighthouse-report
+          path: lighthouse-report.html
 
 
 # name: Lighthouse Audit Vercel deploy
