@@ -18,8 +18,6 @@ jobs:
           lighthouse https://portfolio-jos.vercel.app \
             --output html \
             --output-path ./lighthouse-report.html \
-            --chrome-flags="--headless" \
-            --quiet
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2
