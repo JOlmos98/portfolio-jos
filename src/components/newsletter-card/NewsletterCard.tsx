@@ -15,10 +15,8 @@ export const NewsletterCard = () => {
         const parsed = newsletterSchema.safeParse({ email });
 
         if (!parsed.success) {
-            const msg = parsed.error.errors[0].message;
-            // Manejo de la traducción del mensaje de error de Zod
-            const translatedMsg = msg === "Invalid email" ? t("Invalid email") : msg;
-            toast.error(translatedMsg);
+            const msg = parsed.error.errors[0].message; //! Revisar
+            toast.error(t("Invalid email"));
             return;
         }
 
@@ -35,7 +33,7 @@ export const NewsletterCard = () => {
                 toast.success(t("Email sent successfully"));
                 setEmail("");
             } else {
-                toast.error(data.message || t("Error sending email"));
+                toast.error(data.message === "Este email ya está suscrito" ? t("Error already subscribed") : t("Error sending email"));
             }
         } catch (error) {
             toast.error("Error de conexión");
