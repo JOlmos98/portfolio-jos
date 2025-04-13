@@ -2,38 +2,22 @@
 
 import React from 'react'
 import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import toast from 'react-hot-toast'
 import { FaGoodreads, FaSquareXTwitter } from 'react-icons/fa6';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import { NewsletterCard } from '../newsletter-card/NewsletterCard';
 
 export const Footer = () => {
 
     const t = useTranslations('Footer');
 
-    const stringToast: string = t("Email sent successfully");
-    const emailSent = () => { toast.success(stringToast); }
+    // const stringToast: string = t("Email sent successfully");
+    // const emailSent = () => { toast.success(stringToast); }
 
     return (
-
         <footer className="bg-gray-200 dark:bg-zinc-900 py-2">
             <div className="mx-auto w-full max-w-screen-xl">
-
-                <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
-                    <h2 className='text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-cyan dark:text-blue-cyan font-bold">{t('newsletter')}</span></h2>
-                    <div className="flex items-center justify-center">
-                        <p>
-                            {t('Leave me your email if')}
-                        </p>
-                    </div>
-                    <div className="flex items-center justify-center pt-5">
-                        <input type="text" className='text-blue-cyan dark:text-blue-cyan min-w-24 px-4 py-2 rounded-2xl' placeholder={t('Your email')} />
-                        <button onClick={emailSent} className='ml-4 bg-cyan-600 hover:bg-blue-cyan text-white font-bold py-2 px-4 rounded-2xl'>
-                            {t('Subscribe')}
-                        </button>
-                    </div>
-                </div>
-
+                <NewsletterCard />
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
 
                     <div>
@@ -135,3 +119,17 @@ export const Footer = () => {
     )
 }
 
+{/* <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
+                    <h2 className='text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-cyan dark:text-blue-cyan font-bold">{t('newsletter')}</span></h2>
+                    <div className="flex items-center justify-center">
+                        <p>
+                            {t('Leave me your email if')}
+                        </p>
+                    </div>
+                    <div className="flex items-center justify-center pt-5">
+                        <input type="text" className='text-blue-cyan dark:text-blue-cyan min-w-24 px-4 py-2 rounded-2xl' placeholder={t('Your email')} />
+                        <button onClick={emailSent} className='ml-4 bg-cyan-600 hover:bg-blue-cyan text-white font-bold py-2 px-4 rounded-2xl'>
+                            {t('Subscribe')}
+                        </button>
+                    </div>
+                </div> */}

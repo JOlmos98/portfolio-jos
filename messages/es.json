@@ -19,7 +19,7 @@
     },
     "project1": {
       "title": "Portfolio web",
-      "description": "Desarrollo de un portfolio web profesional con Next.js. Proyecto de gin de grado (TFG) para el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en IES JLMP."
+      "description": "Desarrollo de un portfolio web profesional con Next.js. Proyecto de fin de grado (TFG) para el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en IES JLMP."
     },
     "project2": {
       "title": "SGBD Galería de Arte",
@@ -41,7 +41,11 @@
     "signUp": "Registrarse"
   },
   "Footer": {
-    "Email sent successfully": "Email enviado con éxito!",
+    "Email sent successfully": "Email registrado con éxito. Revisa tu bandeja de entrada.",
+    "Invalid email": "Email no válido.",
+    "Error sending email": "Error al enviar email.",
+    "Error already subscribed": "Error, ya estás suscrito a la newsletter.",
+    "Error server": "Error del servidor.",
     "Subscribe to my ": "Suscríbete a mi ",
     "newsletter": "newsletter",
     "Leave me your email if": "Déjame tu correo electrónico si quieres recibir mi newsletter semanal en la que hablo sobre el mundo del desarrollo y te muestro mis artículos favoritos de la semana:",

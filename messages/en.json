@@ -41,7 +41,11 @@
     "signUp": "Sign Up"
   },
   "Footer": {
-    "Email sent successfully": "Email sent successfully!",
+    "Email sent successfully": "Email successfully registered. Check your inbox.",
+    "Invalid email": "Invalid email.",
+    "Error sending email": "Error sending email.",
+    "Error already subscribed": "Error, you are already subscribed to the newsletter.",
+    "Error server": "Server error.",
     "Subscribe to my ": "Subscribe to my ",
     "newsletter": "newsletter",
     "Leave me your email if": "Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development and I show you my favorite articles of the week:",
