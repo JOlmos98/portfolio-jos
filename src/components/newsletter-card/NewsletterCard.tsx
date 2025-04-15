@@ -15,7 +15,6 @@ export const NewsletterCard = () => {
         const parsed = newsletterSchema.safeParse({ email });
 
         if (!parsed.success) {
-            const msg = parsed.error.errors[0].message; //! Revisar
             toast.error(t("Invalid email"));
             return;
         }
@@ -37,6 +36,7 @@ export const NewsletterCard = () => {
             }
         } catch (error) {
             toast.error("Error de conexión");
+            console.error(error);
         }
     };
 

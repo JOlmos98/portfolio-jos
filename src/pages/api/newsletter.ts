@@ -3,6 +3,7 @@ import { eq } from "drizzle-orm";
 import { db } from "@/db/drizzle";
 import { newsletterSubscribers } from "@/db/drizzle/schema";
 import { newsletterSchema } from "@/zod/newsletterSchema";
+import { resend } from "@/lib/resend";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     
@@ -18,13 +19,27 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const { email } = parsed.data;
 
   try {
-    // Sería: SELECT * FROM newsletter_subscribers WHERE email = newsletterSubscribers.email;
+    // Sería como: SELECT * FROM newsletter_subscribers WHERE email = newsletterSubscribers.email;
     const existing = await db.select().from(newsletterSubscribers).where(eq(newsletterSubscribers.email, email));
 
     // Si se encuentra un registro con el mismo email, se devuelve un error 409
     if (existing.length > 0) {
       return res.status(409).json({ message: "Este email ya está suscrito" });
     }
+
+    await resend.emails.send({
+      from: "Jesús Olmos <onboarding@resend.dev>", //  o tu dominio verificado
+      to: email,
+      subject: 'Hello World, I’m Jesús',
+      html: `
+      <div style="font-family: sans-serif; padding: 1rem">
+        <h2>Thank you for subscribing! 🎉</h2>
+        <p>We welcome you to <strong>Jesús Olmos' IT newsletter</strong>.</p>
+        <p>You'll soon receive updates on web development, programming, and technology.</p>
+        <p>See you soon! 🚀</p>
+      </div>
+    `,
+    });
 
     // Inserta el registro en la tabla newsletter_subscribers
     await db.insert(newsletterSubscribers).values({ email });
