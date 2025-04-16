@@ -64,5 +64,13 @@
     "projects": "Proyectos",
     "articles": "Artículos",
     "contact": "Contacto"
+  },
+  "Contact": {
+    "Send me": "Envíame un",
+    "message": "mensaje",
+    "Full Name": "Nombre completo",
+    "Email": "Email",
+    "Content": "Contenido",
+    "Submit": "Enviar"
   }
 }

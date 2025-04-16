@@ -56,7 +56,7 @@ export const NewsletterCard = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <button onClick={handleSubscribe} className='ml-4 bg-cyan-600 hover:bg-blue-cyan text-white font-bold py-2 px-4 rounded-2xl'>
+                <button onClick={handleSubscribe} className='ml-4 bg-cyan-600 hover:bg-blue-cyan transition text-white font-bold py-2 px-4 rounded-2xl'>
                     {t('Subscribe')}
                 </button>
             </div>

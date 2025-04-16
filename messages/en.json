@@ -64,5 +64,13 @@
     "projects": "Projects",
     "articles": "Articles",
     "contact": "Contact"
+  },
+  "Contact": {
+    "Send me": "Send me a",
+    "message": "message",
+    "Full Name": "Full Name",
+    "Email": "Email",
+    "Content": "Content",
+    "Submit": "Submit"
   }
 }

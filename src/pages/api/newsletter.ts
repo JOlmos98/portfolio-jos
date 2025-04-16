@@ -12,9 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   const parsed = newsletterSchema.safeParse(req.body);
-  if (!parsed.success) {
-    return res.status(400).json({ message: parsed.error.errors[0].message });
-  }
+  if (!parsed.success) {return res.status(400).json({ message: parsed.error.errors[0].message });}
 
   const { email } = parsed.data;
 
@@ -33,10 +31,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       subject: 'Hello World, I’m Jesús',
       html: `
       <div style="font-family: sans-serif; padding: 1rem">
-        <h2>Thank you for subscribing! 🎉</h2>
+        <h2>Thank you for subscribing!</h2>
         <p>We welcome you to <strong>Jesús Olmos' IT newsletter</strong>.</p>
         <p>You'll soon receive updates on web development, programming, and technology.</p>
-        <p>See you soon! 🚀</p>
+        <p>See you soon!</p>
       </div>
     `,
     });
