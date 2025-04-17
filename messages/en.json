@@ -71,6 +71,11 @@
     "Full Name": "Full Name",
     "Email": "Email",
     "Content": "Content",
-    "Submit": "Submit"
+    "Submit": "Submit",
+    "Submitted successfully": "Message sent successfully.",
+    "Error sending message": "There was an error sending the message.",
+    "Error name": "The name must have at least 2 characters",
+    "Error email": "Invalid email",
+    "Error content": "The message must have at least 10 characters"
   }
 }

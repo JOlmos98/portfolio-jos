@@ -71,6 +71,11 @@
     "Full Name": "Vollständiger Name",
     "Email": "E-Mail",
     "Content": "Inhalt",
-    "Submit": "Absenden"
+    "Submit": "Absenden",
+    "Submitted successfully": "Nachricht erfolgreich gesendet.",
+    "Error sending message": "Es gab einen Fehler beim Senden der Nachricht.",
+    "Error name": "Der Name muss mindestens 2 Zeichen haben",
+    "Error email": "Ungültige E-Mail",
+    "Error content": "Die Nachricht muss mindestens 10 Zeichen haben"
   }
 }
