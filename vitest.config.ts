@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'), // 🔥 esto le dice a Vitest qué es "@"
+      '@': path.resolve(__dirname, 'src'), // esto le dice a Vitest qué es "@"
     },
   },
   test: {

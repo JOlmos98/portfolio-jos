@@ -3,23 +3,21 @@ import nodemailer from 'nodemailer';
 // const nodemailer = require('nodemailer')
 
 // Recomendado: usa variables de entorno para evitar exponer tu contraseña
-const EMAIL_FROM = process.env.EMAIL_FROM || "tucorreo@hotmail.com";
-const EMAIL_PASS = process.env.EMAIL_PASS || "tu-contraseña";
-const EMAIL_TO = "soler8@hotmail.es"; // receptor fijo
+const EMAIL_FROM = process.env.EMAIL_FROM;
+const EMAIL_PASS = process.env.EMAIL_PASS;
+const EMAIL_TO = "asimov1891998@gmail.com";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+
   if (req.method !== "POST") return res.status(405).end("Método no permitido");
 
   const { fullName, email, content } = req.body;
 
-  // Validación mínima de campos
-  if (!fullName || !email || !content) {
-    return res.status(400).json({ error: "Faltan campos requeridos" });
-  }
+  if (!fullName || !email || !content) return res.status(400).json({ error: "Faltan campos requeridos" });
 
   try {
     const transporter = nodemailer.createTransport({
-      service: "hotmail", // también puedes usar 'Outlook365' si usas cuenta pro
+      service: "gmail", // también puedes usar 'Outlook365' si usas cuenta pro
       auth: {
         user: EMAIL_FROM,
         pass: EMAIL_PASS,
@@ -29,9 +27,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const mailOptions = {
       from: EMAIL_FROM,
       to: EMAIL_TO,
-      subject: `Nuevo mensaje de contacto de ${fullName}`,
-      text: `Nombre: ${fullName}\nEmail: ${email}\n\nMensaje:\n${content}`,
-    };
+      subject: `Nuevo mensaje de contacto de ${fullName}, <${email}>`,
+      //text: `Nombre: ${fullName}\nEmail: ${email}\n\nMensaje:\n${content}`,
+      html: "<h2><strong style=\"color: blue;\">Nombre: </strong>" + fullName + "</h2>" + "\n<h2><strong style=\"color: blue;\">Email: </strong>" + email + "</h2>" + "\n\n<h2><strong style=\"color: blue;\">Mensaje: </strong>"+content+"</h2>"};
 
     await transporter.sendMail(mailOptions);
 
