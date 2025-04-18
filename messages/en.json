@@ -17,6 +17,16 @@
       "title": "Backend Developer · NTT Data",
       "description": "Backend development of web applications."
     },
+    "projectsTitle": "Projects",
+    "projectsIntro": {
+      "main": "Here you can see all my projects, both those I do to",
+      "learn": " learn ",
+      "continue": "and those I create to push my",
+      "skills": " skills ",
+      "and": "and",
+      "creativity": " creativity ",
+      "end": "as a developer."
+    },
     "project1": {
       "title": "Web portfolio",
       "description": "Development of a professional web portfolio with Next.js. Final degree project (TFG) for the Higher Degree in Multiplatform Application Development at IES JLMP."

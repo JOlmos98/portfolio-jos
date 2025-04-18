@@ -11,4 +11,4 @@ export {NewsletterCard} from './newsletter-card/NewsletterCard';
 export {ContactForm} from './contact-form/ContactForm';
 export {Home} from './home/Home';
 export {ScrollToTopButton} from './scroll-to-top-´button/ScrollToTopButton';
-export {SingUpForm} from './sing-up-form/SingUpForm';
+export {SignUpForm} from './sing-up-form/SingUpForm';

@@ -17,6 +17,16 @@
       "title": "Backend-Entwickler · NTT Data",
       "description": "Backend-Entwicklung von Webanwendungen."
     },
+    "projectsTitle": "Projekte",
+    "projectsIntro": {
+      "main": "Hier kannst du alle meine Projekte sehen, sowohl die, die ich mache, um zu",
+      "learn": " lernen ",
+      "continue": "als auch die, die ich erstelle, um meine",
+      "skills": " Fähigkeiten ",
+      "and": "und",
+      "creativity": " Kreativität ",
+      "end": "als Entwickler weiterzuentwickeln."
+    },
     "project1": {
       "title": "Web-Portfolio",
       "description": "Entwicklung eines professionellen Web-Portfolios mit Next.js. Abschlussprojekt (TFG) für den höheren Abschluss in Multiplattform-Anwendungsentwicklung am IES JLMP."
