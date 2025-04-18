@@ -48,7 +48,7 @@ export const ContactForm = () =>  {
         </span>
       </h2>
 
-      <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-4">
+      <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">
         <div>
           <input
             type="text"

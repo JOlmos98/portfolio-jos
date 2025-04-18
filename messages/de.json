@@ -77,5 +77,24 @@
     "Error name": "Der Name muss mindestens 2 Zeichen haben",
     "Error email": "Ungültige E-Mail",
     "Error content": "Die Nachricht muss mindestens 10 Zeichen haben"
+  },
+  "SignUp": {
+    "Sign Up to": "Registriere dich, um Zugang zu ",
+    "All the content": "allen Inhalten zu erhalten",
+    "Create your": "Erstelle dein",
+    "account": "Konto",
+    "Name": "Name",
+    "Last Name": "Nachname",
+    "Email": "E-Mail",
+    "Password": "Passwort",
+    "Phone": "Telefon",
+    "Bio": "Bio",
+    "Website": "Website",
+    "Register": "Registrieren",
+    "Registered successfully": "Konto erfolgreich erstellt.",
+    "Error during registration": "Fehler bei der Registrierung.",
+    "Account": "Konto",
+    "Already have an account?": "Hast du bereits ein Konto?",
+    "Login": "Anmelden"
   }
 }

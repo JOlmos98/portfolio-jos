@@ -77,5 +77,24 @@
     "Error name": "The name must have at least 2 characters",
     "Error email": "Invalid email",
     "Error content": "The message must have at least 10 characters"
+  },
+  "SignUp": {
+    "Sign Up to": "Sign up to access ",
+    "All the content": "all the content",
+    "Create your": "Create your",
+    "account": "account",
+    "Name": "Name",
+    "Last Name": "Last Name",
+    "Email": "Email",
+    "Password": "Password",
+    "Phone": "Phone",
+    "Bio": "Bio",
+    "Website": "Website",
+    "Register": "Register",
+    "Registered successfully": "Account created successfully.",
+    "Error during registration": "Error during registration.",
+    "Account": "Account",
+    "Already have an account?": "Already have an account?",
+    "Login": "Log in"
   }
 }

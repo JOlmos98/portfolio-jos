@@ -77,5 +77,24 @@
     "Error name": "El nombre debe tener al menos 2 caracteres",
     "Error email": "Email no válido",
     "Error content": "El mensaje debe tener al menos 10 caracteres"
+  },
+  "SignUp": {
+    "Sign Up to": "Registrate para acceder a ",
+    "All the content": "todo el contenido",
+    "Create your": "Crea tu",
+    "account": "cuenta",
+    "Name": "Nombre",
+    "Last Name": "Apellidos",
+    "Email": "Email",
+    "Password": "Contraseña",
+    "Phone": "Teléfono",
+    "Bio": "Bio",
+    "Website": "Sitio web",
+    "Register": "Registrarse",
+    "Registered successfully": "Cuenta creada correctamente.",
+    "Error during registration": "Error al registrarse.",
+    "Account": "Cuenta",
+    "Already have an account?": "¿Ya tienes una cuenta?",
+    "Login": "Iniciar sesión"
   }
 }
