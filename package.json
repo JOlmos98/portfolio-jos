@@ -12,7 +12,7 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.0",
+    "@headlessui/react": "^2.2.2",
     "@hookform/resolvers": "^5.0.1",
     "@types/nodemailer": "^6.4.17",
     "bcrypt": "^5.1.1",

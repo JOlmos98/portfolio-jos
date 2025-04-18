@@ -19,8 +19,9 @@ export const signUpSchema = z.object({
 
   phone: z
     .string()
-    .min(7, { message: "Phone must be at least 7 digits long" })
-    .regex(/^[0-9]+$/, { message: "Phone must contain only numbers" }),
+    .min(7, { message: "Phone must be at least 7 digits long and contain only numbers" })
+    .regex(/^[0-9]+$/, { message: "Phone must contain only numbers" })
+    .optional(),
 
   bio: z
     .string()
@@ -31,4 +32,9 @@ export const signUpSchema = z.object({
     .string()
     .url({ message: "Website must be a valid URL" })
     .optional(),
+
+  subscribe: z
+    .boolean()
+    .optional(),
+
 });

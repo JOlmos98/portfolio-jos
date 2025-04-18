@@ -115,6 +115,8 @@ import toast from "react-hot-toast";
 import { useTranslations } from "next-intl";
 import { signUpSchema } from "@/zod/signUpSchema";
 import { Link } from "@/i18n/navigation";
+import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/react";
+import { useState } from "react";
 
 export const SignUpForm = () => {
   const t = useTranslations("SignUp");
@@ -129,8 +131,20 @@ export const SignUpForm = () => {
       phone: "",
       bio: "",
       website: "",
+      subscribe: false,
     },
   });
+
+  const prefixes = [
+    "+0", "+1", "+7", "+31", "+32", "+33", "+34", "+39", "+41", "+44",
+    "+49", "+52", "+54", "+55", "+57", "+61", "+81", "+82", "+86", "+91",
+    "+352", "+353", "+591"
+  ];
+
+
+
+  const [prefix, setPrefix] = useState(prefixes[0]);
+
 
   const { register, handleSubmit, formState: { errors }, reset } = form;
 
@@ -143,6 +157,8 @@ export const SignUpForm = () => {
       });
 
       if (!res.ok) throw new Error("Signup failed");
+
+      //! Añadir suscribe
 
       toast.success(t("Registered successfully"));
       reset();
@@ -169,7 +185,7 @@ export const SignUpForm = () => {
             className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
             {...register("name")}
           />
-          {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+          {errors.name && <p className="text-red-500 text-sm mt-1">{t("ErrorNameMin")}</p>}
         </div>
 
         <div>
@@ -179,7 +195,7 @@ export const SignUpForm = () => {
             className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
             {...register("last_name")}
           />
-          {errors.last_name && <p className="text-red-500 text-sm mt-1">{errors.last_name.message}</p>}
+          {errors.last_name && <p className="text-red-500 text-sm mt-1">{t("ErrorLastNameMin")}</p>}
         </div>
 
         <div>
@@ -189,7 +205,7 @@ export const SignUpForm = () => {
             className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
             {...register("email")}
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+          {errors.email && <p className="text-red-500 text-sm mt-1">{t("ErrorEmailInvalid")}</p>}
         </div>
 
         <div>
@@ -199,17 +215,43 @@ export const SignUpForm = () => {
             className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
             {...register("password")}
           />
-          {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
+          {errors.password && <p className="text-red-500 text-sm mt-1">{t("ErrorPasswordMin")}</p>}
         </div>
-
         <div>
-          <input
-            type="tel"
-            placeholder={t("Phone")}
-            className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
-            {...register("phone")}
-          />
-          {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>}
+          <div className="flex lg:w-[600px]">
+            <Listbox value={prefix} onChange={setPrefix}>
+              <div className="relative w-[100px]">
+                <ListboxButton className="w-full h-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-l-2xl bg-gray-300 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-900">
+                  {prefix}
+                </ListboxButton>
+                <ListboxOptions className="absolute mt-1 max-h-40 overflow-auto w-full rounded-md bg-white dark:bg-zinc-900 shadow-lg z-10">
+                  {prefixes.map((p, idx) => (
+                    <ListboxOption
+                      key={idx}
+                      value={p}
+                      className={({ active }) =>
+                        `cursor-pointer px-4 py-2 ${active ? 'bg-blue-100 text-black dark:bg-blue-cyan' : ''
+                        }`
+                      }
+                    >
+                      {p}
+                    </ListboxOption>
+                  ))}
+                </ListboxOptions>
+              </div>
+            </Listbox>
+
+            <input
+              type="tel"
+              placeholder={t("Phone")}
+              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-r-2xl border border-l-0 border-zinc-300 dark:border-zinc-900 bg-gray-300 dark:bg-zinc-900"
+              {...register("phone")}
+            />
+          </div>
+
+          {errors.phone && (
+            <p className="text-red-500 text-sm mt-1">{t("ErrorPhoneMin")}</p>
+          )}
         </div>
 
         <div>
@@ -218,7 +260,7 @@ export const SignUpForm = () => {
             className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl min-h-[100px]"
             {...register("bio")}
           />
-          {errors.bio && <p className="text-red-500 text-sm mt-1">{errors.bio.message}</p>}
+          {errors.bio && <p className="text-red-500 text-sm mt-1">{t("ErrorBioMax")}</p>}
         </div>
 
         <div>
@@ -228,7 +270,19 @@ export const SignUpForm = () => {
             className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
             {...register("website")}
           />
-          {errors.website && <p className="text-red-500 text-sm mt-1">{errors.website.message}</p>}
+          {errors.website && <p className="text-red-500 text-sm mt-1">{t("ErrorWebsiteUrl")}</p>}
+        </div>
+
+        <div className="flex items-start gap-2">
+          <input
+            type="checkbox"
+            {...register("subscribe")}
+            className="mt-1"
+            id="subscribe"
+          />
+          <label htmlFor="subscribe" className="text-sm text-zinc-700 dark:text-zinc-300">
+            {t("newsletterSubscription")}
+          </label>
         </div>
 
         <button
@@ -242,3 +296,29 @@ export const SignUpForm = () => {
     </div>
   );
 };
+
+  // <Select name="status" aria-label="Project status" className={"lg:w-[100px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-l-2xl"}>
+  //   <option value="+0">+0</option>
+  //   <option value="+0">+1</option>
+  //   <option value="+7">+7</option>
+  //   <option value="+31">+31</option>
+  //   <option value="+32">+32</option>
+  //   <option value="+33">+33</option>
+  //   <option value="+34">+34</option>
+  //   <option value="+39">+39</option>
+  //   <option value="+41">+41</option>
+  //   <option value="+44">+44</option>
+  //   <option value="+49">+49</option>
+  //   <option value="+52">+52</option>
+  //   <option value="+54">+54</option>
+  //   <option value="+55">+55</option>
+  //   <option value="+57">+57</option>
+  //   <option value="+61">+61</option>
+  //   <option value="+81">+81</option>
+  //   <option value="+82">+82</option>
+  //   <option value="+86">+86</option>
+  //   <option value="+91">+91</option>
+  //   <option value="+352">+352</option>
+  //   <option value="+353">+353</option>
+  //   <option value="+591">+591</option>
+  // </Select>

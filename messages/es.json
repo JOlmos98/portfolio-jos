@@ -97,14 +97,23 @@
     "Last Name": "Apellidos",
     "Email": "Email",
     "Password": "Contraseña",
-    "Phone": "Teléfono",
-    "Bio": "Bio",
-    "Website": "Sitio web",
+    "Phone": "Teléfono (opcional)",
+    "Bio": "Bio (opcional)",
+    "Website": "Sitio web (opcional)",
     "Register": "Registrarse",
     "Registered successfully": "Cuenta creada correctamente.",
     "Error during registration": "Error al registrarse.",
     "Account": "Cuenta",
+    "newsletterSubscription": "Marca para suscribirte a mi newsletter y recibir los mejores artículos de IT cada semana.",
     "Already have an account?": "¿Ya tienes una cuenta?",
-    "Login": "Iniciar sesión"
+    "Login": "Iniciar sesión",
+
+    "ErrorNameMin": "El nombre debe tener al menos 2 caracteres",
+    "ErrorLastNameMin": "El apellido debe tener al menos 2 caracteres",
+    "ErrorEmailInvalid": "Correo electrónico no válido",
+    "ErrorPasswordMin": "La contraseña debe tener al menos 6 caracteres",
+    "ErrorPhoneMin": "El teléfono debe tener al menos 7 dígitos y contener solo números",
+    "ErrorBioMax": "La biografía debe tener menos de 160 caracteres",
+    "ErrorWebsiteUrl": "El sitio web debe ser una URL válida"
   }
 }

@@ -97,14 +97,23 @@
     "Last Name": "Nachname",
     "Email": "E-Mail",
     "Password": "Passwort",
-    "Phone": "Telefon",
-    "Bio": "Bio",
-    "Website": "Website",
+    "Phone": "Telefon (optional)",
+    "Bio": "Bio (optional)",
+    "Website": "Website (optional)",
     "Register": "Registrieren",
     "Registered successfully": "Konto erfolgreich erstellt.",
     "Error during registration": "Fehler bei der Registrierung.",
     "Account": "Konto",
+    "newsletterSubscription": "Hake an, um meinen Newsletter zu abonnieren und jede Woche die besten IT-Artikel zu erhalten.",
     "Already have an account?": "Hast du bereits ein Konto?",
-    "Login": "Anmelden"
+    "Login": "Anmelden",
+
+    "ErrorNameMin": "Der Name muss mindestens 2 Zeichen lang sein",
+    "ErrorLastNameMin": "Der Nachname muss mindestens 2 Zeichen lang sein",
+    "ErrorEmailInvalid": "Ungültige E-Mail-Adresse",
+    "ErrorPasswordMin": "Das Passwort muss mindestens 6 Zeichen lang sein",
+    "ErrorPhoneMin": "Die Telefonnummer muss mindestens 7 Ziffern enthalten und nur Zahlen enthalten",
+    "ErrorBioMax": "Die Biografie darf höchstens 160 Zeichen lang sein",
+    "ErrorWebsiteUrl": "Die Website muss eine gültige URL sein"
   }
 }
