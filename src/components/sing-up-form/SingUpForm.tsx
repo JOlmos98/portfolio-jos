@@ -150,6 +150,9 @@ export const SignUpForm = () => {
 
   const onSubmit = async (values: z.infer<typeof signUpSchema>) => {
     try {
+
+      //! Añadir lógica de campo phone, si está vacío, no se tiene en cuenta tampoco el prefijo.
+
       const res = await fetch("/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -158,7 +161,7 @@ export const SignUpForm = () => {
 
       if (!res.ok) throw new Error("Signup failed");
 
-      //! Añadir suscribe
+      //! Añadir suscribe.
 
       toast.success(t("Registered successfully"));
       reset();
@@ -221,7 +224,7 @@ export const SignUpForm = () => {
           <div className="flex lg:w-[600px]">
             <Listbox value={prefix} onChange={setPrefix}>
               <div className="relative w-[100px]">
-                <ListboxButton className="w-full h-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-l-2xl bg-gray-300 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-900">
+                <ListboxButton className="w-full h-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-l-2xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-900">
                   {prefix}
                 </ListboxButton>
                 <ListboxOptions className="absolute mt-1 max-h-40 overflow-auto w-full rounded-md bg-white dark:bg-zinc-900 shadow-lg z-10">
@@ -244,7 +247,7 @@ export const SignUpForm = () => {
             <input
               type="tel"
               placeholder={t("Phone")}
-              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-r-2xl border border-l-0 border-zinc-300 dark:border-zinc-900 bg-gray-300 dark:bg-zinc-900"
+              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-r-2xl border border-l-0 border-zinc-300 dark:border-zinc-900 bg-white dark:bg-zinc-900"
               {...register("phone")}
             />
           </div>
