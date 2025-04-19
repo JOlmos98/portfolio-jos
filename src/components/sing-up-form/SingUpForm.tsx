@@ -120,6 +120,7 @@ import { useState } from "react";
 
 export const SignUpForm = () => {
   const t = useTranslations("SignUp");
+  const f = useTranslations("Footer");
 
   const form = useForm<z.infer<typeof signUpSchema>>({
     resolver: zodResolver(signUpSchema),
@@ -161,7 +162,29 @@ export const SignUpForm = () => {
 
       if (!res.ok) throw new Error("Signup failed");
 
-      //! Añadir suscribe.
+      // Evaluamos check de suscribe
+      if (values.subscribe) {
+        try {
+          const newsletterRes = await fetch("/api/newsletter", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: values.email }),
+          });
+
+          if (newsletterRes.status === 409) { //Si ya está suscrito.
+            toast(f("Error already subscribed")); // opcional
+          } else if (!newsletterRes.ok) {
+            console.warn("Newsletter failed", await newsletterRes.text());
+            // toast.error(t("Newsletter subscription failed")); 
+          } else {
+            // toast.success(t("Newsletter subscription successful"));
+          }
+        } catch (err) {
+          console.error(err);
+          // toast.error(t("Newsletter subscription failed"));
+        }
+      }
+
 
       toast.success(t("Registered successfully"));
       reset();
@@ -300,28 +323,28 @@ export const SignUpForm = () => {
   );
 };
 
-  // <Select name="status" aria-label="Project status" className={"lg:w-[100px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-l-2xl"}>
-  //   <option value="+0">+0</option>
-  //   <option value="+0">+1</option>
-  //   <option value="+7">+7</option>
-  //   <option value="+31">+31</option>
-  //   <option value="+32">+32</option>
-  //   <option value="+33">+33</option>
-  //   <option value="+34">+34</option>
-  //   <option value="+39">+39</option>
-  //   <option value="+41">+41</option>
-  //   <option value="+44">+44</option>
-  //   <option value="+49">+49</option>
-  //   <option value="+52">+52</option>
-  //   <option value="+54">+54</option>
-  //   <option value="+55">+55</option>
-  //   <option value="+57">+57</option>
-  //   <option value="+61">+61</option>
-  //   <option value="+81">+81</option>
-  //   <option value="+82">+82</option>
-  //   <option value="+86">+86</option>
-  //   <option value="+91">+91</option>
-  //   <option value="+352">+352</option>
-  //   <option value="+353">+353</option>
-  //   <option value="+591">+591</option>
-  // </Select>
+// <Select name="status" aria-label="Project status" className={"lg:w-[100px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-l-2xl"}>
+//   <option value="+0">+0</option>
+//   <option value="+0">+1</option>
+//   <option value="+7">+7</option>
+//   <option value="+31">+31</option>
+//   <option value="+32">+32</option>
+//   <option value="+33">+33</option>
+//   <option value="+34">+34</option>
+//   <option value="+39">+39</option>
+//   <option value="+41">+41</option>
+//   <option value="+44">+44</option>
+//   <option value="+49">+49</option>
+//   <option value="+52">+52</option>
+//   <option value="+54">+54</option>
+//   <option value="+55">+55</option>
+//   <option value="+57">+57</option>
+//   <option value="+61">+61</option>
+//   <option value="+81">+81</option>
+//   <option value="+82">+82</option>
+//   <option value="+86">+86</option>
+//   <option value="+91">+91</option>
+//   <option value="+352">+352</option>
+//   <option value="+353">+353</option>
+//   <option value="+591">+591</option>
+// </Select>

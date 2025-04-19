@@ -19,7 +19,6 @@ import {
     bio: text("bio"),
     website: varchar("website", { length: 255 }),
     avatarUrl: varchar("avatar_url", { length: 255 }),
-    language: varchar("language", { length: 10 }),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   });
