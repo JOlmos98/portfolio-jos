@@ -3,6 +3,7 @@ import {
     serial,
     varchar,
     text,
+    boolean,
     timestamp,
     integer,
     primaryKey
@@ -19,6 +20,7 @@ import {
     bio: text("bio"),
     website: varchar("website", { length: 255 }),
     avatarUrl: varchar("avatar_url", { length: 255 }),
+    isVerified: boolean("is_verified").default(false),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   });

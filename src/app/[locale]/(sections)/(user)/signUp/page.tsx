@@ -1,6 +1,6 @@
 "use server";
 
-import { SignUpForm } from "@/components/sing-up-form/SingUpForm";
+import { SignUpForm } from "@/components/sign-up-form/SignUpForm";
 import { getTranslations } from "next-intl/server";
 
 export default async function SignUpPage() {
