@@ -111,7 +111,7 @@
     "ErrorNameMin": "El nombre debe tener al menos 2 caracteres",
     "ErrorLastNameMin": "El apellido debe tener al menos 2 caracteres",
     "ErrorEmailInvalid": "Correo electrónico no válido",
-    "ErrorPasswordMin": "La contraseña debe tener al menos 6 caracteres",
+    "ErrorPasswordMin": "La contraseña debe tener al menos 6 caracteres e incluir números, letras y símbolos",
     "ErrorPhoneMin": "El teléfono debe tener al menos 7 dígitos y contener solo números",
     "ErrorBioMax": "La biografía debe tener menos de 160 caracteres",
     "ErrorWebsiteUrl": "El sitio web debe ser una URL válida"

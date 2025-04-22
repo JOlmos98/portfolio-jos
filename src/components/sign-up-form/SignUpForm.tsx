@@ -37,6 +37,7 @@ export const SignUpForm = () => {
 
   const [prefix, setPrefix] = useState(prefixes[0]);
 
+  //! Revisar
   const { register, handleSubmit, formState: { errors }, reset } = form;
 
   const onSubmit = async (values: z.infer<typeof signUpSchema>) => {
@@ -44,14 +45,14 @@ export const SignUpForm = () => {
 
       //Lógica de phone
       const processedValues = { ...values };
-      
-      if (processedValues.phone !== undefined && processedValues.phone !== null && processedValues.phone.trim() !== "") {
-        processedValues.phone = `${prefix} ${processedValues.phone.trim()}`;
-      } else {processedValues.phone = null;}
 
-      if (processedValues.website !== undefined && processedValues.website !== null && processedValues.website.trim() !== "") {
+      if (processedValues.phone !== undefined && processedValues.phone.trim() !== "") {
+        processedValues.phone = `${prefix} ${processedValues.phone.trim()}`;
+      } else {processedValues.phone = "";}
+
+      if (processedValues.website !== undefined && processedValues.website.trim() !== "") {
         processedValues.website = `${processedValues.website.trim()}`;
-      } else {processedValues.website = null;}
+      } else {processedValues.website = "";}
 
       const res = await fetch("/api/signUp", {
         method: "POST",
@@ -85,7 +86,7 @@ export const SignUpForm = () => {
         }
       }
 
-      toast.success(t("Registered successfully"));
+      toast.success((t("Registered successfully")+" "+values.email), { duration: 5000 });
       reset();
     } catch (e) {
       toast.error(t("Error during registration"));
@@ -146,10 +147,10 @@ export const SignUpForm = () => {
           <div className="flex lg:w-[600px]">
             <Listbox value={prefix} onChange={setPrefix}>
               <div className="relative w-[100px]">
-                <ListboxButton className="w-full h-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-l-2xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-900">
+                <ListboxButton className="w-full h-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-l-2xl bg-white dark:bg-[#121212] border border-zinc-300 dark:border-[#121212]">
                   {prefix}
                 </ListboxButton>
-                <ListboxOptions className="absolute mt-1 max-h-40 overflow-auto w-full rounded-md bg-white dark:bg-zinc-900 shadow-lg z-10">
+                <ListboxOptions className="absolute mt-1 max-h-40 overflow-auto w-full rounded-md bg-white dark:bg-[#121212] shadow-lg z-10">
                   {prefixes.map((p, idx) => (
                     <ListboxOption
                       key={idx}
@@ -169,7 +170,7 @@ export const SignUpForm = () => {
             <input
               type="tel"
               placeholder={t("Phone")}
-              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-r-2xl border border-l-0 border-zinc-300 dark:border-zinc-900 bg-white dark:bg-zinc-900"
+              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-r-2xl border border-l-0 border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212]"
               {...register("phone")}
             />
           </div>
@@ -300,7 +301,7 @@ export const SignUpForm = () => {
 //     <div className="flex min-h-screen w-full">
 //       {/* Lado izquierdo sin fondo */}
 //       <div className="w-1/2 hidden lg:flex items-center justify-center">
-//         <h2 className="text-4xl font-bold leading-tight text-zinc-900 dark:text-white p-12">
+//         <h2 className="text-4xl font-bold leading-tight text-[#121212] dark:text-white p-12">
 //           {t("Sign Up to")} <br />
 //           <span className="text-blue-cyan">{t("All the content")}</span>
 //         </h2>
@@ -313,7 +314,7 @@ export const SignUpForm = () => {
 //           noValidate
 //           className="w-full max-w-xl space-y-4"
 //         >
-//           <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">
+//           <h2 className="text-2xl font-bold text-[#121212] dark:text-white">
 //             {t("Create your")}{" "}
 //             <span className="text-blue-cyan dark:text-blue-cyan">{t("account")}</span>
 //           </h2>

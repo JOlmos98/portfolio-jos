@@ -15,14 +15,30 @@ export const signUpSchema = z.object({
 
   password: z
     .string()
-    .min(6, { message: "Password must be at least 6 characters long" }),
+    .min(6, { message: "Password must be at least 6 characters long" })
+    .regex(
+      /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[^a-zA-Z0-9])/,
+      { message: "Password must include letters, numbers, and symbols" }
+    ),
+
+  // phone: z
+  //   .string()
+  //   .optional()
+  //   .transform(val => val === "" ? undefined : val)
+  //   .pipe(z.string().regex(/^[0-9]{7,}$/, "Phone must be numeric and at least 7 digits").optional()),
 
   phone: z
-    .string()
-    .min(7, { message: "Phone must be at least 7 characters" })
-    .regex(/^[\d+ ]+$/, { message: "Phone must contain only numbers, spaces, or +" })
-    .optional()
-    .nullable(),
+  .string()
+  .optional()
+  .transform(val => val?.trim() === "" ? undefined : val?.trim()) // "" → undefined
+  .refine(
+    val =>
+      val === undefined ||
+      /^\+?[0-9\s\-]{7,}$/.test(val), // admite "+" al principio, espacios y guiones
+    {
+      message: "Phone must start with '+' and have at least 7 digits",
+    }
+  ),
 
   bio: z
     .string()
@@ -31,9 +47,9 @@ export const signUpSchema = z.object({
 
   website: z
     .string()
-    .url({ message: "Website must be a valid URL" })
     .optional()
-    .nullable(),
+    .transform(val => val === "" ? undefined : val)
+    .pipe(z.string().url("Website must be a valid URL").optional()),
 
   subscribe: z
     .boolean()
