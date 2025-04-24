@@ -4,6 +4,8 @@ import bcrypt from "bcryptjs";
 import { eq } from "drizzle-orm";
 import { db } from "@/db/drizzle";
 import { users } from "@/db/drizzle/schema";
+import jwt from 'jsonwebtoken';
+import nodemailer from "nodemailer";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
@@ -39,6 +41,39 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       bio: bio || null,
       website: website || null,
     });
+
+    //* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ VERIFICACIÓN DE EMAIL ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 
+
+    const verificationToken = jwt.sign(
+      { email },                            // Payload, contenido del jwt
+      process.env.SUPABASE_JWT_SECRET!,
+      { expiresIn: "1d" }                   // Expira en un día
+    );
+    
+    const verificationUrl = `${process.env.NEXT_PUBLIC_APP_URL}/en/api/verifyEmail?token=${verificationToken}`;
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_FROM,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+    
+    await transporter.sendMail({
+      to: email,
+      from: process.env.EMAIL_FROM,
+      subject: "Verify your account",
+      html: `
+        <p style="text-align: center; font-size: 20px;">Verify your account</p>
+        <p style="text-align: center; font-size: 16px;">
+          Click the link below to verify your account:
+        </p>
+        <a style="text-align: center; font-size: 36px;" href="${verificationUrl}">Link</a>
+      `,
+    });
+
+    //* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ VERIFICACIÓN DE EMAIL ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 
 
     return res.status(201).json({ message: "User created" });
   } catch (err) {
