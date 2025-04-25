@@ -12,8 +12,8 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server"; // ✅ AÑADE esto
 
 export async function POST(req: Request) { // ✅ CAMBIA esto
-    
-if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed" }, { status: 405 });
+
+  if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed" }, { status: 405 });
 
 
 
@@ -25,7 +25,7 @@ if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed
     const parsed = signUpSchema.safeParse(body);
     console.log("PARSED:", parsed);
     if (!parsed.success) {
-        return NextResponse.json({ error: "Invalid input" }, { status: 400 });
+      return NextResponse.json({ error: "Invalid input" }, { status: 400 });
     }
 
     const { email, password, name, last_name, phone, bio, website } = parsed.data;
@@ -35,7 +35,7 @@ if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed
     });
 
     if (existingUser) {
-        return NextResponse.json({ error: "Email already exists" }, { status: 409 });
+      return NextResponse.json({ error: "Email already exists" }, { status: 409 });
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -57,7 +57,7 @@ if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed
       process.env.SUPABASE_JWT_SECRET!,
       { expiresIn: "1d" }                   // Expira en un día
     );
-    
+
     //! /en/ ?
     const verificationUrl = `${process.env.NEXT_PUBLIC_APP_URL}/api/verifyEmail?token=${verificationToken}`;
 
@@ -68,7 +68,7 @@ if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed
         pass: process.env.EMAIL_PASS,
       },
     });
-    
+
     await transporter.sendMail({
       to: email,
       from: process.env.EMAIL_FROM,
@@ -85,9 +85,9 @@ if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed
     //* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ VERIFICACIÓN DE EMAIL ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 
 
     return NextResponse.json({ message: "User created" }, { status: 201 });
-} catch (err) {
+  } catch (err) {
     console.error("Error en registro:", err);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
-}
+  }
 }
 

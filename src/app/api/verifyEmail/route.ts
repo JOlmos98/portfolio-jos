@@ -20,11 +20,14 @@ export async function GET(req: Request) {
       .set({ isVerified: true })
       .where(eq(users.email, email));
 
-    return NextResponse.redirect("/en/verified?status=success");
-
+    // return NextResponse.redirect("/en/verified?status=success");
+    // return NextResponse.redirect("/en/verifiedSuccess");
+    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/en/verifiedSuccess`);
   } catch (err) {
     console.error("Invalid or expired token:", err);
-    return NextResponse.redirect("/en/verified?status=error&reason=expired-or-invalid");
+    // return NextResponse.redirect("/en/verified?status=error&reason=expired-or-invalid");
+    // return NextResponse.redirect("/en/verifiedError");
+    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/en/verifiedError`);
   }
 }
 
