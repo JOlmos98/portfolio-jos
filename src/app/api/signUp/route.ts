@@ -1,4 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { signUpSchema } from "@/zod/signUpSchema";
 import bcrypt from "bcryptjs";
 import { eq } from "drizzle-orm";
