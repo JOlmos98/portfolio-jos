@@ -101,8 +101,9 @@
     "Bio": "Bio (optional)",
     "Website": "Website (optional)",
     "Register": "Registrieren",
-    "Registered successfully": "Konto erfolgreich erstellt.",
+    "Registered successfully": "Konto erfolgreich erstellt. Überprüfen Sie Ihren Posteingang.",
     "Error during registration": "Fehler bei der Registrierung.",
+    "Error already registered": "Fehler diese E-Mail ist bereits registriert.",
     "Account": "Konto",
     "newsletterSubscription": "Hake an, um meinen Newsletter zu abonnieren und jede Woche die besten IT-Artikel zu erhalten.",
     "Already have an account?": "Hast du bereits ein Konto?",
@@ -114,6 +115,11 @@
     "ErrorPasswordMin": "Das Passwort muss mindestens 6 Zeichen haben und Zahlen, Buchstaben und Symbole enthalten",
     "ErrorPhoneMin": "Die Telefonnummer muss mindestens 7 Ziffern enthalten und nur Zahlen enthalten",
     "ErrorBioMax": "Die Biografie darf höchstens 160 Zeichen lang sein",
-    "ErrorWebsiteUrl": "Die Website muss eine gültige URL sein"
+    "ErrorWebsiteUrl": "Die Website muss eine gültige URL sein",
+
+    "Verified": "E-Mail verifiziert.",
+    "Error verifying": "Fehler beim Verifizieren der E-Mail.",
+    "Email successfully verified": "E-Mail erfolgreich verifiziert, melde dich an, um fortzufahren.",
+    "Error during verification": "Fehler bei der Verifizierung der E-Mail."
   }
 }

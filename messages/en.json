@@ -101,8 +101,9 @@
     "Bio": "Bio (optional)",
     "Website": "Website (optional)",
     "Register": "Register",
-    "Registered successfully": "Account created successfully.",
+    "Registered successfully": "Account created successfully. Check your inbox.",
     "Error during registration": "Error during registration.",
+    "Error already registered": "Error, this email is already registered.",
     "Account": "Account",
     "newsletterSubscription": "Check to subscribe to my newsletter and receive the best IT articles every week.",
     "Already have an account?": "Already have an account?",
@@ -114,6 +115,11 @@
     "ErrorPasswordMin": "The password must have at least 6 characters and include numbers, letters, and symbols",
     "ErrorPhoneMin": "Phone must be at least 7 digits long and contain only numbers",
     "ErrorBioMax": "Bio must be less than 160 characters",
-    "ErrorWebsiteUrl": "Website must be a valid URL"
+    "ErrorWebsiteUrl": "Website must be a valid URL",
+
+    "Verified": "Email verified.",
+    "Error verifying": "Error verifying email.",
+    "Email successfully verified": "Email successfully verified, log in to continue.",
+    "Error during verification": "Error during email verification."
   }
 }

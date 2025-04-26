@@ -16,7 +16,6 @@ export default async function SignUpPage() {
         </p>
       </div>
 
-
       {/* Lado derecho*/}
       <div className="w-full lg:w-1/2 bg-gray-300 dark:bg-zinc-800 flex items-center justify-center p-8">
         <SignUpForm />

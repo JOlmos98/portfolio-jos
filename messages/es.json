@@ -101,8 +101,9 @@
     "Bio": "Bio (opcional)",
     "Website": "Sitio web (opcional)",
     "Register": "Registrarse",
-    "Registered successfully": "Cuenta creada correctamente.",
+    "Registered successfully": "Cuenta creada correctamente. Revisa tu bandeja de entrada.",
     "Error during registration": "Error al registrarse.",
+    "Error already registered": "Error, este email ya está registrado.",
     "Account": "Cuenta",
     "newsletterSubscription": "Marca para suscribirte a mi newsletter y recibir los mejores artículos de IT cada semana.",
     "Already have an account?": "¿Ya tienes una cuenta?",
@@ -114,6 +115,11 @@
     "ErrorPasswordMin": "La contraseña debe tener al menos 6 caracteres e incluir números, letras y símbolos",
     "ErrorPhoneMin": "El teléfono debe tener al menos 7 dígitos y contener solo números",
     "ErrorBioMax": "La biografía debe tener menos de 160 caracteres",
-    "ErrorWebsiteUrl": "El sitio web debe ser una URL válida"
+    "ErrorWebsiteUrl": "El sitio web debe ser una URL válida",
+
+    "Verified": "Verificado",
+    "Error verifying": "Error verificando",
+    "Email successfully verified": "Correo electrónico verificado con éxito, inicia sesión para continuar.",
+    "Error during verification": "Error durante la verificación del correo electrónico."
   }
 }

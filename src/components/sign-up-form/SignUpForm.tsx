@@ -48,11 +48,11 @@ export const SignUpForm = () => {
 
       if (processedValues.phone !== undefined && processedValues.phone.trim() !== "") {
         processedValues.phone = `${prefix} ${processedValues.phone.trim()}`;
-      } else {processedValues.phone = "";}
+      } else { processedValues.phone = ""; }
 
       if (processedValues.website !== undefined && processedValues.website.trim() !== "") {
         processedValues.website = `${processedValues.website.trim()}`;
-      } else {processedValues.website = "";}
+      } else { processedValues.website = ""; }
 
       const res = await fetch("/api/signUp", {
         method: "POST",
@@ -60,35 +60,39 @@ export const SignUpForm = () => {
         body: JSON.stringify(processedValues),
       });
 
-      if (!res.ok) throw new Error("Signup failed");
+      if (res.status === 409) toast.error(t("Error already registered"));
+      else if (!res.ok) throw new Error("Signup failed");
+      else {
 
-      //Lógica de newsletter check
-      if (values.subscribe) {
-        try {
-          const newsletterRes = await fetch("/api/newsletter", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: values.email }),
-          });
+        //Lógica de newsletter check
+        if (values.subscribe) {
+          try {
+            const newsletterRes = await fetch("/api/newsletter", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: values.email }),
+            });
 
-          if (newsletterRes.status === 409) { //Si ya está suscrito.
-            // toast(f("Error already subscribed")); // opcional
-            console.warn("Already subscribed");
-          } else if (!newsletterRes.ok) {
-            console.warn("Newsletter failed", await newsletterRes.text());
-            // toast.error(t("Newsletter subscription failed")); 
-          } else {
-            // toast.success(t("Newsletter subscription successful"));
+            if (newsletterRes.status === 409) { //Si ya está suscrito.
+              // toast(f("Error already subscribed")); // opcional
+              console.warn("Already subscribed");
+            } else if (!newsletterRes.ok) {
+              console.warn("Newsletter failed", await newsletterRes.text());
+              // toast.error(t("Newsletter subscription failed")); 
+            } else {
+              // toast.success(t("Newsletter subscription successful"));
+            }
+          } catch (err) {
+            console.warn(err);
+            // toast.error(t("Newsletter subscription failed"));
           }
-        } catch (err) {
-          console.warn(err);
-          // toast.error(t("Newsletter subscription failed"));
         }
-      }
 
-      toast.success((t("Registered successfully")+" "+values.email), { duration: 5000 });
-      reset();
+        toast.success((t("Registered successfully") + " " + values.email), { duration: 5000 });
+        reset();
+      }
     } catch (e) {
+
       toast.error(t("Error during registration"));
       console.error(e);
     }

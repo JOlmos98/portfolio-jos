@@ -1,5 +1,6 @@
 import { db } from "@/db/drizzle";
 import { users } from "@/db/drizzle/schema";
+import { detectLocale } from "@/lib/detectLocale";
 import { eq } from "drizzle-orm";
 import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
@@ -7,10 +8,9 @@ import { NextResponse } from "next/server";
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const token = searchParams.get("token");
+  const locale = detectLocale(req);
 
-  if (!token) {
-    return NextResponse.redirect("/en/verified?status=error&reason=missing-token");
-  }
+  if (!token) return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/${locale}/verifiedError?reason=missing-token`);
 
   try {
     const decoded = jwt.verify(token, process.env.SUPABASE_JWT_SECRET!) as { email: string };
@@ -20,17 +20,19 @@ export async function GET(req: Request) {
       .set({ isVerified: true })
       .where(eq(users.email, email));
 
-    // return NextResponse.redirect("/en/verified?status=success");
-    // return NextResponse.redirect("/en/verifiedSuccess");
-    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/en/verifiedSuccess`);
+    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/${locale}/verifiedSuccess`);
   } catch (err) {
     console.error("Invalid or expired token:", err);
-    // return NextResponse.redirect("/en/verified?status=error&reason=expired-or-invalid");
-    // return NextResponse.redirect("/en/verifiedError");
-    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/en/verifiedError`);
+
+    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/${locale}/verifiedError`);
   }
 }
 
+// return NextResponse.redirect("/en/verified?status=success");
+// return NextResponse.redirect("/en/verifiedSuccess");
+
+// return NextResponse.redirect("/en/verified?status=error&reason=expired-or-invalid");
+// return NextResponse.redirect("/en/verifiedError");
 
 // import { db } from "@/db/drizzle";
 // import { users } from "@/db/drizzle/schema";
