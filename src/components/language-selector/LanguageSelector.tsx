@@ -49,7 +49,7 @@ export const LanguageSelector = () => {
         <IoLanguage className="text-2xl hover:text-green-400" />
       </MenuButton>
 
-      <MenuItems className="absolute left-0 mt-2 w-20 dark:bg-gray-800 bg-gray-200 dark:text-white rounded-md shadow-lg border dark:border-gray-700 z-50">
+      <MenuItems className="absolute left-1/2 -translate-x-1/2 mt-2 w-20 dark:bg-gray-800 bg-gray-200 dark:text-white rounded-md shadow-lg border dark:border-gray-700 z-50">
         <MenuItem>
           <Link href={pathname} locale="en" className="block text-center px-4 py-2 rounded-md dark:hover:bg-green-600 hover:bg-green-400">EN</Link>
         </MenuItem>

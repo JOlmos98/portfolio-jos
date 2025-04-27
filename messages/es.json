@@ -17,9 +17,19 @@
       "title": "Desarrollador backend · NTT Data",
       "description": "Desarrollo backend de aplicaciones web."
     },
+    "projectsTitle": "Proyectos",
+    "projectsIntro": {
+      "main": "Aquí puedes ver todos mis proyectos, tanto los que hago para",
+      "learn": " aprender ",
+      "continue": "como los que hago para llevar más allá mis",
+      "skills": " habilidades ",
+      "and": "y",
+      "creativity": " creatividad ",
+      "end": "como desarrollador."
+    },
     "project1": {
       "title": "Portfolio web",
-      "description": "Desarrollo de un portfolio web profesional con Next.js. Proyecto de gin de grado (TFG) para el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en IES JLMP."
+      "description": "Desarrollo de un portfolio web profesional con Next.js. Proyecto de fin de grado (TFG) para el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en IES JLMP."
     },
     "project2": {
       "title": "SGBD Galería de Arte",
@@ -41,7 +51,10 @@
     "signUp": "Registrarse"
   },
   "Footer": {
-    "Email sent successfully": "Email enviado con éxito!",
+    "Email sent successfully": "Email registrado con éxito. Revisa tu bandeja de entrada.",
+    "Invalid email": "Email no válido.",
+    "Error sending email": "Error al enviar email.",
+    "Error already subscribed": "Error, ya estás suscrito a la newsletter.",
     "Subscribe to my ": "Suscríbete a mi ",
     "newsletter": "newsletter",
     "Leave me your email if": "Déjame tu correo electrónico si quieres recibir mi newsletter semanal en la que hablo sobre el mundo del desarrollo y te muestro mis artículos favoritos de la semana:",
@@ -61,5 +74,52 @@
     "projects": "Proyectos",
     "articles": "Artículos",
     "contact": "Contacto"
+  },
+  "Contact": {
+    "Send me": "Envíame un",
+    "message": "mensaje",
+    "Full Name": "Nombre completo",
+    "Email": "Email",
+    "Content": "Contenido",
+    "Submit": "Enviar",
+    "Submitted successfully": "Mensaje enviado correctamente.",
+    "Error sending message": "Hubo un error al enviar el mensaje.",
+    "Error name": "El nombre debe tener al menos 2 caracteres",
+    "Error email": "Email no válido",
+    "Error content": "El mensaje debe tener al menos 10 caracteres"
+  },
+  "SignUp": {
+    "Sign Up to": "Registrate para acceder a ",
+    "All the content": "todo el contenido",
+    "Create your": "Crea tu",
+    "account": "cuenta",
+    "Name": "Nombre",
+    "Last Name": "Apellidos",
+    "Email": "Email",
+    "Password": "Contraseña",
+    "Phone": "Teléfono (opcional)",
+    "Bio": "Bio (opcional)",
+    "Website": "Sitio web (opcional)",
+    "Register": "Registrarse",
+    "Registered successfully": "Cuenta creada correctamente. Revisa tu bandeja de entrada.",
+    "Error during registration": "Error al registrarse.",
+    "Error already registered": "Error, este email ya está registrado.",
+    "Account": "Cuenta",
+    "newsletterSubscription": "Marca para suscribirte a mi newsletter y recibir los mejores artículos de IT cada semana.",
+    "Already have an account?": "¿Ya tienes una cuenta?",
+    "Login": "Iniciar sesión",
+
+    "ErrorNameMin": "El nombre debe tener al menos 2 caracteres",
+    "ErrorLastNameMin": "El apellido debe tener al menos 2 caracteres",
+    "ErrorEmailInvalid": "Correo electrónico no válido",
+    "ErrorPasswordMin": "La contraseña debe tener al menos 6 caracteres e incluir números, letras y símbolos",
+    "ErrorPhoneMin": "El teléfono debe tener al menos 7 dígitos y contener solo números",
+    "ErrorBioMax": "La biografía debe tener menos de 160 caracteres",
+    "ErrorWebsiteUrl": "El sitio web debe ser una URL válida",
+
+    "Verified": "Verificado",
+    "Error verifying": "Error verificando",
+    "Email successfully verified": "Correo electrónico verificado con éxito, inicia sesión para continuar.",
+    "Error during verification": "Error durante la verificación del correo electrónico."
   }
 }

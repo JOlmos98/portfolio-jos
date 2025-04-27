@@ -2,9 +2,10 @@ import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { detectLocale } from './lib/detectLocale';
 
 const supportedLocales = ['en', 'es', 'de']; // Idiomas soportados
-const defaultLocale = 'en'; // Idioma por defecto si no se detecta otro
+// const defaultLocale = 'en'; // Idioma por defecto si no se detecta otro
 
 export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
@@ -13,17 +14,20 @@ export function middleware(request: NextRequest) {
         return createMiddleware(routing)(request);
     }
 
-    const localeCookie = request.cookies.get('NEXT_LOCALE')?.value; // Intentar obtener el idioma desde la cookie
-    if (localeCookie && supportedLocales.includes(localeCookie)) {
-        return NextResponse.redirect(new URL(`/${localeCookie}${pathname}`, request.url));
-    }
+    // * Código sustituido por la función detectLocale
+    // const localeCookie = request.cookies.get('NEXT_LOCALE')?.value; // Intentar obtener el idioma desde la cookie
+    // if (localeCookie && supportedLocales.includes(localeCookie)) {
+    //     return NextResponse.redirect(new URL(`/${localeCookie}${pathname}`, request.url));
+    // }
 
-    const acceptLanguage = request.headers.get('accept-language') || defaultLocale; // Si no hay cookie, usar `Accept-Language` para detectar el idioma preferido
-    let preferredLanguage = acceptLanguage.split(',')[0].split('-')[0];
+    // const acceptLanguage = request.headers.get('accept-language') || defaultLocale; // Si no hay cookie, usar `Accept-Language` para detectar el idioma preferido
+    // let preferredLanguage = acceptLanguage.split(',')[0].split('-')[0];
 
-    if (!supportedLocales.includes(preferredLanguage)) { // Si el idioma detectado no está soportado, usar `defaultLocale`
-        preferredLanguage = defaultLocale;
-    }
+    // if (!supportedLocales.includes(preferredLanguage)) { // Si el idioma detectado no está soportado, usar `defaultLocale`
+    //     preferredLanguage = defaultLocale;
+    // }
+
+    const preferredLanguage = detectLocale(request);
 
     const response = NextResponse.redirect(new URL(`/${preferredLanguage}${pathname}`, request.url)); // Redirigir al usuario a la versión correcta del idioma y guardar la preferencia en una cookie
     response.cookies.set('NEXT_LOCALE', preferredLanguage, { path: '/' }); // Guardar idioma detectado en cookie

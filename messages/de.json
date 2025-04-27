@@ -17,6 +17,16 @@
       "title": "Backend-Entwickler · NTT Data",
       "description": "Backend-Entwicklung von Webanwendungen."
     },
+    "projectsTitle": "Projekte",
+    "projectsIntro": {
+      "main": "Hier kannst du alle meine Projekte sehen, sowohl die, die ich mache, um zu",
+      "learn": " lernen ",
+      "continue": "als auch die, die ich erstelle, um meine",
+      "skills": " Fähigkeiten ",
+      "and": "und",
+      "creativity": " Kreativität ",
+      "end": "als Entwickler weiterzuentwickeln."
+    },
     "project1": {
       "title": "Web-Portfolio",
       "description": "Entwicklung eines professionellen Web-Portfolios mit Next.js. Abschlussprojekt (TFG) für den höheren Abschluss in Multiplattform-Anwendungsentwicklung am IES JLMP."
@@ -41,7 +51,10 @@
     "signUp": "Registrieren"
   },
   "Footer": {
-    "Email sent successfully": "E-Mail erfolgreich gesendet!",
+    "Email sent successfully": "E-Mail erfolgreich registriert. Überprüfen Sie Ihren Posteingang.",
+    "Invalid email": "Ungültige E-Mail.",
+    "Error sending email": "Fehler beim Senden der E-Mail.",
+    "Error already subscribed": "Fehler, Sie sind bereits für den Newsletter angemeldet.",
     "Subscribe to my ": "Abonniere meinen ",
     "newsletter": "newsletter",
     "Leave me your email if": "Hinterlasse mir deine E-Mail, wenn du meinen wöchentlichen Newsletter erhalten möchtest, in dem ich über die Welt der Entwicklung spreche und dir meine Lieblingsartikel der Woche zeige:",
@@ -61,5 +74,52 @@
     "projects": "Projekte",
     "articles": "Artikel",
     "contact": "Kontakt"
+  },
+  "Contact": {
+    "Send me": "Schicke mir eine",
+    "message": "Nachricht",
+    "Full Name": "Vollständiger Name",
+    "Email": "E-Mail",
+    "Content": "Inhalt",
+    "Submit": "Absenden",
+    "Submitted successfully": "Nachricht erfolgreich gesendet.",
+    "Error sending message": "Es gab einen Fehler beim Senden der Nachricht.",
+    "Error name": "Der Name muss mindestens 2 Zeichen haben",
+    "Error email": "Ungültige E-Mail",
+    "Error content": "Die Nachricht muss mindestens 10 Zeichen haben"
+  },
+  "SignUp": {
+    "Sign Up to": "Registriere dich, um Zugang zu ",
+    "All the content": "allen Inhalten zu erhalten",
+    "Create your": "Erstelle dein",
+    "account": "Konto",
+    "Name": "Name",
+    "Last Name": "Nachname",
+    "Email": "E-Mail",
+    "Password": "Passwort",
+    "Phone": "Telefon (optional)",
+    "Bio": "Bio (optional)",
+    "Website": "Website (optional)",
+    "Register": "Registrieren",
+    "Registered successfully": "Konto erfolgreich erstellt. Überprüfen Sie Ihren Posteingang.",
+    "Error during registration": "Fehler bei der Registrierung.",
+    "Error already registered": "Fehler diese E-Mail ist bereits registriert.",
+    "Account": "Konto",
+    "newsletterSubscription": "Hake an, um meinen Newsletter zu abonnieren und jede Woche die besten IT-Artikel zu erhalten.",
+    "Already have an account?": "Hast du bereits ein Konto?",
+    "Login": "Anmelden",
+    
+    "ErrorNameMin": "Der Name muss mindestens 2 Zeichen lang sein",
+    "ErrorLastNameMin": "Der Nachname muss mindestens 2 Zeichen lang sein",
+    "ErrorEmailInvalid": "Ungültige E-Mail-Adresse",
+    "ErrorPasswordMin": "Das Passwort muss mindestens 6 Zeichen haben und Zahlen, Buchstaben und Symbole enthalten",
+    "ErrorPhoneMin": "Die Telefonnummer muss mindestens 7 Ziffern enthalten und nur Zahlen enthalten",
+    "ErrorBioMax": "Die Biografie darf höchstens 160 Zeichen lang sein",
+    "ErrorWebsiteUrl": "Die Website muss eine gültige URL sein",
+
+    "Verified": "E-Mail verifiziert.",
+    "Error verifying": "Fehler beim Verifizieren der E-Mail.",
+    "Email successfully verified": "E-Mail erfolgreich verifiziert, melde dich an, um fortzufahren.",
+    "Error during verification": "Fehler bei der Verifizierung der E-Mail."
   }
 }

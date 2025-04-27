@@ -53,7 +53,7 @@ export default async function HomePage() {
           />
         </div>
 
-        <h1 className="text-4xl bg-transparent mt-44 mb-8 font-bold">Proyectos</h1>
+        <h1 className="text-4xl bg-transparent mt-44 mb-8 font-bold">{t("projectsTitle")}</h1>
 
         <ProjectItem
           year="2025"
