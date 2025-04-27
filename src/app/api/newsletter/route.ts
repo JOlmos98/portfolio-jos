@@ -2,8 +2,9 @@ import { eq } from "drizzle-orm";
 import { db } from "@/db/drizzle";
 import { newsletterSubscribers } from "@/db/drizzle/schema";
 import { newsletterSchema } from "@/zod/newsletterSchema";
-import { resend } from "@/lib/resend";
+// import { resend } from "@/lib/resend";
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 export async function POST(req: Request) {
   try {
@@ -18,6 +19,8 @@ export async function POST(req: Request) {
     }
 
     const { email } = parsed.data;
+
+    const resend = new Resend(process.env.RESEND_API_KEY!);
 
     // Comprobar si ya existe el email
     const existing = await db
