@@ -99,7 +99,7 @@ export const SignUpForm = () => {
   };
 
   return (
-    <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-4xl w-auto mx-auto">
+    <div className=" p-6 m-6 rounded-2xl max-w-4xl w-auto mx-auto">
       <h2 className="text-xl font-bold mb-4">
         {t("Create your")}{" "}
         <span className="text-blue-cyan dark:text-blue-cyan font-bold">
@@ -112,7 +112,7 @@ export const SignUpForm = () => {
           <input
             type="text"
             placeholder={t("Name")}
-            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("name")}
           />
           {errors.name && <p className="text-red-500 text-sm mt-1">{t("ErrorNameMin")}</p>}
@@ -122,7 +122,7 @@ export const SignUpForm = () => {
           <input
             type="text"
             placeholder={t("Last Name")}
-            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("last_name")}
           />
           {errors.last_name && <p className="text-red-500 text-sm mt-1">{t("ErrorLastNameMin")}</p>}
@@ -132,7 +132,7 @@ export const SignUpForm = () => {
           <input
             type="email"
             placeholder={t("Email")}
-            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("email")}
           />
           {errors.email && <p className="text-red-500 text-sm mt-1">{t("ErrorEmailInvalid")}</p>}
@@ -142,7 +142,7 @@ export const SignUpForm = () => {
           <input
             type="password"
             placeholder={t("Password")}
-            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("password")}
           />
           {errors.password && <p className="text-red-500 text-sm mt-1">{t("ErrorPasswordMin")}</p>}
@@ -174,7 +174,7 @@ export const SignUpForm = () => {
             <input
               type="tel"
               placeholder={t("Phone")}
-              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan rounded-r-2xl border border-l-0 border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212]"
+              className="w-full px-4 py-2 text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] rounded-r-2xl border border-l-0 "
               {...register("phone")}
             />
           </div>
@@ -187,7 +187,7 @@ export const SignUpForm = () => {
         <div>
           <textarea
             placeholder={t("Bio")}
-            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl min-h-[100px]"
+            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl min-h-[100px]"
             {...register("bio")}
           />
           {errors.bio && <p className="text-red-500 text-sm mt-1">{t("ErrorBioMax")}</p>}
@@ -197,7 +197,7 @@ export const SignUpForm = () => {
           <input
             type="url"
             placeholder={t("Website")}
-            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[315] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("website")}
           />
           {errors.website && <p className="text-red-500 text-sm mt-1">{t("ErrorWebsiteUrl")}</p>}
