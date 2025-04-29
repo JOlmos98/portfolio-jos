@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export const Home = () => {
+  
   const t = useTranslations("HomePage");
 
   return (
@@ -25,7 +26,7 @@ export const Home = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true, amount: "some" }}
-        className="text-lg sm:max-w-xl break-words disable-motion-sm"
+        className="text-lg sm:max-w-2xl break-words disable-motion-sm"
       >
         {t("intro")}
       </motion.p>
