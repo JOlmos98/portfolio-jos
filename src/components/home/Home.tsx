@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col sm:flex-row items-center gap-8">
       <motion.div
-      className="disable-motion-sm"
+        className="disable-motion-sm"
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}

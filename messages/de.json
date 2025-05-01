@@ -108,7 +108,6 @@
     "newsletterSubscription": "Hake an, um meinen Newsletter zu abonnieren und jede Woche die besten IT-Artikel zu erhalten.",
     "Already have an account?": "Hast du bereits ein Konto?",
     "Login": "Anmelden",
-    
     "ErrorNameMin": "Der Name muss mindestens 2 Zeichen lang sein",
     "ErrorLastNameMin": "Der Nachname muss mindestens 2 Zeichen lang sein",
     "ErrorEmailInvalid": "Ungültige E-Mail-Adresse",
@@ -116,10 +115,19 @@
     "ErrorPhoneMin": "Die Telefonnummer muss mindestens 7 Ziffern enthalten und nur Zahlen enthalten",
     "ErrorBioMax": "Die Biografie darf höchstens 160 Zeichen lang sein",
     "ErrorWebsiteUrl": "Die Website muss eine gültige URL sein",
-
     "Verified": "E-Mail verifiziert.",
     "Error verifying": "Fehler beim Verifizieren der E-Mail.",
     "Email successfully verified": "E-Mail erfolgreich verifiziert, melde dich an, um fortzufahren.",
     "Error during verification": "Fehler bei der Verifizierung der E-Mail."
+  },
+  "LogIn": {
+    "Log": "Log",
+    "In": "in",
+    "Login": "Anmelden",
+    "Welcome": "Willkommen,",
+    "log in": "anmelden",
+    "to continue": "um fortzufahren",
+    "Login successful": "Anmeldung erfolgreich.",
+    "Invalid credentials or email not verified": "Ungültige Anmeldeinformationen oder E-Mail nicht verifiziert."
   }
 }

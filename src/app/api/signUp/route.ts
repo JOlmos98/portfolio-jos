@@ -7,23 +7,21 @@ import jwt from 'jsonwebtoken';
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 import { detectLocale } from "@/lib/detectLocale";
+import { UserDTO } from "@/types/dto";
 
 export async function POST(req: Request) {
-
-  if (req.method !== "POST") return NextResponse.json({ error: "Method not allowed" }, { status: 405 });
+  if (req.method !== "POST")
+    return NextResponse.json({ error: "Method not allowed" }, { status: 405 });
 
   try {
-    // const body = req.body;
-    const body = await req.json();
-    console.log("BODY recibido:", body);
-
+    const body: UserDTO = await req.json(); // ✅ Aplicando el tipo
     const parsed = signUpSchema.safeParse(body);
-    console.log("PARSED:", parsed);
     if (!parsed.success) {
       return NextResponse.json({ error: "Invalid input" }, { status: 400 });
     }
 
     const { email, password, name, last_name, phone, bio, website } = parsed.data;
+
 
     const existingUser = await db.query.users.findFirst({
       where: eq(users.email, email),
