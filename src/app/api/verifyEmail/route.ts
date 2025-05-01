@@ -10,7 +10,7 @@ export async function GET(req: Request) {
   const token = searchParams.get("token");
   const locale = detectLocale(req);
 
-  if (!token) return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/${locale}/verifiedError?reason=missing-token`);
+  if (!token) return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/${locale}/verifiedError`);
 
   try {
     const decoded = jwt.verify(token, process.env.SUPABASE_JWT_SECRET!) as { email: string };

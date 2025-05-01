@@ -1,6 +1,6 @@
 import { signUpSchema } from "@/zod/signUpSchema";
 import bcrypt from "bcryptjs";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { db } from "@/db/drizzle";
 import { users } from "@/db/drizzle/schema";
 import jwt from 'jsonwebtoken';
@@ -29,9 +29,7 @@ export async function POST(req: Request) {
       where: eq(users.email, email),
     });
 
-    if (existingUser) {
-      return NextResponse.json({ error: "Email already exists" }, { status: 409 });
-    }
+    if (existingUser) return NextResponse.json({ error: "Email already exists" }, { status: 409 });
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -45,8 +43,9 @@ export async function POST(req: Request) {
       website: website || null,
     });
 
-    //* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ VERIFICACIÓN DE EMAIL ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 
+    await db.execute(sql`select delete_unverified_users();`);
 
+    //* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ VERIFICACIÓN DE EMAIL ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 
     const verificationToken = jwt.sign(
       { email },                            // Payload, contenido del jwt
       process.env.SUPABASE_JWT_SECRET!,
