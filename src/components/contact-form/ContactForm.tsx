@@ -53,7 +53,7 @@ export const ContactForm = () =>  {
           <input
             type="text"
             placeholder={t("Full Name")}
-            className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[250px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("fullName")}
           />
           {errors.fullName && <p className="text-red-500 text-sm mt-1">{t("Error name")}</p>}
@@ -63,7 +63,7 @@ export const ContactForm = () =>  {
           <input
             type="email"
             placeholder={t("Email")}
-            className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl"
+            className="w-[250px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
             {...register("email")}
           />
           {errors.email && <p className="text-red-500 text-sm mt-1">{t("Error email")}</p>}
@@ -72,7 +72,7 @@ export const ContactForm = () =>  {
         <div>
           <textarea
             placeholder={t("Content")}
-            className="lg:w-[600px] text-blue-cyan dark:text-blue-cyan px-4 py-2 rounded-2xl min-h-[150px]"
+            className="w-[250px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl min-h-[150px]"
             {...register("content")}
           />
           {errors.content && <p className="text-red-500 text-sm mt-1">{t("Error content")}</p>}

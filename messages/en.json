@@ -108,7 +108,6 @@
     "newsletterSubscription": "Check to subscribe to my newsletter and receive the best IT articles every week.",
     "Already have an account?": "Already have an account?",
     "Login": "Log in",
-    
     "ErrorNameMin": "Name must be at least 2 characters long",
     "ErrorLastNameMin": "Last name must be at least 2 characters long",
     "ErrorEmailInvalid": "Invalid email address",
@@ -116,10 +115,19 @@
     "ErrorPhoneMin": "Phone must be at least 7 digits long and contain only numbers",
     "ErrorBioMax": "Bio must be less than 160 characters",
     "ErrorWebsiteUrl": "Website must be a valid URL",
-
     "Verified": "Email verified.",
     "Error verifying": "Error verifying email.",
     "Email successfully verified": "Email successfully verified, log in to continue.",
     "Error during verification": "Error during email verification."
+  },
+  "LogIn": {
+    "Log": "Log",
+    "In": "in",
+    "Login": "Log in",
+    "Welcome": "Welcome,",
+    "log in": "log in",
+    "to continue": "to continue",
+    "Login successful": "Login successful.",
+    "Invalid credentials or email not verified": "Invalid credentials or email not verified."
   }
 }

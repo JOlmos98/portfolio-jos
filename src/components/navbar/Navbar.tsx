@@ -6,6 +6,7 @@ import { LanguageSelector } from '../language-selector/LanguageSelector'
 import { ThemeButton } from '../theme-button/ThemeButton'
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl';
+import ButtonAuth from '../ButtonAuth';
 
 export const Navbar = () => {
 
@@ -44,7 +45,8 @@ export const Navbar = () => {
                         </div>
 
                         <div className="flex space-x-4 items-center justify-center">
-                            <Link href="/login" className="border-2 border-black dark:border-white rounded-2xl px-3 py-1 text-xl hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition duration-200 text-center">{t('login')}</Link>
+                            <ButtonAuth/>
+                            {/* <Link href="/login" className="border-2 border-black dark:border-white rounded-2xl px-3 py-1 text-xl hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition duration-200 text-center">{t('login')}</Link> */}
                             <Link href="/signUp" className="border-2 border-black dark:border-white rounded-2xl px-3 py-1 text-xl hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition duration-200 text-center">{t('signUp')}</Link>
                         </div>
 

@@ -108,7 +108,6 @@
     "newsletterSubscription": "Marca para suscribirte a mi newsletter y recibir los mejores artículos de IT cada semana.",
     "Already have an account?": "¿Ya tienes una cuenta?",
     "Login": "Iniciar sesión",
-
     "ErrorNameMin": "El nombre debe tener al menos 2 caracteres",
     "ErrorLastNameMin": "El apellido debe tener al menos 2 caracteres",
     "ErrorEmailInvalid": "Correo electrónico no válido",
@@ -116,10 +115,19 @@
     "ErrorPhoneMin": "El teléfono debe tener al menos 7 dígitos y contener solo números",
     "ErrorBioMax": "La biografía debe tener menos de 160 caracteres",
     "ErrorWebsiteUrl": "El sitio web debe ser una URL válida",
-
     "Verified": "Verificado",
     "Error verifying": "Error verificando",
     "Email successfully verified": "Correo electrónico verificado con éxito, inicia sesión para continuar.",
     "Error during verification": "Error durante la verificación del correo electrónico."
+  },
+  "LogIn": {
+    "Log": "Iniciar",
+    "In": " sesión",
+    "Login": "Iniciar sesión",
+    "Welcome": "Bienvenido,",
+    "log in": "inicia sesión",
+    "to continue": "para continuar",
+    "Login successful": "Sesión iniciada con éxito.",
+    "Invalid credentials or email not verified": "Credenciales incorrectas o email no verificado."
   }
 }
