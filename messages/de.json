@@ -131,28 +131,33 @@
     "Invalid credentials or email not verified": "Ungültige Anmeldeinformationen oder E-Mail nicht verifiziert.",
     "Sign out": "Abmelden",
     "Error password": "Falsches Passwort",
-    "Error email": "Ungültige E-Mail"
+    "Error email": "Ungültige E-Mail",
+    "Don't have an account?": "Du hast noch kein Konto?",
+    "Sign up": "Registrieren"
   },
   "Articles": {
-  "Articles": "Artikel",
-  "To access the Articles page, you must be": "Um auf die Artikelseite zuzugreifen, musst du",
-  "logged in": " angemeldet sein",
-  "Please": ". Bitte",
-  "log in": " melde dich an ",
-  "or": "oder",
-  "sign up": " registriere dich ",
-  "if you haven't already": "wenn du noch kein Konto hast."
-},
-"Dashboard": {
-  "SavedArticles": "Gespeicherte Artikel",
-  "NewArticle": "Neuer Artikel",
-  "Settings": "Einstellungen",
-  "Profile": "Profil",
-  "SignOut": "Abmelden",
-  "WelcomeDashboard": "Willkommen in deinem Dashboard",
-  "IntroText": "Dies ist dein persönlicher Bereich, um Artikel zu verwalten, dein Profil zu aktualisieren und deine Einstellungen anzupassen."
-}
+    "Articles": "Artikel",
+    "To access the Articles page, you must be": "Um auf die Artikelseite zuzugreifen, musst du",
+    "logged in": " angemeldet sein",
+    "Please": ". Bitte",
+    "log in": " melde dich an ",
+    "or": "oder",
+    "sign up": " registriere dich ",
+    "if you haven't already": "wenn du noch kein Konto hast.",
 
-
-
+"IntroText": "Im Internet gibt es viel Müll und viele Artikel, die weniger Wert bieten als eine Antwort von einer beliebigen KI zum gleichen Thema, deshalb speichere ich jede Woche die Artikel, die mir am interessantesten erscheinen, und stelle sie hier vor. Du kannst mir auch einen interessanten Artikel vorschlagen, indem du klickst ",
+"here": " hier"
+  },
+  "Dashboard": {
+    "SavedArticles": "Gespeicherte Artikel",
+    "NewArticle": "Neuer Artikel",
+    "Settings": "Einstellungen",
+    "Profile": "Profil",
+    "SignOut": "Abmelden",
+    "WelcomeDashboard": "Willkommen in deinem Dashboard",
+    "IntroText": "Dies ist dein persönlicher Bereich, um Artikel zu verwalten, dein Profil zu aktualisieren und deine Einstellungen anzupassen.",
+    "NewArticleText": "Schlage einen neuen Artikel vor, um ihn in den Artikel-Feed der Website aufzunehmen.",
+    "SettingsText": "Bearbeite die Felder deines Profils und passe deine Einstellungen an.",
+    "SavedArticlesText": "Favorisierte Artikel."
+  }
 }

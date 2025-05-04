@@ -1,30 +1,21 @@
-"use client";
+// "use client";
 
-import { useTranslations } from "next-intl";
-import { AsideDashboard } from './AsideDashboard';
+// import { AsideDashboard } from './AsideDashboard';
+// import { HomeDashboard } from './dashboard-sections/HomeDashboard';
 
-export const Dashboard = () => {
+// export const Dashboard = () => {
 
-    const t = useTranslations("Dashboard");
-
-  return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-white dark:bg-[#121212] text-blue-cyan dark:text-blue-cyan">
-      
-      {/* Sidebar (fixed en desktop, oculto en móvil) */}
-      <AsideDashboard />
-
-      {/* Main content (debe compensar el sidebar fijo en desktop) */}
-      <main className="flex-1 p-6 pt-24 ml-40 lg:ml-64">
-      <h1 className="text-2xl font-bold mb-4">{t("WelcomeDashboard")}</h1>
-        <p className="text-zinc-700 dark:text-zinc-300">
-          {t("IntroText")}
-        </p>
-      </main>
-    </div>
-  );
-};
+//     return (
+//         <div className="flex flex-col lg:flex-row min-h-screen bg-white dark:bg-[#121212] text-blue-cyan dark:text-blue-cyan">
+//             <AsideDashboard />
+//             <HomeDashboard />
+//         </div>
+//     );
+// };
 
 
+
+//! OLD
 // "use client";
 
 // import { useTranslations } from "next-intl";

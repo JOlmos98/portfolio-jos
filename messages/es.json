@@ -129,30 +129,38 @@
     "to continue": "para continuar",
     "Login successful": "Sesión iniciada con éxito.",
     "Invalid credentials or email not verified": "Credenciales incorrectas o email no verificado.",
-  
     "Sign out": "Cerrar sesión",
     "Error password": "Contraseña incorrecta",
-    "Error email": "Correo electrónico no válido"
+    "Error email": "Correo electrónico no válido",
+    "Don't have an account?": "¿No tienes una cuenta?",
+    "Sign up": "Regístrate"
   },
   "Articles": {
     "Articles": "Artículos",
-  "To access the Articles page, you must be": "Para acceder a la página de Artículos debes haber",
-  "logged in": " iniciado sesión",
-  "Please": ". Por favor,",
-  "log in": " inicia sesión ",
-  "or": "o",
-  "sign up": " regístrate ",
-  "if you haven't already": "si aún no lo estás."
-},
-"Dashboard": {
-  "SavedArticles": "Artículos guardados",
-  "NewArticle": "Nuevo artículo",
-  "Settings": "Configuración",
-  "Profile": "Perfil",
-  "SignOut": "Cerrar sesión",
-  "WelcomeDashboard": "Bienvenido a tu panel",
-  "IntroText": "Este es tu espacio personal para gestionar artículos, actualizar tu perfil y ajustar tus preferencias."
-}
+    "To access the Articles page, you must be": "Para acceder a la página de Artículos debes haber",
+    "logged in": " iniciado sesión",
+    "Please": ". Por favor,",
+    "log in": " inicia sesión ",
+    "or": "o",
+    "sign up": " regístrate ",
+    "if you haven't already": "si aún no lo estás.",
 
-
+    "IntroText":"En internet hay mucha basura y muchos artículos que aportan menos valor del que te puede aportar una respuesta de cualquier IA sobre el mismo tema, por eso, cada semana guardo los artículos que me parecen más interesantes y los expongo aquí. También puedes proponerme algún artículo interesante haciendo click ",
+"here":" aquí"
+  },
+  "Dashboard": {
+    "SavedArticles": "Artículos guardados",
+    "NewArticle": "Nuevo artículo",
+    "Settings": "Configuración",
+    "Profile": "Perfil",
+    "SignOut": "Cerrar sesión",
+    "WelcomeDashboard": "Bienvenido a tu panel",
+    "IntroText": "Este es tu espacio personal para gestionar artículos, actualizar tu perfil y ajustar tus preferencias.",
+  
+    "NewArticleText":"Propón un nuevo artículo para incluir en el feed de artículos de la web.",
+    "SettingsText": "Modifica los campos de tu perfil y ajusta tus preferencias.",
+    "SavedArticlesText": "Artículos favoritos."
+  
+  
+  }
 }

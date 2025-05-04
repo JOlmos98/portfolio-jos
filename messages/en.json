@@ -131,26 +131,33 @@
     "Invalid credentials or email not verified": "Invalid credentials or email not verified.",
     "Sign out": "Sign out",
     "Error password": "Incorrect password",
-    "Error email": "Invalid email"
+    "Error email": "Invalid email",
+    "Don't have an account?": "Don't have an account?",
+    "Sign up": "Sign up"
   },
   "Articles": {
     "Articles": "Articles",
-    "To access the Articles page, you must be" : "To access the Articles page, you must be",
-    "logged in" : " logged in",
-    "Please" : ". Please",
-    "log in" : " log in ",
-    "or" : "or",
-    "sign up" : " sign up ",
-    "if you haven't already" : "if you haven't already."
+    "To access the Articles page, you must be": "To access the Articles page, you must be",
+    "logged in": " logged in",
+    "Please": ". Please",
+    "log in": " log in ",
+    "or": "or",
+    "sign up": " sign up ",
+    "if you haven't already": "if you haven't already.",
+    "IntroText": "There's a lot of junk on the internet and many articles that provide less value than a response from any AI on the same topic, so every week I save the articles I find most interesting and share them here. You can also suggest an interesting article by clicking ",
+"here": " here"
   },
   "Dashboard": {
-  "SavedArticles": "Saved Articles",
-  "NewArticle": "New Article",
-  "Settings": "Settings",
-  "Profile": "Profile",
-  "SignOut": "Sign out",
-  "WelcomeDashboard": "Welcome to your dashboard",
-  "IntroText": "This is your personal space to manage articles, update your profile and adjust your settings."
-}
+    "SavedArticles": "Saved Articles",
+    "NewArticle": "New Article",
+    "Settings": "Settings",
+    "Profile": "Profile",
+    "SignOut": "Sign out",
+    "WelcomeDashboard": "Welcome to your dashboard",
+    "IntroText": "This is your personal space to manage articles, update your profile and adjust your settings.",
 
+    "NewArticleText": "Suggest a new article to include in the website's article feed.",
+"SettingsText": "Edit your profile fields and adjust your preferences.",
+"SavedArticlesText": "Favorite articles."
+  }
 }

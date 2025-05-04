@@ -16,13 +16,18 @@ export const AuthGuard = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     if (status === "loading") return;
-    
+
     if (!session) {
       if (pathname.includes("articles")) {
         router.push(`/${locale}/articlesLogIn`);
       } else router.push(`/${locale}/login`);
     }
+
+    // if (pathname.includes("login")) router.push(`/${locale}/dashboard`);
+
   }, [session, status, router, locale, pathname]);
+
+  if (!locale) return null;
 
   if (status === "loading") return <div className="flex justify-center items-center min-h-screen">Cargando...</div>;
 
