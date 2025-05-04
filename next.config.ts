@@ -18,8 +18,16 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
         search: '',
-      }],
-  }
+      },
+      // {
+      //   protocol: 'https',
+      //   hostname: 'imgur.com',
+      //   port: '',
+      //   pathname: '/**',
+      //   search: '',
+      // },
+    ],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();

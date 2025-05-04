@@ -128,6 +128,9 @@
     "log in": "anmelden",
     "to continue": "um fortzufahren",
     "Login successful": "Anmeldung erfolgreich.",
-    "Invalid credentials or email not verified": "Ungültige Anmeldeinformationen oder E-Mail nicht verifiziert."
+    "Invalid credentials or email not verified": "Ungültige Anmeldeinformationen oder E-Mail nicht verifiziert.",
+    "Sign out": "Abmelden",
+    "Error password": "Falsches Passwort",
+    "Error email": "Ungültige E-Mail"
   }
 }

@@ -1,5 +1,6 @@
 // app/[locale]/dashboard/page.tsx
-import AuthGuard from "@/components/auth/auth-guard";
+
+import { AuthGuard } from "@/components";
 
 export default function DashboardPage() {
   return (
@@ -8,12 +9,10 @@ export default function DashboardPage() {
         <div className="flex flex-col row-start-2 items-center sm:items-start mt-12 lg:mt-38">
           <div>
 
-
             <div className="container mx-auto p-8">
               <h1 className="text-3xl font-bold mb-6">Dashboard</h1>
               <p>Contenido protegido del dashboard</p>
             </div>
-
 
           </div>
         </div>

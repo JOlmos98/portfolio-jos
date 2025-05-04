@@ -12,3 +12,5 @@ export {ContactForm} from './contact-form/ContactForm';
 export {Home} from './home/Home';
 export {ScrollToTopButton} from './scroll-to-top-´button/ScrollToTopButton';
 export {SignUpForm} from './sign-up-form/SignUpForm';
+export {ButtonAuth} from './button-auth/ButtonAuth';
+export {AuthGuard} from './auth/AuthGuard';

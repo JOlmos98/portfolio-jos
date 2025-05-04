@@ -8,11 +8,12 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
 import { useTranslations } from "next-intl";
+import { logInSchema } from "@/zod/logInSchema";
 
-const logInSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(6),
-});
+// const logInSchema = z.object({
+//   email: z.string().email(),
+//   password: z.string().min(6),
+// });
 
 export const LogInForm = () => {
   const t = useTranslations("LogIn");
@@ -74,7 +75,7 @@ export const LogInForm = () => {
             {...register("email")}
             disabled={isLoading}
           />
-          {errors.email && <p className="text-red-500 text-sm ml-1 mt-1">{errors.email.message}</p>}
+          {errors.email && <p className="text-red-500 text-sm ml-1 mt-1">{t("Error email")}</p>}
         </div>
 
         <div>
@@ -85,7 +86,7 @@ export const LogInForm = () => {
             {...register("password")}
             disabled={isLoading}
           />
-          {errors.password && <p className="text-red-500 text-sm ml-1 mt-1">{errors.password.message}</p>}
+          {errors.password && <p className="text-red-500 text-sm ml-1 mt-1">{t("Error password")}</p>}
         </div>
 
         <button
