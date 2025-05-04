@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useLocale } from "next-intl";
 
-export default function AuthGuard({ children }: { children: React.ReactNode }) {
+export const AuthGuard = ({ children }: { children: React.ReactNode }) => {
+// export default function AuthGuard({ children }: { children: React.ReactNode }) {
   const { data: session, status } = useSession();
   const router = useRouter();
   const locale = useLocale();

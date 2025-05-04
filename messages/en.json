@@ -128,6 +128,9 @@
     "log in": "log in",
     "to continue": "to continue",
     "Login successful": "Login successful.",
-    "Invalid credentials or email not verified": "Invalid credentials or email not verified."
+    "Invalid credentials or email not verified": "Invalid credentials or email not verified.",
+    "Sign out": "Sign out",
+    "Error password": "Incorrect password",
+    "Error email": "Invalid email"
   }
 }

@@ -128,6 +128,10 @@
     "log in": "inicia sesión",
     "to continue": "para continuar",
     "Login successful": "Sesión iniciada con éxito.",
-    "Invalid credentials or email not verified": "Credenciales incorrectas o email no verificado."
+    "Invalid credentials or email not verified": "Credenciales incorrectas o email no verificado.",
+  
+    "Sign out": "Cerrar sesión",
+    "Error password": "Contraseña incorrecta",
+    "Error email": "Correo electrónico no válido"
   }
 }

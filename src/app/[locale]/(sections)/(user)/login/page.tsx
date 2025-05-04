@@ -16,7 +16,6 @@ export default async function LogInPage() {
           </p>
         </div>
         <div>
-          {/* <ContactForm /> */}
           <LogInForm />
         </div>
       </div>
