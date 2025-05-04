@@ -121,8 +121,8 @@
     "Error during verification": "Fehler bei der Verifizierung der E-Mail."
   },
   "LogIn": {
-    "Log": "Log",
-    "In": "in",
+    "Log": "An",
+    "In": "melden",
     "Login": "Anmelden",
     "Welcome": "Willkommen,",
     "log in": "anmelden",
@@ -132,5 +132,27 @@
     "Sign out": "Abmelden",
     "Error password": "Falsches Passwort",
     "Error email": "Ungültige E-Mail"
-  }
+  },
+  "Articles": {
+  "Articles": "Artikel",
+  "To access the Articles page, you must be": "Um auf die Artikelseite zuzugreifen, musst du",
+  "logged in": " angemeldet sein",
+  "Please": ". Bitte",
+  "log in": " melde dich an ",
+  "or": "oder",
+  "sign up": " registriere dich ",
+  "if you haven't already": "wenn du noch kein Konto hast."
+},
+"Dashboard": {
+  "SavedArticles": "Gespeicherte Artikel",
+  "NewArticle": "Neuer Artikel",
+  "Settings": "Einstellungen",
+  "Profile": "Profil",
+  "SignOut": "Abmelden",
+  "WelcomeDashboard": "Willkommen in deinem Dashboard",
+  "IntroText": "Dies ist dein persönlicher Bereich, um Artikel zu verwalten, dein Profil zu aktualisieren und deine Einstellungen anzupassen."
+}
+
+
+
 }
