@@ -14,3 +14,4 @@ export {ScrollToTopButton} from './scroll-to-top-´button/ScrollToTopButton';
 export {SignUpForm} from './sign-up-form/SignUpForm';
 export {ButtonAuth} from './button-auth/ButtonAuth';
 export {AuthGuard} from './auth/AuthGuard';
+export {Dashboard} from './dashboard/Dashboard';

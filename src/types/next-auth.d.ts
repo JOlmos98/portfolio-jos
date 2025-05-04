@@ -2,7 +2,7 @@
 import NextAuth, { DefaultSession, DefaultUser } from "next-auth"
 import { JWT } from "next-auth/jwt"
 
-declare module "next-auth" {
+declare module "next-auth" { //Extiende de next-auth
   interface User {
     id: string
     role: string
@@ -20,10 +20,7 @@ declare module "next-auth" {
   }
 }
 
-declare module "next-auth/jwt" {
-  /**
-   * Extiende el objeto JWT
-   */
+declare module "next-auth/jwt" { //Extiende de jwt
   interface JWT {
     id: string
     role: string

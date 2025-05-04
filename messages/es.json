@@ -133,5 +133,26 @@
     "Sign out": "Cerrar sesión",
     "Error password": "Contraseña incorrecta",
     "Error email": "Correo electrónico no válido"
-  }
+  },
+  "Articles": {
+    "Articles": "Artículos",
+  "To access the Articles page, you must be": "Para acceder a la página de Artículos debes haber",
+  "logged in": " iniciado sesión",
+  "Please": ". Por favor,",
+  "log in": " inicia sesión ",
+  "or": "o",
+  "sign up": " regístrate ",
+  "if you haven't already": "si aún no lo estás."
+},
+"Dashboard": {
+  "SavedArticles": "Artículos guardados",
+  "NewArticle": "Nuevo artículo",
+  "Settings": "Configuración",
+  "Profile": "Perfil",
+  "SignOut": "Cerrar sesión",
+  "WelcomeDashboard": "Bienvenido a tu panel",
+  "IntroText": "Este es tu espacio personal para gestionar artículos, actualizar tu perfil y ajustar tus preferencias."
+}
+
+
 }

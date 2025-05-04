@@ -132,5 +132,25 @@
     "Sign out": "Sign out",
     "Error password": "Incorrect password",
     "Error email": "Invalid email"
-  }
+  },
+  "Articles": {
+    "Articles": "Articles",
+    "To access the Articles page, you must be" : "To access the Articles page, you must be",
+    "logged in" : " logged in",
+    "Please" : ". Please",
+    "log in" : " log in ",
+    "or" : "or",
+    "sign up" : " sign up ",
+    "if you haven't already" : "if you haven't already."
+  },
+  "Dashboard": {
+  "SavedArticles": "Saved Articles",
+  "NewArticle": "New Article",
+  "Settings": "Settings",
+  "Profile": "Profile",
+  "SignOut": "Sign out",
+  "WelcomeDashboard": "Welcome to your dashboard",
+  "IntroText": "This is your personal space to manage articles, update your profile and adjust your settings."
+}
+
 }
