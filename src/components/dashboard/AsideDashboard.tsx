@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image'
 import { Link } from "@/i18n/navigation";
@@ -6,13 +8,15 @@ import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 
 export const AsideDashboard = () => {
-    const { data: session } = useSession();
-    const t = useTranslations("Dashboard");
-    const pathname = usePathname();
-  
-    return (
-      <aside className="w-30 lg:w-64 bg-gray-100 dark:bg-[#1a1a1a] p-3 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
-        {/* Avatar + user info */}
+
+  const { data: session } = useSession();
+  const t = useTranslations("Dashboard");
+  const pathname = usePathname();
+
+  return (
+    <aside className="w-30 lg:w-64 bg-gray-100 dark:bg-[#1a1a1a] p-3 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
+
+      <Link href={"/dashboard"}>
         <div className="mt-20 flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-3">
           <Image
             src={typeof session?.user?.avatarUrl === "string" ? session.user.avatarUrl : "https://i.imgur.com/bGW4oJg.png"}
@@ -28,29 +32,29 @@ export const AsideDashboard = () => {
             </p>
           </div>
         </div>
-  
-        {/* Navigation */}
-        <nav className="flex flex-col gap-3 mt-8 lg:text-xl">
-          <Link href="/dashboard/articles" className={pathname.includes("dashboard/articles") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
-            {t("SavedArticles")}
-          </Link>
-          <Link href="/dashboard/new" className={pathname.includes("dashboard/new") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
-            {t("NewArticle")}
-          </Link>
-          <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
-            {t("Settings")}
-          </Link>
-          <button
-            onClick={() => signOut({ callbackUrl: "/" })}
-            className="text-left text-red-600 hover:text-red-400"
-          >
-            {t("SignOut")}
-          </button>
-        </nav>
-      </aside>
-    );
-  }
-  
+      </Link>
+
+      <nav className="flex flex-col gap-3 mt-8 lg:text-xl w-24 lg:w-52">
+        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+          {t("SavedArticles")}
+        </Link>
+        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+          {t("NewArticle")}
+        </Link>
+        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+          {t("Settings")}
+        </Link>
+        <button
+          onClick={() => signOut({ callbackUrl: "/" })}
+          className="text-left text-red-600 hover:text-red-400"
+        >
+          {t("SignOut")}
+        </button>
+      </nav>
+    </aside>
+  );
+}
+
 
 
 // import React from 'react'

@@ -17,7 +17,7 @@ export async function middleware(request: NextRequest) {                        
     ? '/' + segments.slice(2).join('/') 
     : pathname;
 
-  const protectedPaths = ['/dashboard', '/profile', '/settings', '/articles'];        // Rutas que requieren autenticación
+  const protectedPaths = ['/dashboard', '/profile', '/settings'];        // Rutas que requieren autenticación
 
   const isProtectedPath = protectedPaths.some(path => pathWithoutLocale.startsWith(path)); // Comprueba si la ruta es protegida
 
@@ -49,7 +49,6 @@ export const config = {
     '/dashboard/:path*',
     '/profile/:path*',
     '/settings/:path*',
-    '/articles/:path*',
     '/login',
   ],
 };
