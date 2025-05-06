@@ -144,9 +144,8 @@
     "or": "o",
     "sign up": " regístrate ",
     "if you haven't already": "si aún no lo estás.",
-
-    "IntroText":"En internet hay mucha basura y muchos artículos que aportan menos valor del que te puede aportar una respuesta de cualquier IA sobre el mismo tema, por eso, cada semana guardo los artículos que me parecen más interesantes y los expongo aquí. También puedes proponerme algún artículo interesante haciendo click ",
-"here":" aquí"
+    "IntroText": "En internet hay mucha basura y muchos artículos que aportan menos valor del que te puede aportar una respuesta de cualquier IA sobre el mismo tema, por eso, cada semana guardo los artículos que me parecen más interesantes y los expongo aquí. También puedes proponerme algún artículo interesante haciendo click ",
+    "here": " aquí"
   },
   "Dashboard": {
     "SavedArticles": "Artículos guardados",
@@ -154,13 +153,21 @@
     "Settings": "Configuración",
     "Profile": "Perfil",
     "SignOut": "Cerrar sesión",
+    "Admin": "Administrador",
     "WelcomeDashboard": "Bienvenido a tu panel",
     "IntroText": "Este es tu espacio personal para gestionar artículos, actualizar tu perfil y ajustar tus preferencias.",
-  
-    "NewArticleText":"Propón un nuevo artículo para incluir en el feed de artículos de la web.",
+    "NewArticleText": "Propón un nuevo artículo para incluir en el feed de artículos de la web.",
     "SettingsText": "Modifica los campos de tu perfil y ajusta tus preferencias.",
-    "SavedArticlesText": "Artículos favoritos."
-  
-  
+    "SavedArticlesText": "Artículos favoritos.",
+    "AdminText": "Solicitudes de artículos.",
+    "NewArticleSection": {
+      "SubmitArticle": "Proponer un nuevo artículo",
+      "URL": "URL del artículo",
+      "Title": "Título del artículo",
+      "Description": "Descripción (opcional)",
+      "Submit": "Enviar",
+      "ArticleSubmitted": "¡Tu propuesta ha sido enviada!",
+      "ErrorSubmitting": "Hubo un error al enviar tu propuesta."
+    }
   }
 }

@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Method not allowed" }, { status: 405 });
 
   try {
-    const body: UserDTO = await req.json(); // ✅ Aplicando el tipo
+    const body: UserDTO = await req.json(); // Tipado
     const parsed = signUpSchema.safeParse(body);
     if (!parsed.success) {
       return NextResponse.json({ error: "Invalid input" }, { status: 400 });

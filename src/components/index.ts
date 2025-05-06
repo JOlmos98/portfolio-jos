@@ -20,3 +20,4 @@ export {HomeDashboard} from './dashboard/dashboard-sections/HomeDashboard';
 export {SavedArticles} from './dashboard/dashboard-sections/SavedArticles';
 export {NewArticle} from './dashboard/dashboard-sections/NewArticle';
 export {Settings} from './dashboard/dashboard-sections/Settings';
+export {Admin} from './dashboard/dashboard-sections/Admin';
