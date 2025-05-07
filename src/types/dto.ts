@@ -17,10 +17,14 @@ export type UserDTO = {
   };
   
   export type ArticleRequestDTO = {
+    id: number;
     userId: number;
     url: string;
     title: string;
     description?: string;
+    status?: string;
+    createdAt?: string;
+    updatedAt?: string;
   };
 
   export type TagDTO = {

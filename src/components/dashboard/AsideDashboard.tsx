@@ -17,7 +17,7 @@ export const AsideDashboard = () => {
 // console.warn("==================== admin = ", admin);
 
   return (
-    <aside className="w-30 lg:w-64 bg-gray-100 dark:bg-[#1a1a1a] p-3 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
+    <aside className="w-30 lg:w-64 bg-gray-100 dark:bg-[#1a1a1a] p-2 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
 
       <Link href={"/dashboard"}>
         <div className="mt-20 flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-3">
@@ -30,14 +30,14 @@ export const AsideDashboard = () => {
           />
           <div className="text-center lg:text-left">
             <p className="font-bold">{session?.user?.name}</p>
-            <p className="text-xs lg:text-sm text-zinc-500 dark:text-zinc-400">
+            <p className="text-[10px] lg:text-sm text-zinc-500 dark:text-zinc-400">
               {session?.user?.email}
             </p>
           </div>
         </div>
       </Link>
 
-      <nav className="flex flex-col gap-3 mt-8 lg:text-xl w-24 lg:w-52">
+      <nav className="flex flex-col gap-3 mt-8 text-sm lg:text-xl w-24 lg:w-52">
         <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
           {t("SavedArticles")}
         </Link>

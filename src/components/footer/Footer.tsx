@@ -15,7 +15,7 @@ export const Footer = () => {
     // const emailSent = () => { toast.success(stringToast); }
 
     return (
-        <footer className="bg-gray-200 dark:bg-zinc-900 py-2">
+        <footer className="bg-gray-200 dark:bg-zinc-900 py-2 relative z-50">
             <div className="mx-auto w-full max-w-screen-xl">
                 <NewsletterCard />
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
