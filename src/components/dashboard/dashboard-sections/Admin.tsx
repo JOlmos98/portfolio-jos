@@ -1,23 +1,14 @@
 "use client";
 
 import { Link } from '@/i18n/navigation';
+import { ArticleRequestDTO } from '@/types/dto';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react';
-
-type ArticleRequest = {
-  id: number;
-  userId: number;
-  url: string;
-  title: string;
-  description?: string;
-  status: string;
-  createdAt: string;
-  updatedAt: string;
-};
+import { Request } from './adminSections/Request';
 
 export const Admin = () => {
   const t = useTranslations("Dashboard");
-  const [requests, setRequests] = useState<ArticleRequest[]>([]);
+  const [requests, setRequests] = useState<ArticleRequestDTO[]>([]);
 
   useEffect(() => {
     const fetchRequests = async () => {
@@ -35,6 +26,8 @@ export const Admin = () => {
         {t("AdminText")}
       </p>
 
+      <Request/>
+{/* 
       <table className="w-full text-left border text-white p-2">
         <thead>
           <tr>
@@ -56,10 +49,9 @@ export const Admin = () => {
               <td className='p-2 border'><a href={req.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Ver</a></td>
               <td className='p-2 border'>{req.title}</td>
               <td className='p-2 border'>{req.status}</td>
-              <td className='p-2 border'>{new Date(req.createdAt).toLocaleDateString()}</td>
-              <td className='p-2 border'>{new Date(req.updatedAt).toLocaleDateString()}</td>
+              <td className='p-2 border'>{new Date(req.createdAt as string).toLocaleDateString()}</td>
+              <td className='p-2 border'>{new Date(req.updatedAt as string).toLocaleDateString()}</td>
               <td className='p-2 border'>
-                {/* botones: aceptar, añadir etiquetas */}
                 
                 <button className="text-green-600 hover:underline p-2">Aceptar</button>
                 <Link className='text-red-600 hover:underline p-2' href={""}>Rechazar</Link>
@@ -68,7 +60,7 @@ export const Admin = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </main>
   );
 };

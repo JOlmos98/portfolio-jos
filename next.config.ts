@@ -11,6 +11,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
+    domains: ['medium.com', 'images.unsplash.com', 'i.imgur.com'], 
     remotePatterns: [
       {
         protocol: 'https',
@@ -19,6 +20,10 @@ const nextConfig: NextConfig = {
         pathname: '/**',
         search: '',
       },
+      {
+        protocol: 'https',
+        hostname: '**',
+      }
       // {
       //   protocol: 'https',
       //   hostname: 'imgur.com',

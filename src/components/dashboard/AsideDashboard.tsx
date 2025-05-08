@@ -6,7 +6,6 @@ import { Link } from "@/i18n/navigation";
 import { useSession, signOut } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
-import { AuthGuardAdmin } from '../auth/AuthGuardAdmin';
 
 export const AsideDashboard = () => {
 
@@ -17,7 +16,7 @@ export const AsideDashboard = () => {
 // console.warn("==================== admin = ", admin);
 
   return (
-    <aside className="w-30 lg:w-64 bg-gray-100 dark:bg-[#1a1a1a] p-2 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
+    <aside className="w-30 lg:w-64 bg-gray-200 dark:bg-[#1a1a1a] p-2 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
 
       <Link href={"/dashboard"}>
         <div className="mt-20 flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-3">
@@ -38,13 +37,13 @@ export const AsideDashboard = () => {
       </Link>
 
       <nav className="flex flex-col gap-3 mt-8 text-sm lg:text-xl w-24 lg:w-52">
-        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
           {t("SavedArticles")}
         </Link>
-        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
           {t("NewArticle")}
         </Link>
-        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
           {t("Settings")}
         </Link>
 
@@ -55,7 +54,7 @@ export const AsideDashboard = () => {
           {t("SignOut")}
         </button>
       <div className='flex fixed bottom-0 mb-5'>
-        <Link href="/dashboard/admin" className={pathname.includes("dashboard/admin") ? "text-blue-cyan hover:text-cyan-500" : "text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/admin" className={pathname.includes("dashboard/admin") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
           {t("Admin")}
         </Link>
         </div>

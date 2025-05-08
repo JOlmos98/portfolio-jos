@@ -54,7 +54,7 @@ export const NewArticle = () => {
           <input
             type="text"
             placeholder={t("URL")}
-            className="w-[200px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
+            className="w-[200px] lg:w-[1200px] text-blue-cyan dark:text-blue-cyan border border-zinc-300 dark:border-[#121212] bg-neutral-50 dark:bg-neutral-800 px-4 py-2 rounded-2xl"
             {...register("url")}
           />
           {errors.url && <p className="text-red-500 text-sm mt-1">{errors.url.message}</p>}
@@ -64,7 +64,7 @@ export const NewArticle = () => {
           <input
             type="text"
             placeholder={t("Title")}
-            className="w-[200px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan border border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
+            className="w-[200px] lg:w-[1200px] text-blue-cyan dark:text-blue-cyan border border-zinc-300 dark:border-[#121212] bg-neutral-50 dark:bg-neutral-800 px-4 py-2 rounded-2xl"
             {...register("title")}
           />
           {errors.title && <p className="text-red-500 text-sm mt-1">{errors.title.message}</p>}
@@ -73,7 +73,7 @@ export const NewArticle = () => {
         <div>
           <textarea
             placeholder={t("Description")}
-            className="w-[200px] lg:w-[600px] min-h-[120px] text-blue-cyan dark:text-blue-cyan border border-zinc-300 dark:border-[#121212] bg-white dark:bg-[#121212] px-4 py-2 rounded-2xl"
+            className="w-[200px] lg:w-[1200px] min-h-[120px] text-blue-cyan dark:text-blue-cyan border border-zinc-300 dark:border-[#121212] bg-neutral-50 dark:bg-neutral-800 px-4 py-2 rounded-2xl"
             {...register("description")}
           />
           {errors.description && <p className="text-red-500 text-sm mt-1">{errors.description.message}</p>}
@@ -81,7 +81,7 @@ export const NewArticle = () => {
 
         <button
           type="submit"
-          className="bg-cyan-600 hover:bg-blue-cyan transition text-white font-bold py-2 px-4 rounded-2xl w-full w-[200px] lg:w-[600px]"
+          className="w-[200px] lg:w-[1200px] bg-cyan-600  hover:bg-blue-cyan transition text-white font-bold py-2 px-4 rounded-2xl "
         >
           {t("Submit")}
         </button>
