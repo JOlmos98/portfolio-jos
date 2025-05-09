@@ -29,7 +29,7 @@ export const AsideDashboard = () => {
           />
           <div className="text-center lg:text-left">
             <p className="font-bold">{session?.user?.name}</p>
-            <p className="text-[10px] lg:text-sm text-zinc-500 dark:text-zinc-400">
+            <p className="text-[10px] lg:text-xs text-zinc-500 dark:text-zinc-400">
               {session?.user?.email}
             </p>
           </div>

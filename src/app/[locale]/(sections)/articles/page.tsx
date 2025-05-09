@@ -23,7 +23,7 @@ export default async function ArticlesPage() {
             </div>
 
             <div className="space-y-8 mt-10">
-              {articles.map((article, i) => (
+              {articles.reverse().map((article, i) => (
                 <ArticleCard key={article.id} article={articles[i]} />
               ))}
             </div>
