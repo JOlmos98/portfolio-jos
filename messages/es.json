@@ -154,6 +154,7 @@
     "Profile": "Perfil",
     "SignOut": "Cerrar sesión",
     "Admin": "Administrador",
+    "Unauthorized": "Acceso no autorizado",
     "WelcomeDashboard": "Bienvenido a tu panel",
     "IntroText": "Este es tu espacio personal para gestionar artículos, actualizar tu perfil y ajustar tus preferencias.",
     "NewArticleText": "Propón un nuevo artículo para incluir en el feed de artículos de la web.",

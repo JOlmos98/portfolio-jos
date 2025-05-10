@@ -14,22 +14,19 @@ export default async function ArticlesPage() {
   return (
     <AuthGuard>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 font-[family-name:var(--font-geist-sans)]">
-        <div className="flex flex-col row-start-2 items-center sm:items-start mt-12 lg:mt-38">
+        <div className="flex flex-col row-start-2 items-center sm:items-start mt-12 lg:mt-1">
           <div>
 
             <div className="container mx-auto p-8">
               <h1 className="text-5xl font-bold mb-6">{t("Articles")}</h1>
-              <p className="text-3xl ">{t("IntroText")}<Link href={"/dashboard/newArticle"} className="text-blue-cyan hover:text-cyan-500">{t("here")}</Link>.</p>
+              <p className="text-lg lg:text-3xl">{t("IntroText")}<Link href={"/dashboard/newArticle"} className="text-blue-cyan hover:text-cyan-500">{t("here")}</Link>.</p>
             </div>
 
-            <div className="space-y-8 mt-10">
-              {articles.reverse().map((article, i) => (
-                <ArticleCard key={article.id} article={articles[i]} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+              {articles.map((article) => (
+                <ArticleCard key={article.id} article={article} />
               ))}
             </div>
-
-            {/* <ArticlesFeed /> */}
-
           </div>
         </div>
       </div>

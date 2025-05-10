@@ -6,19 +6,17 @@ import { ArticleDTO } from '@/types/dto';
 
 export async function getAllArticles(): Promise<ArticleDTO[]> {
   try {
-    const dbArticles = await db
-      .select({
-        id: articles.id,
-        userId: articles.userId,
-        url: articles.url,
-        title: articles.title,
-        imageUrl: articles.imageUrl,
-        description: articles.description,
-        createdAt: articles.createdAt,
-      })
-      .from(articles);
+    const dbArticles = await db.select({
+      id: articles.id,
+      userId: articles.userId,
+      url: articles.url,
+      title: articles.title,
+      imageUrl: articles.imageUrl,
+      description: articles.description,
+      createdAt: articles.createdAt,
+    }).from(articles);
 
-    const formatted: ArticleDTO[] = dbArticles.map((a) => ({
+    const formatted: ArticleDTO[] = dbArticles.reverse().map((a) => ({
       id: a.id,
       userId: a.userId,
       url: a.url,

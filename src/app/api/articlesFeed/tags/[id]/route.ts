@@ -6,7 +6,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest,{ params }: { params: { id: string } }) {
   
-  const articleId = Number(params.id);
+  const aParams = await params;
+  const articleId = Number(aParams.id);
 
   if (isNaN(articleId)) return NextResponse.json({ error: "Invalid article ID" }, { status: 400 });
 

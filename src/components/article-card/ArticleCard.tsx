@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { CopyUrlButton, LikeButton } from "@/components";
 
 interface ArticleCardProps { article: ArticleDTO; }
 
@@ -29,27 +30,29 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
 
         setTags(tagsData);
         setAuthorName(userData.name);//+ " " + userData.lastName);
-      } catch (err) {
-        console.error("Error fetching article data:", err);
-      }
+      } catch (err) { console.error("Error fetching article data:", err); }
     };
 
     fetchTagsAndUser();
   }, [article.id, article.userId]);
 
+  const rDescription = article.description && article.description.length > 35
+    ? article.description.substring(0, 35) + "..."
+    : article.description || "";
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.08, ease: "easeOut" }}
+      whileHover={{ scale: 1.1, transition: { duration: 0.08, ease: "easeOut" } }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="bg-white dark:bg-neutral-800 border rounded-2xl border-white dark:border-neutral-800 shadow p-6 mb-6 w-full max-w-4xl mx-auto"
+      className="flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-800 border rounded-2xl border-white dark:border-neutral-800 shadow mb-6 w-80 lg:w-[325px] max-w-4xl mx-auto "
     >
       <Link
         href={article.url}
         target="_blank"
-        className="inline-block mt-4 text-blue-600 dark:text-blue-cyan hover:underline"
+        className="inline-block mt-4 text-blue-600 dark:text-blue-cyan"
       >
         <p className="text-sm text-neutral-600 dark:text-neutral-300">
           {new Date(article.createdAt ?? '').toLocaleDateString()} · {authorName}
@@ -59,22 +62,24 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
           {article.title}
         </h3>
 
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="w-full sm:w-auto sm:flex-shrink-0">
+        <div className="flex flex-col items-center justify-center gap-2 w-full">
+          <div className="">
+            {/* <p className="text-base text-neutral-700 dark:text-neutral-300 mb-2 w-52">
+              {rDescription}
+            </p> */}
             <Image
               src={typeof article.imageUrl !== "string" ? "https://i.imgur.com/N1Q5pm7.png" : article.imageUrl}
               alt={article.title}
-              width={240}
+              width={300}
               height={160}
-              className={typeof article.imageUrl !== "string" ? "rounded-2xl object-contain w-full sm:w-60 h-40" : "rounded-xl object-cover w-full sm:w-60 h-40"}
+              className={"rounded-3xl object-contain w-full sm:w-60"}
             />
+
           </div>
-          <p className="text-base text-neutral-700 dark:text-neutral-300">
-            {article.description || ""}
-          </p>
+
         </div>
 
-        <div className="mt-4 flex flex-wrap">
+        <div className="mt-4 flex flex-wrap justify-center">
           {tags.map((tag) => (
             <span
               key={tag.name}
@@ -85,6 +90,10 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
           ))}
         </div>
       </Link>
+      <div className="flex flex-row mb-4 ">
+        <LikeButton />
+        <CopyUrlButton />
+      </div>
     </motion.div>
   );
 };

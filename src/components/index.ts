@@ -1,3 +1,4 @@
+import { CopyUrlButton } from './copy-url-button/CopyUrlButton';
 export {Navbar} from './navbar/Navbar';
 export {NavbarUser} from './navbar/NavbarUser';
 export {ThemeButton} from './theme-button/ThemeButton';
@@ -23,3 +24,6 @@ export {Settings} from './dashboard/dashboard-sections/Settings';
 
 export {Admin} from './dashboard/dashboard-sections/Admin';
 export {Request} from './dashboard/dashboard-sections/adminSections/Request';
+
+export {LikeButton} from './like-button/LikeButton';
+export {CopyUrlButton} from './copy-url-button/CopyUrlButton';

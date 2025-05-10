@@ -154,6 +154,7 @@
     "Profile": "Profile",
     "SignOut": "Sign out",
     "Admin": "Admin",
+    "Unauthorized": "Unauthorized",
     "WelcomeDashboard": "Welcome to your dashboard",
     "IntroText": "This is your personal space to manage articles, update your profile and adjust your settings.",
     "NewArticleText": "Suggest a new article to include in the website's article feed.",

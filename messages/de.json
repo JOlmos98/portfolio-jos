@@ -154,6 +154,7 @@
     "Profile": "Profil",
     "SignOut": "Abmelden",
     "Admin": "Administrator",
+    "Unauthorized": "Unbefugter Zugriff",
     "WelcomeDashboard": "Willkommen in deinem Dashboard",
     "IntroText": "Dies ist dein persönlicher Bereich, um Artikel zu verwalten, dein Profil zu aktualisieren und deine Einstellungen anzupassen.",
     "NewArticleText": "Schlage einen neuen Artikel vor, um ihn in den Artikel-Feed der Website aufzunehmen.",

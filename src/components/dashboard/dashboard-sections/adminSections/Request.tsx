@@ -25,10 +25,18 @@ export const Request = () => {
         const res = await fetch("/api/admin/articles");
         const data = await res.json();
         setRequests(data);
-      };
+    };
 
     const handleAccept = async (id: number) => {
         try {
+
+            for (const req of requests) {
+                if (req.id === id && req.status === "accepted") {
+                    toast.error("El artículo ya está aceptado.");
+                    return;
+                }
+            }
+
             const res = await fetch("/api/admin/acceptArticle", {
                 method: "POST",
                 headers: {
@@ -37,9 +45,7 @@ export const Request = () => {
                 body: JSON.stringify({ id }),
             });
 
-            if (!res.ok) {
-                throw new Error("Error accepting article");
-            }
+            if (!res.ok) { throw new Error("Error accepting article"); }
 
             toast.success("Artículo aceptado");
             await fetchRequests();
@@ -51,6 +57,14 @@ export const Request = () => {
 
     const handleReject = async (id: number) => {
         try {
+
+            for (const req of requests) {
+                if (req.id === id && req.status === "rejected") {
+                    toast.error("El artículo ya está rechazado.");
+                    return;
+                }
+            }
+
             const res = await fetch("/api/admin/rejectArticle", {
                 method: "POST",
                 headers: {
@@ -94,20 +108,20 @@ export const Request = () => {
                             <td className='p-2 border'>{req.userId}</td>
                             <td className='p-2 border'><a href={req.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Ver</a></td>
                             <td className='p-2 border'>{req.title}</td>
-                            <td className='p-2 border'>{req.status}</td>
+                            <td className={req.status === "accepted" ? 'p-2 border text-green-500' : (req.status === "pending" ? 'p-2 border text-blue-cyan' : 'p-2 border text-red-500')}>{req.status}</td>
                             <td className='p-2 border'>{new Date(req.createdAt as string).toLocaleDateString()}</td>
                             <td className='p-2 border'>{new Date(req.updatedAt as string).toLocaleDateString()}</td>
                             <td className='p-2 border'>
                                 <button
                                     onClick={() => handleAccept(req.id)}
-                                    className="text-green-600 hover:underline p-2"
+                                    className="text-white rounded-md bg-green-700 mx-2 p-2 hover:bg-green-900 transition-colors duration-300"
                                 >
                                     Aceptar
                                 </button>
 
                                 <button
                                     onClick={() => handleReject(req.id)}
-                                    className="text-red-600 hover:underline p-2"
+                                    className="text-white rounded-md bg-red-700 mx-2 p-2 hover:bg-red-900 transition-colors duration-300"
                                 >
                                     Rechazar
                                 </button>

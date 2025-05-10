@@ -1,15 +1,16 @@
-// src/app/api/users/[id]/route.ts
+"use server";
+
 import { db } from "@/db/drizzle";
 import { users } from "@/db/drizzle/schema";
 import { eq } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest,{ params }: { params: { id: string } }) {
-  const userId = Number(params.id);
 
-  if (isNaN(userId)) {
-    return NextResponse.json({ error: "Invalid user ID" }, { status: 400 });
-  }
+  const aParams = await params;
+  const userId = Number(aParams.id);
+
+  if (isNaN(userId)) return NextResponse.json({ error: "Invalid user ID" }, { status: 400 });
 
   try {
     const result = await db
