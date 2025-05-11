@@ -160,7 +160,7 @@
     "NewArticleText": "Suggest a new article to include in the website's article feed.",
     "SettingsText": "Edit your profile fields and adjust your preferences.",
     "SavedArticlesText": "Favorite articles.",
-    "AdminText": "Articles requests.",
+    "AdminText": "Requests: Article requests. - Users: Registered users - Articles: Accepted articles.",
     "NewArticleSection": {
       "SubmitArticle": "Submit a New Article",
       "URL": "Article URL",

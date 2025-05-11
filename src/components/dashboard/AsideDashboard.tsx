@@ -37,13 +37,13 @@ export const AsideDashboard = () => {
       </Link>
 
       <nav className="flex flex-col gap-3 mt-8 text-sm lg:text-xl w-24 lg:w-52">
-        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-cyan-500"}>
           {t("SavedArticles")}
         </Link>
-        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-cyan-500"}>
           {t("NewArticle")}
         </Link>
-        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
+        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-cyan-500"}>
           {t("Settings")}
         </Link>
 

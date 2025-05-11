@@ -160,7 +160,7 @@
     "NewArticleText": "Schlage einen neuen Artikel vor, um ihn in den Artikel-Feed der Website aufzunehmen.",
     "SettingsText": "Bearbeite die Felder deines Profils und passe deine Einstellungen an.",
     "SavedArticlesText": "Favorisierte Artikel.",
-    "AdminText": "Artikelanfragen.",
+    "AdminText": "Anfragen: Artikelanfragen. - Benutzer: Registrierte Benutzer - Artikel: Akzeptierte Artikel.",
     "NewArticleSection": {
       "SubmitArticle": "Neuen Artikel vorschlagen",
       "URL": "Artikel-URL",

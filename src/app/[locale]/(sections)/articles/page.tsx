@@ -14,7 +14,7 @@ export default async function ArticlesPage() {
   return (
     <AuthGuard>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 font-[family-name:var(--font-geist-sans)]">
-        <div className="flex flex-col row-start-2 items-center sm:items-start mt-12 lg:mt-1">
+        <div className="flex flex-col row-start-2 items-center sm:items-start mt-12 lg:mt-14">
           <div>
 
             <div className="container mx-auto p-8">
