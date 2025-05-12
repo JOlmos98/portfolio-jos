@@ -15,13 +15,13 @@ export const Footer = () => {
     // const emailSent = () => { toast.success(stringToast); }
 
     return (
-        <footer className="bg-gray-200 dark:bg-zinc-900 py-2 relative z-50">
+        <footer className="bg-gray-200 dark:bg-zinc-900 py-2 relative z-40">
             <div className="mx-auto w-full max-w-screen-xl">
                 <NewsletterCard />
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
 
                     <div>
-                        <h2 className='text-xl font-bold mb-5'>
+                        <h2 className='text-md lg:text-xl font-bold mb-5'>
                             {t('ABOUT THIS WEBSITE')}
                         </h2>
                         <p className="mb-4 text-gray-500 dark:text-gray-400">{t('This web has been developed by Jesús Olmos for')}</p>
@@ -31,7 +31,7 @@ export const Footer = () => {
                         </a>
                     </div>
                     <div>
-                        <h2 className='text-xl font-bold mb-5'>
+                        <h2 className='text-md lg:text-xl font-bold mb-5'>
                             {t('FOLLOW ME')}
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -62,7 +62,7 @@ export const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className='text-xl font-bold mb-5'>
+                        <h2 className='text-md lg:text-xl font-bold mb-5'>
                             {t('TABLE OF CONTENTS')}
                         </h2>
                         <ul className='text-gray-500 dark:text-gray-400 font-medium'>
@@ -94,7 +94,7 @@ export const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className='text-xl font-bold mb-5'>
+                        <h2 className='text-md lg:text-xl font-bold mb-5'>
                             {t('DEVELOPED WITH')}
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -120,7 +120,7 @@ export const Footer = () => {
 }
 
 {/* <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
-                    <h2 className='text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-cyan dark:text-blue-cyan font-bold">{t('newsletter')}</span></h2>
+                    <h2 className='text-md lg:text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-cyan dark:text-blue-cyan font-bold">{t('newsletter')}</span></h2>
                     <div className="flex items-center justify-center">
                         <p>
                             {t('Leave me your email if')}

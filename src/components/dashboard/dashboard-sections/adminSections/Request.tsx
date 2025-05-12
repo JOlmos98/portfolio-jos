@@ -32,8 +32,8 @@ export const Request = () => {
         try {
 
             for (const req of requests) {
-                if (req.id === id && req.status === "accepted") {
-                    toast.error("El artículo ya está aceptado.");
+                if (req.id === id && (req.status === "accepted" || req.status === "rejected")) {
+                    toast.error("El artículo ya se ha aceptado o rechazado.");
                     return;
                 }
             }
@@ -60,8 +60,8 @@ export const Request = () => {
         try {
 
             for (const req of requests) {
-                if (req.id === id && req.status === "rejected") {
-                    toast.error("El artículo ya está rechazado.");
+                if (req.id === id && (req.status === "accepted" || req.status === "rejected")) {
+                    toast.error("El artículo ya se ha aceptado o rechazado.");
                     return;
                 }
             }
@@ -124,14 +124,14 @@ export const Request = () => {
                                 <td className='p-2 border'>
                                     <button
                                         onClick={() => handleAccept(req.id)}
-                                        className="text-white rounded-md bg-green-700 mx-2 p-2 hover:bg-green-900 transition-colors duration-300"
+                                        className={req.status === "accepted"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":(req.status === "rejected"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":"text-white rounded-md bg-green-700 mx-2 p-2 hover:bg-green-900 transition-colors duration-300")}
                                     >
                                         Aceptar
                                     </button>
 
                                     <button
                                         onClick={() => handleReject(req.id)}
-                                        className="text-white rounded-md bg-red-700 mx-2 p-2 hover:bg-red-900 transition-colors duration-300"
+                                        className={req.status === "accepted"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":(req.status === "rejected"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":"text-white rounded-md bg-red-700 mx-2 p-2 hover:bg-red-900 transition-colors duration-300")}
                                     >
                                         Rechazar
                                     </button>
