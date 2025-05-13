@@ -36,9 +36,9 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
     fetchTagsAndUser();
   }, [article.id, article.userId]);
 
-  const rDescription = article.description && article.description.length > 35
-    ? article.description.substring(0, 35) + "..."
-    : article.description || "";
+  // const rDescription = article.description && article.description.length > 35
+  //   ? article.description.substring(0, 35) + "..."
+  //   : article.description || "";
 
   return (
     <motion.div

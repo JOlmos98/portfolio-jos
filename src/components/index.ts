@@ -1,4 +1,3 @@
-import { CopyUrlButton } from './copy-url-button/CopyUrlButton';
 export {Navbar} from './navbar/Navbar';
 export {NavbarUser} from './navbar/NavbarUser';
 export {ThemeButton} from './theme-button/ThemeButton';
