@@ -20,3 +20,11 @@ export {HomeDashboard} from './dashboard/dashboard-sections/HomeDashboard';
 export {SavedArticles} from './dashboard/dashboard-sections/SavedArticles';
 export {NewArticle} from './dashboard/dashboard-sections/NewArticle';
 export {Settings} from './dashboard/dashboard-sections/Settings';
+
+export {Admin} from './dashboard/dashboard-sections/Admin';
+export {Request} from './dashboard/dashboard-sections/adminSections/Request';
+export {Users} from './dashboard/dashboard-sections/adminSections/Users';
+export {Articles} from './dashboard/dashboard-sections/adminSections/Articles';
+
+export {LikeButton} from './like-button/LikeButton';
+export {CopyUrlButton} from './copy-url-button/CopyUrlButton';

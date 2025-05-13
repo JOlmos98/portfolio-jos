@@ -145,7 +145,7 @@
     "sign up": " sign up ",
     "if you haven't already": "if you haven't already.",
     "IntroText": "There's a lot of junk on the internet and many articles that provide less value than a response from any AI on the same topic, so every week I save the articles I find most interesting and share them here. You can also suggest an interesting article by clicking ",
-"here": " here"
+    "here": " here"
   },
   "Dashboard": {
     "SavedArticles": "Saved Articles",
@@ -153,11 +153,22 @@
     "Settings": "Settings",
     "Profile": "Profile",
     "SignOut": "Sign out",
+    "Admin": "Admin",
+    "Unauthorized": "Unauthorized",
     "WelcomeDashboard": "Welcome to your dashboard",
     "IntroText": "This is your personal space to manage articles, update your profile and adjust your settings.",
-
     "NewArticleText": "Suggest a new article to include in the website's article feed.",
-"SettingsText": "Edit your profile fields and adjust your preferences.",
-"SavedArticlesText": "Favorite articles."
+    "SettingsText": "Edit your profile fields and adjust your preferences.",
+    "SavedArticlesText": "Favorite articles.",
+    "AdminText": "Requests: Article requests. - Users: Registered users - Articles: Accepted articles.",
+    "NewArticleSection": {
+      "SubmitArticle": "Submit a New Article",
+      "URL": "Article URL",
+      "Title": "Article Title",
+      "Description": "Description (optional)",
+      "Submit": "Submit",
+      "ArticleSubmitted": "Your article request has been submitted!",
+      "ErrorSubmitting": "There was an error submitting your article."
+    }
   }
 }

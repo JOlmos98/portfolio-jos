@@ -12,20 +12,14 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.imgur.com',
-        port: '',
-        pathname: '/**',
-        search: '',
-      },
       // {
       //   protocol: 'https',
-      //   hostname: 'imgur.com',
+      //   hostname: 'i.imgur.com',
       //   port: '',
       //   pathname: '/**',
       //   search: '',
       // },
+      { protocol: 'https', hostname: '**', },
     ],
   },
 };

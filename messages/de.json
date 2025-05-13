@@ -144,9 +144,8 @@
     "or": "oder",
     "sign up": " registriere dich ",
     "if you haven't already": "wenn du noch kein Konto hast.",
-
-"IntroText": "Im Internet gibt es viel Müll und viele Artikel, die weniger Wert bieten als eine Antwort von einer beliebigen KI zum gleichen Thema, deshalb speichere ich jede Woche die Artikel, die mir am interessantesten erscheinen, und stelle sie hier vor. Du kannst mir auch einen interessanten Artikel vorschlagen, indem du klickst ",
-"here": " hier"
+    "IntroText": "Im Internet gibt es viel Müll und viele Artikel, die weniger Wert bieten als eine Antwort von einer beliebigen KI zum gleichen Thema, deshalb speichere ich jede Woche die Artikel, die mir am interessantesten erscheinen, und stelle sie hier vor. Du kannst mir auch einen interessanten Artikel vorschlagen, indem du klickst ",
+    "here": " hier"
   },
   "Dashboard": {
     "SavedArticles": "Gespeicherte Artikel",
@@ -154,10 +153,22 @@
     "Settings": "Einstellungen",
     "Profile": "Profil",
     "SignOut": "Abmelden",
+    "Admin": "Administrator",
+    "Unauthorized": "Unbefugter Zugriff",
     "WelcomeDashboard": "Willkommen in deinem Dashboard",
     "IntroText": "Dies ist dein persönlicher Bereich, um Artikel zu verwalten, dein Profil zu aktualisieren und deine Einstellungen anzupassen.",
     "NewArticleText": "Schlage einen neuen Artikel vor, um ihn in den Artikel-Feed der Website aufzunehmen.",
     "SettingsText": "Bearbeite die Felder deines Profils und passe deine Einstellungen an.",
-    "SavedArticlesText": "Favorisierte Artikel."
+    "SavedArticlesText": "Favorisierte Artikel.",
+    "AdminText": "Anfragen: Artikelanfragen. - Benutzer: Registrierte Benutzer - Artikel: Akzeptierte Artikel.",
+    "NewArticleSection": {
+      "SubmitArticle": "Neuen Artikel vorschlagen",
+      "URL": "Artikel-URL",
+      "Title": "Artikeltitel",
+      "Description": "Beschreibung (optional)",
+      "Submit": "Absenden",
+      "ArticleSubmitted": "Dein Artikelvorschlag wurde eingereicht!",
+      "ErrorSubmitting": "Beim Absenden des Vorschlags ist ein Fehler aufgetreten."
+    }
   }
 }
