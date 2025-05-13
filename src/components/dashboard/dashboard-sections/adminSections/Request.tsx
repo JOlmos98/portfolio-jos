@@ -97,7 +97,7 @@ export const Request = () => {
             <Link className={pathname.includes("articles") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/articles"}>Articles</Link>
 
             <div>
-                <h1 className="text-4xl font-bold mb-4 mt-5">Article requests</h1>
+                <h1 className="text-3xl font-bold mb-4 mt-5">Article requests</h1>
                 <table className="w-full text-left border bg-neutral-100 dark:bg-neutral-900 text-black dark:text-neutral-200 p-2">
                     <thead>
                         <tr>

@@ -8,12 +8,11 @@ export async function GET(
   req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+
   const { id } = await params;
   const articleId = Number(id);
 
-  if (isNaN(articleId)) {
-    return NextResponse.json({ error: "Invalid article ID" }, { status: 400 });
-  }
+  if (isNaN(articleId)) return NextResponse.json({ error: "Invalid article ID" }, { status: 400 });
 
   try {
     const result = await db

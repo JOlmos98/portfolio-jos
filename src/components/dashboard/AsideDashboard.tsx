@@ -12,8 +12,8 @@ export const AsideDashboard = () => {
   const { data: session } = useSession();
   const t = useTranslations("Dashboard");
   const pathname = usePathname();
-//   const admin = session !== null ? (session.user?.email !== "soler98@hotmail.es" ? false : true) : false;
-// console.warn("==================== admin = ", admin);
+  //   const admin = session !== null ? (session.user?.email !== "soler98@hotmail.es" ? false : true) : false;
+  // console.warn("==================== admin = ", admin);
 
   return (
     <aside className="w-30 lg:w-64 bg-gray-200 dark:bg-[#1a1a1a] p-2 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
@@ -37,13 +37,13 @@ export const AsideDashboard = () => {
       </Link>
 
       <nav className="flex flex-col gap-3 mt-8 text-sm lg:text-xl w-24 lg:w-52">
-        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-cyan-500"}>
+        <Link href="/dashboard/savedArticles" className={pathname.includes("dashboard/savedArticles") ? "text-blue-cyan hover:text-cyan-500 dark:hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan dark:hover:text-blue-cyan"}>
           {t("SavedArticles")}
         </Link>
-        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-cyan-500"}>
+        <Link href="/dashboard/newArticle" className={pathname.includes("dashboard/newArticle") ? "text-blue-cyan hover:text-cyan-500 dark:hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan dark:hover:text-blue-cyan"}>
           {t("NewArticle")}
         </Link>
-        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-cyan-500"}>
+        <Link href="/dashboard/settings" className={pathname.includes("dashboard/settings") ? "text-blue-cyan hover:text-cyan-500 dark:hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan dark:hover:text-blue-cyan"}>
           {t("Settings")}
         </Link>
 
@@ -53,10 +53,10 @@ export const AsideDashboard = () => {
         >
           {t("SignOut")}
         </button>
-      <div className='flex fixed bottom-0 mb-5'>
-        <Link href="/dashboard/admin" className={pathname.includes("dashboard/admin") ? "text-blue-cyan hover:text-cyan-500" : "text-black dark:text-gray-300 hover:text-blue-cyan"}>
-          {t("Admin")}
-        </Link>
+        <div className='flex fixed bottom-0 mb-5'>
+          <Link href="/dashboard/admin" className={`hover:text-cyan-500 dark:hover:text-cyan-500 ${pathname.includes("dashboard/admin") ? "text-blue-cyan" : "text-black dark:text-gray-300"}`}>
+            {t("Admin")}
+          </Link>
         </div>
       </nav>
     </aside>
