@@ -42,6 +42,8 @@ const authOptions: NextAuthOptions = {
             return null;
           }
 
+          if (!user.isVerified) return null;
+
           return {
             id: user.id.toString(),
             name: user.name,

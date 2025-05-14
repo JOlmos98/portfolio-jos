@@ -46,7 +46,7 @@ export const NewArticle = () => {
 
   return (
     <main className="flex-1 p-2 pt-28 ml-32 lg:ml-80 pr-2">
-      <h1 className="text-4xl font-bold mb-4">{t("SubmitArticle")}</h1>
+      <h1 className="flex text-left justify-start text-4xl font-bold mb-4">{t("SubmitArticle")}</h1>
       {/* <h1 className="text-4xl font-bold mb-4">{t("Admin")}</h1> */}
 
       <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">

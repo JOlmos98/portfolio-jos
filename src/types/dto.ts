@@ -7,6 +7,7 @@ export type UserDTO = {
   phone?: string | null;
   bio?: string | null;
   website?: string | null;
+  isVerified?: string | null;
 };
 
 export type ArticleDTO = {

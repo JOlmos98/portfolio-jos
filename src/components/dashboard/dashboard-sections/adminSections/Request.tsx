@@ -89,22 +89,22 @@ export const Request = () => {
     return (
         <main className="flex-1 p-2 pt-28 ml-32 lg:ml-80">
             <h1 className="text-4xl font-bold mb-4">{t("Admin")}</h1>
-            <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-6">
-                {t("AdminText")}
-            </p>
-            <Link className={pathname.includes("requests") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/requests"}>Requests</Link>
-            <Link className={pathname.includes("users") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/users"}>Users</Link>
-            <Link className={pathname.includes("articles") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/articles"}>Articles</Link>
+            {/* <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-6">
+                Requests: Solicitudes de artículos. - Users: Usuarios registrados - Articles: Artículos aceptados.
+            </p> */}
+            <Link className={pathname.includes("requests") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/requests"}>Solicitudes de artículos</Link>
+            <Link className={pathname.includes("users") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/users"}>Usuarios registrados</Link>
+            <Link className={pathname.includes("articles") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/articles"}>Artículos aceptados</Link>
 
             <div>
-                <h1 className="text-3xl font-bold mb-4 mt-5">Article requests</h1>
+                <h1 className="text-3xl font-bold mb-4 mt-5">Solicitudes de artículos</h1>
                 <table className="w-full text-left border bg-neutral-100 dark:bg-neutral-900 text-black dark:text-neutral-200 p-2">
                     <thead>
                         <tr>
                             <th className='p-2'>ID</th>
                             <th className='p-2'>User ID</th>
                             <th className='p-2'>URL</th>
-                            <th className='p-2'>Title</th>
+                            <th className='p-2'>Título</th>
                             <th className='p-2'>Status</th>
                             <th className='p-2'>Created</th>
                             <th className='p-2'>Updated</th>
