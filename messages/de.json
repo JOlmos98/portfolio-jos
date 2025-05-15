@@ -172,5 +172,10 @@
       "ArticleSubmitted": "Dein Artikelvorschlag wurde eingereicht!",
       "ErrorSubmitting": "Beim Absenden des Vorschlags ist ein Fehler aufgetreten."
     }
+  },
+  "Metadata": {
+    "title": "Portfolio von Jesús Olmos",
+    "description": "Fullstack-Entwickler spezialisiert auf Next.js, TypeScript und Rust.",
+    "siteName": "portfolio-jos"
   }
 }

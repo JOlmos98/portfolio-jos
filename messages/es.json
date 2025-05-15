@@ -172,5 +172,10 @@
       "ArticleSubmitted": "¡Tu propuesta ha sido enviada!",
       "ErrorSubmitting": "Hubo un error al enviar tu propuesta."
     }
+  },
+  "Metadata": {
+    "title": "Portfolio de Jesús Olmos",
+    "description": "Desarrollador Fullstack especializado en Next.js, TypeScript y Rust.",
+    "siteName": "portfolio-jos"
   }
 }

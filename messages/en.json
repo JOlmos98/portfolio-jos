@@ -172,5 +172,10 @@
       "ArticleSubmitted": "Your article request has been submitted!",
       "ErrorSubmitting": "There was an error submitting your article."
     }
+  },
+  "Metadata": {
+    "title": "Jesús Olmos' Portfolio",
+    "description": "Fullstack Developer specialized in Next.js, TypeScript, and Rust.",
+    "siteName": "portfolio-jos"
   }
 }
