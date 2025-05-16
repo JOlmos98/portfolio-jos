@@ -47,5 +47,3 @@ export type ArticleTagDTO = {
   articleId: number;
   tagId: number;
 };
-
-//!     createdAt: Date;

@@ -24,7 +24,7 @@ export default async function ÀrticlesPage() {
                             {t("or")}
                             <span className="text-blue-cyan"><Link href={"/signUp"}>{t("sign up")}</Link></span>
                             {t("if you haven't already")}
-                            </p>
+                        </p>
                     </div>
                     {/* <div className="mt-24 flex justify-center text-2xl"> */}
                     <div className="flex space-x-4 mt-24 items-center justify-center">

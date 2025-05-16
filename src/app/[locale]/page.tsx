@@ -94,14 +94,13 @@ export default async function HomePage() {
         <p className="w-full text-xl mt-5 mb-8 text-center px-4 sm:px-8">
           {t("toMoreAboutMe")}{" "}
           <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">
-          {t("linkMoreAboutMe")}
+            {t("linkMoreAboutMe")}
           </Link>
         </p>
       </div>
     </div>
   );
 }
-//Entre otras cosas, aprendí todo lo relacionado con las bases de datos, modelos entidad relación, SQL, PL/SQL, por otro lado profundicé en Java manejando hilos con semáforos, multihilo, etc. También aprendí a manejar ciertosmódulos de Spring Boot como Spring Data JPA.
 
 /*
         <div className="flex flex-col sm:flex-row items-center gap-8"> 

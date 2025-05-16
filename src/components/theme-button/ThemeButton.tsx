@@ -8,11 +8,11 @@ import { IoMoon, IoSunny } from "react-icons/io5";
 export const ThemeButton = () => {
 
   const { setTheme, resolvedTheme } = useTheme();
-  const toggleTheme = () => {setTheme(resolvedTheme === "light" ? "dark" : "light");};
-  
+  const toggleTheme = () => { setTheme(resolvedTheme === "light" ? "dark" : "light"); };
+
   const [mounted, setMounted] = useState(false)
-  useEffect(() =>  setMounted(true), [])
-  
+  useEffect(() => setMounted(true), [])
+
   if (!mounted) return (
     <p>Loading...</p>
   )

@@ -21,7 +21,7 @@ export default async function ProjectsPage() {
             <span className="text-blue-cyan dark:text-blue-cyan">{p("creativity")}</span>
             {p("end")}
           </h1>
-          
+
           <ProjectItem
             year="2025"
             title={t("project1.title")}

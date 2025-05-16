@@ -3,7 +3,7 @@ import { articleTags, tags } from "@/db/drizzle/schema";
 import { eq } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(_: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
 
   const { id } = await params;
   const articleId = Number(id);

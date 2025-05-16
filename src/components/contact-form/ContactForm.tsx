@@ -7,7 +7,8 @@ import { contactSchema } from "@/zod/contactSchema";
 import { useTranslations } from "next-intl";
 import toast from "react-hot-toast";
 
-export const ContactForm = () =>  {
+export const ContactForm = () => {
+
   const t = useTranslations("Contact");
 
   const form = useForm<z.infer<typeof contactSchema>>({

@@ -34,7 +34,7 @@ export async function generateMetadata({params,}: {params: { locale: string };})
 
   return {
 
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL as string),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BACKEND_URL as string),
 
     title: {
       default: t("title"),
@@ -47,7 +47,7 @@ export async function generateMetadata({params,}: {params: { locale: string };})
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: process.env.NEXT_PUBLIC_BASE_URL+`/${locale}`,
+      url: process.env.NEXT_PUBLIC_BACKEND_URL+`/${locale}`,
       siteName: t("siteName"),
       locale: locale === "es" ? "es_ES" : locale === "de" ? "de_DE" : "en_US",
       type: "website",
@@ -68,11 +68,11 @@ export async function generateMetadata({params,}: {params: { locale: string };})
     },
 
     alternates: {
-      canonical: process.env.NEXT_PUBLIC_BASE_URL+`/${locale}`,
+      canonical: process.env.NEXT_PUBLIC_BACKEND_URL+`/${locale}`,
       languages: {
-        en: process.env.NEXT_PUBLIC_BASE_URL+`/en`,
-        es: process.env.NEXT_PUBLIC_BASE_URL+`/es`,
-        de: process.env.NEXT_PUBLIC_BASE_URL+`/de`,
+        en: process.env.NEXT_PUBLIC_BACKEND_URL+`/en`,
+        es: process.env.NEXT_PUBLIC_BACKEND_URL+`/es`,
+        de: process.env.NEXT_PUBLIC_BACKEND_URL+`/de`,
       },
     },
   };

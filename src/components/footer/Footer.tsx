@@ -118,18 +118,3 @@ export const Footer = () => {
         </footer>
     )
 }
-
-{/* <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-xl w-auto mx-auto">
-                    <h2 className='text-md lg:text-xl font-bold mb-4'>{t('Subscribe to my ')}<span className="text-blue-cyan dark:text-blue-cyan font-bold">{t('newsletter')}</span></h2>
-                    <div className="flex items-center justify-center">
-                        <p>
-                            {t('Leave me your email if')}
-                        </p>
-                    </div>
-                    <div className="flex items-center justify-center pt-5">
-                        <input type="text" className='text-blue-cyan dark:text-blue-cyan min-w-24 px-4 py-2 rounded-2xl' placeholder={t('Your email')} />
-                        <button onClick={emailSent} className='ml-4 bg-cyan-600 hover:bg-blue-cyan text-white font-bold py-2 px-4 rounded-2xl'>
-                            {t('Subscribe')}
-                        </button>
-                    </div>
-                </div> */}

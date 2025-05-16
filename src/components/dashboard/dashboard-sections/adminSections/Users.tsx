@@ -52,7 +52,7 @@ export const Users = () => {
               <td className='p-2 border'>{user.phone || "-"}</td>
               <td className='p-2 border'>{user.bio || "-"}</td>
               <td className='p-2 border'>{user.website ? <a href={user.website} target="_blank" className="underline text-blue-cyan">Link</a> : "-"}</td>
-              <td className={'p-2 border'+(user.isVerified ? " text-green-500":" text-red-500")}>{user.isVerified ? "TRUE" : "FALSE "}</td>
+              <td className={'p-2 border' + (user.isVerified ? " text-green-500" : " text-red-500")}>{user.isVerified ? "TRUE" : "FALSE "}</td>
             </tr>
           ))}
         </tbody>

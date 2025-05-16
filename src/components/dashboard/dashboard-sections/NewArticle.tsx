@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { z } from "zod";
 
 export const NewArticle = () => {
+
   const t = useTranslations("Dashboard.NewArticleSection");
 
   const form = useForm<z.infer<typeof articleRequestSchema>>({

@@ -9,6 +9,7 @@ export const LanguageSelector = () => {
   
   const pathname = usePathname();
 
+  // useEffect para el manejo del error de la barra de scroll
   useEffect(() => {                                                            // Esta función restaura el overflow cuando el menú está abierto
 
     // Establecemos los overflow en auto para ver la barra de scroll después de esperar 5 milisegundos
@@ -63,54 +64,3 @@ export const LanguageSelector = () => {
     </Menu>
   );
 };
-
-
-
-
-/*
-
-          <button className="block w-full text-left px-4 py-2 hover:bg-blue-500" onClick={() => changeLanguage("de")}>
-            DE
-          </button>
-
-    <Menu>
-      <MenuButton>My account</MenuButton>
-      <MenuItems anchor="bottom">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </MenuItems>
-    </Menu>
-
-*/
-
-
-
-
-
-
-
-
-
-// import React from 'react'
-// import { IoLanguage } from 'react-icons/io5'
-
-// export const LanguageSelector = () => {
-//   return (
-//     <div className='flex items-center '>
-//       <IoLanguage className="m-1 ml-8 text-2xl hover:text-green-400" />
-//     </div>
-//   )
-// }

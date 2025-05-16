@@ -124,14 +124,14 @@ export const Request = () => {
                                 <td className='p-2 border'>
                                     <button
                                         onClick={() => handleAccept(req.id)}
-                                        className={req.status === "accepted"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":(req.status === "rejected"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":"text-white rounded-md bg-green-700 mx-2 p-2 hover:bg-green-900 transition-colors duration-300")}
+                                        className={req.status === "accepted" ? "text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300" : (req.status === "rejected" ? "text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300" : "text-white rounded-md bg-green-700 mx-2 p-2 hover:bg-green-900 transition-colors duration-300")}
                                     >
                                         Aceptar
                                     </button>
 
                                     <button
                                         onClick={() => handleReject(req.id)}
-                                        className={req.status === "accepted"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":(req.status === "rejected"?"text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300":"text-white rounded-md bg-red-700 mx-2 p-2 hover:bg-red-900 transition-colors duration-300")}
+                                        className={req.status === "accepted" ? "text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300" : (req.status === "rejected" ? "text-white rounded-md bg-neutral-700 mx-2 p-2 transition-colors duration-300" : "text-white rounded-md bg-red-700 mx-2 p-2 hover:bg-red-900 transition-colors duration-300")}
                                     >
                                         Rechazar
                                     </button>

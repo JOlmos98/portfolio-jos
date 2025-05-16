@@ -1,5 +1,4 @@
 export {Navbar} from './navbar/Navbar';
-export {NavbarUser} from './navbar/NavbarUser';
 export {ThemeButton} from './theme-button/ThemeButton';
 export {Providers} from '../app/context/Providers';
 export {ParticlesBackground} from './particles/ParticlesBackground';
