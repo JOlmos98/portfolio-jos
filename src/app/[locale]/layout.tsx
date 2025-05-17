@@ -31,9 +31,9 @@ const inter = Inter({
 
 export const locales = ["es", "en", "de"];
 
-export async function generateMetadata({ params, }: { params: { locale: string }; }): Promise<Metadata> {
+export async function generateMetadata({ params, }: { params: Promise<{ locale: string }>; }): Promise<Metadata> {
 
-  const locale = params.locale;
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL!;
 

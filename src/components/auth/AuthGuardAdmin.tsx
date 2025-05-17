@@ -7,6 +7,7 @@ import { useLocale } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 
 export const AuthGuardAdmin = ({ children }: { children: React.ReactNode }) => {
+  
   const { data: session, status } = useSession();
   const router = useRouter();
   const locale = useLocale();

@@ -20,12 +20,7 @@ export const NewArticle = () => {
     },
   });
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = form;
+  const { register, handleSubmit, formState: { errors }, reset, } = form;
 
   const onSubmit = async (values: z.infer<typeof articleRequestSchema>) => {
     try {
