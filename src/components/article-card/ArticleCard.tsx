@@ -92,7 +92,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
       </Link>
       <div className="flex flex-row mb-4 ">
         <LikeButton />
-        <CopyUrlButton />
+        <CopyUrlButton url={article.url}/>
       </div>
     </motion.div>
   );

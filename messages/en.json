@@ -145,7 +145,10 @@
     "sign up": " sign up ",
     "if you haven't already": "if you haven't already.",
     "IntroText": "There's a lot of junk on the internet and many articles that provide less value than a response from any AI on the same topic, so every week I save the articles I find most interesting and share them here. You can also suggest an interesting article by clicking ",
-    "here": " here"
+    "here": " here",
+    "copyUrl": "Copy URL",
+    "urlCopied": "URL copied to clipboard.",
+    "urlNotCopied": "Error copying URL."
   },
   "Dashboard": {
     "SavedArticles": "Saved Articles",

@@ -145,7 +145,10 @@
     "sign up": " registriere dich ",
     "if you haven't already": "wenn du noch kein Konto hast.",
     "IntroText": "Im Internet gibt es viel Müll und viele Artikel, die weniger Wert bieten als eine Antwort von einer beliebigen KI zum gleichen Thema, deshalb speichere ich jede Woche die Artikel, die mir am interessantesten erscheinen, und stelle sie hier vor. Du kannst mir auch einen interessanten Artikel vorschlagen, indem du klickst ",
-    "here": " hier"
+    "here": " hier",
+    "copyUrl": "URL kopieren",
+    "urlCopied": "URL in die Zwischenablage kopiert.",
+    "urlNotCopied": "Fehler beim Kopieren der URL."
   },
   "Dashboard": {
     "SavedArticles": "Gespeicherte Artikel",
