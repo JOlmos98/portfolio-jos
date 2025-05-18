@@ -72,7 +72,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
               alt={article.title}
               width={300}
               height={160}
-              className={"rounded-3xl object-contain lg:w-full w-64"}
+              className={"rounded-3xl object-contain lg:w-72 w-64"}
             />
 
           </div>
