@@ -12,7 +12,7 @@ export default async function ProjectsPage() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 font-[family-name:var(--font-geist-sans)]">
       <div className="flex flex-col row-start-2 items-center sm:items-start mt-12 lg:mt-38">
         <div>
-          <h1 className="text-center mx-auto text-xl lg:text-4xl w-2/3 bg-transparent mt-8 mb-12 font-bold">
+          <h1 className="text-center mx-auto text-xl lg:text-4xl w-2/3 bg-transparent mt-8 mb-12">
             {p("main")}
             <span className="text-blue-cyan dark:text-blue-cyan">{p("learn")}</span>
             {p("continue")}
@@ -21,7 +21,7 @@ export default async function ProjectsPage() {
             <span className="text-blue-cyan dark:text-blue-cyan">{p("creativity")}</span>
             {p("end")}
           </h1>
-          
+
           <ProjectItem
             year="2025"
             title={t("project1.title")}

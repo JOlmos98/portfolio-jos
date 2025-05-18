@@ -47,7 +47,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
       whileHover={{ scale: 1.1, transition: { duration: 0.08, ease: "easeOut" } }}
       transition={{ duration: 1.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-800 border rounded-2xl border-white dark:border-neutral-800 shadow mb-6 w-80 lg:w-[325px] max-w-4xl mx-auto "
+      className="flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-800 border rounded-3xl border-white dark:border-neutral-800 shadow mb-6 w-80 lg:w-[325px] max-w-4xl mx-auto "
     >
       <Link
         href={article.url}
@@ -58,7 +58,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
           {new Date(article.createdAt ?? '').toLocaleDateString()} · {authorName}
         </p>
 
-        <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2">
+        <h3 className="text-xl font-semibold text-neutral-900 dark:text-white p-2 mb-2">
           {article.title}
         </h3>
 
@@ -72,7 +72,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
               alt={article.title}
               width={300}
               height={160}
-              className={"rounded-3xl object-contain w-full sm:w-60"}
+              className={"rounded-3xl object-contain lg:w-full w-64"}
             />
 
           </div>
@@ -92,7 +92,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
       </Link>
       <div className="flex flex-row mb-4 ">
         <LikeButton />
-        <CopyUrlButton />
+        <CopyUrlButton url={article.url}/>
       </div>
     </motion.div>
   );

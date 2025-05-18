@@ -3,7 +3,7 @@
 import { getTranslations } from "next-intl/server";
 
 export default async function UnauthorizedPage() {
-  
+
   const t = await getTranslations("Dashboard");
 
   return (

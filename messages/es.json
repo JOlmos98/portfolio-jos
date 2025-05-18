@@ -145,7 +145,11 @@
     "sign up": " regístrate ",
     "if you haven't already": "si aún no lo estás.",
     "IntroText": "En internet hay mucha basura y artículos que aportan menos valor del que te puede aportar una respuesta de cualquier IA sobre el mismo tema, por eso, cada semana guardo los artículos que me parecen más interesantes y los expongo aquí. También puedes proponerme algún artículo interesante haciendo click ",
-    "here": " aquí"
+    "here": " aquí",
+
+    "copyUrl": "Copiar URL",
+    "urlCopied": "URL copiada al portapapeles.",
+    "urlNotCopied": "Error al copiar URL."
   },
   "Dashboard": {
     "SavedArticles": "Artículos guardados",
@@ -157,10 +161,12 @@
     "Unauthorized": "Acceso no autorizado",
     "WelcomeDashboard": "Bienvenido a tu panel",
     "IntroText": "Este es tu espacio personal para gestionar artículos, actualizar tu perfil y ajustar tus preferencias.",
+    "SavedArticleTextHome": "Aquí puedes ver una lista de los artículos que has guardado del feed.",
+    "NewArticleTextHome": "Envía propuestas para sugerir nuevos artículos que deberían aparecer en el feed.",
+    "SettingsTextHome": "Gestiona aquí tu información de perfil, preferencias y configuración de cuenta.",
     "NewArticleText": "Propón un nuevo artículo para incluir en el feed de artículos de la web.",
     "SettingsText": "Modifica los campos de tu perfil y ajusta tus preferencias.",
-    "SavedArticlesText": "Artículos favoritos.",
-    "AdminText": "Requests: Solicitudes de artículos. - Users: Usuarios registrados - Articles: Artículos aceptados.",
+    "SavedArticlesText": "Artículos guardados del feed principal.",
     "NewArticleSection": {
       "SubmitArticle": "Proponer un nuevo artículo",
       "URL": "URL del artículo",
@@ -170,5 +176,10 @@
       "ArticleSubmitted": "¡Tu propuesta ha sido enviada!",
       "ErrorSubmitting": "Hubo un error al enviar tu propuesta."
     }
+  },
+  "Metadata": {
+    "title": "Portfolio de Jesús Olmos",
+    "description": "Desarrollador Fullstack especializado en Next.js, TypeScript y Rust.",
+    "siteName": "portfolio-jos"
   }
 }

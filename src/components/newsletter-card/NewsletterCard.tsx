@@ -35,7 +35,7 @@ export const NewsletterCard = () => {
                 toast.error(data.message === "Este email ya está suscrito" ? t("Error already subscribed") : t("Error sending email"));
             }
         } catch (error) {
-            toast.error("Error de conexión");
+            toast.error("Connection error");
             console.error(error);
         }
     };

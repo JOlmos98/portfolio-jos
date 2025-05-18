@@ -145,7 +145,10 @@
     "sign up": " registriere dich ",
     "if you haven't already": "wenn du noch kein Konto hast.",
     "IntroText": "Im Internet gibt es viel Müll und viele Artikel, die weniger Wert bieten als eine Antwort von einer beliebigen KI zum gleichen Thema, deshalb speichere ich jede Woche die Artikel, die mir am interessantesten erscheinen, und stelle sie hier vor. Du kannst mir auch einen interessanten Artikel vorschlagen, indem du klickst ",
-    "here": " hier"
+    "here": " hier",
+    "copyUrl": "URL kopieren",
+    "urlCopied": "URL in die Zwischenablage kopiert.",
+    "urlNotCopied": "Fehler beim Kopieren der URL."
   },
   "Dashboard": {
     "SavedArticles": "Gespeicherte Artikel",
@@ -157,10 +160,12 @@
     "Unauthorized": "Unbefugter Zugriff",
     "WelcomeDashboard": "Willkommen in deinem Dashboard",
     "IntroText": "Dies ist dein persönlicher Bereich, um Artikel zu verwalten, dein Profil zu aktualisieren und deine Einstellungen anzupassen.",
+    "SavedArticleTextHome": "Hier siehst du eine Liste der Artikel, die du für später gespeichert hast.",
+    "NewArticleTextHome": "Schlage neue Artikel vor, die im Feed erscheinen sollten.",
+    "SettingsTextHome": "Verwalte hier deine Profilinformationen, Einstellungen und Kontodaten.",
     "NewArticleText": "Schlage einen neuen Artikel vor, um ihn in den Artikel-Feed der Website aufzunehmen.",
     "SettingsText": "Bearbeite die Felder deines Profils und passe deine Einstellungen an.",
-    "SavedArticlesText": "Favorisierte Artikel.",
-    "AdminText": "Anfragen: Artikelanfragen. - Benutzer: Registrierte Benutzer - Artikel: Akzeptierte Artikel.",
+    "SavedArticlesText": "Artikel, die aus dem Hauptfeed gespeichert wurden.",
     "NewArticleSection": {
       "SubmitArticle": "Neuen Artikel vorschlagen",
       "URL": "Artikel-URL",
@@ -170,5 +175,10 @@
       "ArticleSubmitted": "Dein Artikelvorschlag wurde eingereicht!",
       "ErrorSubmitting": "Beim Absenden des Vorschlags ist ein Fehler aufgetreten."
     }
+  },
+  "Metadata": {
+    "title": "Portfolio von Jesús Olmos",
+    "description": "Fullstack-Entwickler spezialisiert auf Next.js, TypeScript und Rust.",
+    "siteName": "portfolio-jos"
   }
 }

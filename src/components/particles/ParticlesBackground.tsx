@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback } from "react";                   // Importa useCallback para memorizar funciones y evitar recrearlas en cada renderizado
-import Particles from "react-tsparticles";             // Importa el componente Particles para renderizar las partículas
-import type { Container, Engine } from "tsparticles-engine"; // Importa tipos para mejorar la tipificación con TypeScript
-import { loadSlim } from "tsparticles-slim";           // Importa una versión reducida de tsparticles para optimizar el tamaño del paquete
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import type { Container, Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
 
-export const ParticlesBackground = () => {             // Define un componente funcional para renderizar partículas
+export const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => { 
     await loadSlim(engine);                            // Inicializa el motor de partículas con la versión reducida
   }, []);                                              // Memoriza la función para que no se recree en cada renderizado
@@ -80,11 +80,10 @@ export const ParticlesBackground = () => {             // Define un componente f
     />
   );
 };
-/*
 
+/*
       id="tsparticles"                                // Identificador único para el componente de partículas
       init={particlesInit}                            // Llama a la función para inicializar el motor
       loaded={particlesLoaded}                        // Llama a la función cuando las partículas se han cargado
       options={particlesOptions}                      // Configuración definida para las partículas
-
 */

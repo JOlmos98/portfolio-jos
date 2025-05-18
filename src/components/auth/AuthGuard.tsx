@@ -1,4 +1,3 @@
-// components/auth/auth-guard.tsx
 "use client";
 
 import { useSession } from "next-auth/react";

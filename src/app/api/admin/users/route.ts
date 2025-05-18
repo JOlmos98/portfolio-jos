@@ -13,6 +13,7 @@ export async function GET() {
       phone: users.phone,
       bio: users.bio,
       website: users.website,
+      isVerified: users.isVerified,
     }).from(users);
 
     return NextResponse.json(data);

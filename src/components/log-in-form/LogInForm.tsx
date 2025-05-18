@@ -10,11 +10,6 @@ import { toast } from "react-hot-toast";
 import { useTranslations } from "next-intl";
 import { logInSchema } from "@/zod/logInSchema";
 
-// const logInSchema = z.object({
-//   email: z.string().email(),
-//   password: z.string().min(6),
-// });
-
 export const LogInForm = () => {
 
   const t = useTranslations("LogIn");
@@ -35,7 +30,7 @@ export const LogInForm = () => {
   const onSubmit = async (values: z.infer<typeof logInSchema>) => {
     try {
       setIsLoading(true);
-      
+
       const res = await signIn("credentials", {
         email: values.email,
         password: values.password,
@@ -45,7 +40,7 @@ export const LogInForm = () => {
       if (res?.ok) {
         toast.success(t("Login successful"));
         router.push("/dashboard");
-        router.refresh(); // Importante para actualizar la UI con la nueva sesión
+        router.refresh(); // Redundante?
       } else {
         toast.error(t("Invalid credentials or email not verified"));
       }
@@ -101,91 +96,3 @@ export const LogInForm = () => {
     </div>
   );
 };
-
-// "use client";
-
-// import { useForm } from "react-hook-form";
-// import { z } from "zod";
-// import { zodResolver } from "@hookform/resolvers/zod";
-// import { signIn } from "next-auth/react";
-// import toast from "react-hot-toast";
-// import { useRouter } from "next/navigation";
-// import { useTranslations } from "next-intl";
-
-// const loginSchema = z.object({
-//   email: z.string().email({ message: "Invalid email" }),
-//   password: z.string().min(1, { message: "Password is required" }),
-// });
-
-// export const LogInForm = () => {
-//   const t = useTranslations("Login");
-//   const router = useRouter();
-
-//   const form = useForm<z.infer<typeof loginSchema>>({
-//     resolver: zodResolver(loginSchema),
-//     defaultValues: {
-//       email: "",
-//       password: "",
-//     },
-//   });
-
-//   const { register, handleSubmit, formState: { errors } } = form;
-
-//   const onSubmit = async (values: z.infer<typeof loginSchema>) => {
-//     const res = await signIn("credentials", {
-//       ...values,
-//       redirect: false,
-//     });
-
-//     if (res?.ok) {
-//       toast.success(t("Login successful"));
-//       router.push("/dashboard");
-//     } else {
-//       toast.error(t("Invalid credentials or email not verified"));
-//     }
-//   };
-
-//   return (
-//     <div className="bg-gray-300 dark:bg-zinc-800 p-6 m-6 rounded-2xl max-w-4xl w-auto mx-auto">
-//       <h2 className="text-xl font-bold mb-4">
-//         {t("Log in to your")}{" "}
-//         <span className="text-blue-cyan dark:text-blue-cyan font-bold">
-//           {t("account")}
-//         </span>
-//       </h2>
-
-//       <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">
-//         <div>
-//           <input
-//             type="email"
-//             placeholder={t("Email")}
-//             className="w-[315px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan bg-white dark:bg-[#121212] border-zinc-300 dark:border-[#121212] px-4 py-2 rounded-2xl"
-//             {...register("email")}
-//           />
-//           {errors.email && (
-//             <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-//           )}
-//         </div>
-
-//         <div>
-//           <input
-//             type="password"
-//             placeholder={t("Password")}
-//             className="w-[315px] lg:w-[600px] text-blue-cyan dark:text-blue-cyan bg-white dark:bg-[#121212] border-zinc-300 dark:border-[#121212] px-4 py-2 rounded-2xl"
-//             {...register("password")}
-//           />
-//           {errors.password && (
-//             <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>
-//           )}
-//         </div>
-
-//         <button
-//           type="submit"
-//           className="bg-cyan-600 hover:bg-blue-cyan transition text-white font-bold py-2 px-4 rounded-2xl w-full"
-//         >
-//           {t("Login")}
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
