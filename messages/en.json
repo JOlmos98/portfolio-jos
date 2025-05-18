@@ -148,7 +148,11 @@
     "here": " here",
     "copyUrl": "Copy URL",
     "urlCopied": "URL copied to clipboard.",
-    "urlNotCopied": "Error copying URL."
+    "urlNotCopied": "Error copying URL.",
+    "setLike": "Save as favorite",
+    "removedFromSaved": "Article removed from favorites.",
+    "addedToSaved": "Article added to favorites.",
+    "likeError": "Error saving as favorite."
   },
   "Dashboard": {
     "SavedArticles": "Saved Articles",
@@ -166,6 +170,7 @@
     "NewArticleText": "Suggest a new article to include in the website's article feed.",
     "SettingsText": "Edit your profile fields and adjust your preferences.",
     "SavedArticlesText": "Articles saved from the main feed.",
+    "ArticleTitle": "Title",
     "NewArticleSection": {
       "SubmitArticle": "Submit a New Article",
       "URL": "Article URL",

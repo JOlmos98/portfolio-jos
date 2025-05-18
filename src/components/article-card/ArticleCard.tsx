@@ -91,8 +91,8 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
         </div>
       </Link>
       <div className="flex flex-row mb-4 ">
-        <LikeButton />
-        <CopyUrlButton url={article.url}/>
+        <LikeButton articleId={article.id} />
+        <CopyUrlButton url={article.url} />
       </div>
     </motion.div>
   );
