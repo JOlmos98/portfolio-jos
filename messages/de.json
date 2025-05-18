@@ -148,7 +148,11 @@
     "here": " hier",
     "copyUrl": "URL kopieren",
     "urlCopied": "URL in die Zwischenablage kopiert.",
-    "urlNotCopied": "Fehler beim Kopieren der URL."
+    "urlNotCopied": "Fehler beim Kopieren der URL.",
+    "setLike": "Als Favorit speichern",
+    "removedFromSaved": "Artikel aus den Favoriten entfernt.",
+    "addedToSaved": "Artikel zu den Favoriten hinzugefügt.",
+    "likeError": "Fehler beim Speichern als Favorit."
   },
   "Dashboard": {
     "SavedArticles": "Gespeicherte Artikel",
@@ -166,6 +170,7 @@
     "NewArticleText": "Schlage einen neuen Artikel vor, um ihn in den Artikel-Feed der Website aufzunehmen.",
     "SettingsText": "Bearbeite die Felder deines Profils und passe deine Einstellungen an.",
     "SavedArticlesText": "Artikel, die aus dem Hauptfeed gespeichert wurden.",
+    "ArticleTitle": "Titel",
     "NewArticleSection": {
       "SubmitArticle": "Neuen Artikel vorschlagen",
       "URL": "Artikel-URL",

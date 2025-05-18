@@ -72,7 +72,7 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
               alt={article.title}
               width={300}
               height={160}
-              className={"rounded-3xl object-contain lg:w-full w-64"}
+              className={"rounded-3xl object-contain lg:w-72 w-64"}
             />
 
           </div>
@@ -91,8 +91,8 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
         </div>
       </Link>
       <div className="flex flex-row mb-4 ">
-        <LikeButton />
-        <CopyUrlButton url={article.url}/>
+        <LikeButton articleId={article.id} />
+        <CopyUrlButton url={article.url} />
       </div>
     </motion.div>
   );
