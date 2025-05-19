@@ -118,7 +118,9 @@
     "Verified": "E-Mail verifiziert.",
     "Error verifying": "Fehler beim Verifizieren der E-Mail.",
     "Email successfully verified": "E-Mail erfolgreich verifiziert, melde dich an, um fortzufahren.",
-    "Error during verification": "Fehler bei der Verifizierung der E-Mail."
+    "Error during verification": "Fehler bei der Verifizierung der E-Mail.",
+    "dontHaveAnAccount": "Sie haben kein Konto?",
+    "signUp": "Registrieren"
   },
   "LogIn": {
     "Log": "An",

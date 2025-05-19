@@ -118,7 +118,9 @@
     "Verified": "Email verified.",
     "Error verifying": "Error verifying email.",
     "Email successfully verified": "Email successfully verified, log in to continue.",
-    "Error during verification": "Error during email verification."
+    "Error during verification": "Error during email verification.",
+    "dontHaveAnAccount": "Don't have an account?",
+    "signUp": "Sign up"
   },
   "LogIn": {
     "Log": "Log",

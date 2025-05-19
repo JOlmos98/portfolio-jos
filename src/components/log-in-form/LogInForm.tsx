@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
 import { useTranslations } from "next-intl";
 import { logInSchema } from "@/zod/logInSchema";
+import { Link } from "@/i18n/navigation";
 
 export const LogInForm = () => {
 
@@ -84,7 +85,6 @@ export const LogInForm = () => {
           />
           {errors.password && <p className="text-red-500 text-sm ml-1 mt-1">{t("Error password")}</p>}
         </div>
-
         <button
           type="submit"
           className="bg-cyan-600 hover:bg-blue-cyan transition text-white font-bold py-2 px-4 rounded-2xl w-full"
@@ -93,6 +93,8 @@ export const LogInForm = () => {
           {isLoading ? "Loading..." : t("Login")}
         </button>
       </form>
+              <p className="text-xs mt-4">{t("Don't have an account?")}{" "}<Link href="/sign-up" className="text-blue-cyan dark:text-blue-cyan hover:text-cyan-300 dark:hover:text-cyan-300">{t("Sign up")}</Link></p>
+
     </div>
   );
 };
