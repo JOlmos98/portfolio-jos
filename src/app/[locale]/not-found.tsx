@@ -1,16 +1,16 @@
 "use server";
 
-import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+// import { Metadata } from "next";
+// import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: '404 - Página no encontrada',
-  description: 'Lo sentimos, la página que buscas no existe.',
-};
+// export async const metadata: Metadata = {
+//   title: '404 - Página no encontrada',
+//   description: 'Lo sentimos, la página que buscas no existe.',
+// };
 
-export default async function MoreAboutMePage() {
+export default async function NotFoundPage() {
 
-  const t = await getTranslations("Navbar");
+//   const t = await getTranslations("Navbar");
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 font-[family-name:var(--font-geist-sans)]">
