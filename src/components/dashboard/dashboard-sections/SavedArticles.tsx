@@ -40,7 +40,7 @@ export const SavedArticles = () => {
         {t("SavedArticlesText")}
       </p>
 
-      <Table className="bg-neutral-400 dark:bg-neutral-800 rounded-lg">
+      <Table className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-2 w-max-2xl lg:w-[1200px]">
         <TableHeader>
           <TableColumn className="p-2">{t("ArticleTitle")}</TableColumn>
           <TableColumn className="p-2">Link</TableColumn>
@@ -49,7 +49,7 @@ export const SavedArticles = () => {
         </TableHeader>
         <TableBody>
           {articles.map((article, i) => (
-            <TableRow key={article.id} className={i % 2 === 0 ? "bg-neutral-500 dark:bg-neutral-900" : "bg-neutral-400 dark:bg-neutral-800"}>
+            <TableRow key={article.id} className={i % 2 === 0 ? "bg-neutral-100 dark:bg-neutral-900 m-2" : "bg-neutral-200 dark:bg-neutral-800"}>
               <TableCell className="p-2">{article.title}</TableCell>
               <TableCell className="p-2 text-center">
                 <Link href={article.url} target="_blank" className="text-blue-cyan underline">
