@@ -8,10 +8,10 @@ export default async function NotFoundPage() {
   const t = await getTranslations("HomePage");
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 gap-12 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 gap-6 lg:gap-12 font-[family-name:var(--font-geist-sans)]">
 
       {/* Imagen a la izquierda */}
-      <div className="w-full md:w-1/4 flex justify-center">
+      <div className="w-2/4 lg:w-1/4 flex justify-center">
         <Image
           className="object-contain rounded-2xl max-w-full h-auto"
           src="https://i.imgur.com/mS3Y1VQ.png"
@@ -24,7 +24,7 @@ export default async function NotFoundPage() {
 
       {/* Texto centrado */}
       <div className="w-full md:w-1/4 flex flex-col items-center text-center">
-        <h1 className="text-3xl lg:text-9xl font-bold text-blue-cyan mb-10">404</h1>
+        <h1 className="text-3xl lg:text-9xl font-bold text-blue-cyan mb-2 lg:mb-10">404</h1>
         <p className="text-2xl">
           {t("404")}
         </p>
