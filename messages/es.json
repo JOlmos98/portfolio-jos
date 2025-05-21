@@ -2,6 +2,7 @@
   "HomePage": {
     "intro": "Hola, soy Jesús Olmos, desarrollador especializado en Next.js, apasionado por la tecnología, la lógica y la resolución de problemas. Mi enfoque va más allá de escribir código: me fascina construir soluciones eficientes, escalables y bien estructuradas, donde cada línea tenga un propósito claro. Mi viaje en el desarrollo no se limita a JavaScript y TypeScript; Rust es otra de mis grandes pasiones, un lenguaje que me ha enseñado el valor del rendimiento, la seguridad y la gestión eficiente de recursos. Disfruto explorando nuevas tecnologías, optimizando sistemas y enfrentándome a desafíos que requieren pensamiento lógico y estructurado. Aquí encontrarás algunos de mis proyectos, donde combino arquitecturas modernas, rendimiento y buenas prácticas, siempre buscando crear experiencias sólidas y eficientes.",
     "experienceTitle": "Experiencia",
+    "404": "Parece que la página que buscas no existe.",
     "experience1": {
       "dates": "2024 - Presente",
       "title": "Desarrollador backend junior · CTICONTROL",

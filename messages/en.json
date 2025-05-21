@@ -2,6 +2,7 @@
   "HomePage": {
     "intro": "Hi, I'm Jesús Olmos, a developer specialized in Next.js, passionate about technology, logic, and problem-solving. My focus goes beyond just writing code: I'm fascinated by building efficient, scalable, and well-structured solutions, where every line has a clear purpose. My development journey is not limited to JavaScript and TypeScript; Rust is another one of my great passions, a language that has taught me the value of performance, safety, and efficient resource management. I enjoy exploring new technologies, optimizing systems, and facing challenges that require logical and structured thinking. Here you'll find some of my projects, where I combine modern architectures, performance, and best practices, always aiming to create solid and efficient experiences.",
     "experienceTitle": "Experience",
+    "404": "It seems that the page you're looking for doesn't exist.",
     "experience1": {
       "dates": "2024 - Present",
       "title": "Junior Backend Developer · CTICONTROL",
