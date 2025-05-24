@@ -5,7 +5,9 @@ import { articles } from '@/db/drizzle/schema';
 import { ArticleDTO } from '@/types/dto';
 
 export async function getAllArticles(): Promise<ArticleDTO[]> {
+  
   try {
+
     const dbArticles = await db.select({
       id: articles.id,
       userId: articles.userId,
@@ -27,6 +29,7 @@ export async function getAllArticles(): Promise<ArticleDTO[]> {
     }));
 
     return formatted;
+
   } catch (error) {
     console.error('Error fetching articles:', error);
     return [];
