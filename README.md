@@ -3,7 +3,7 @@
 
 A professional and fully functional portfolio built with Next.js 15, TypeScript, Tailwind CSS, and Supabase. Includes authentication, email verification, admin panel, multi-language support, and automated testing.
 
-![Demo](https://imgur.com/omXb83c)
+![Demo](https://i.imgur.com/omXb83c.png)
 
 The Vercel link is [here](https://portfolio-jos-git-main-jesus-projects-8116cd3a.vercel.app).
 
