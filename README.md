@@ -16,6 +16,14 @@ yarn install
 # or npm install
 ```
 
+Then, create your own .env file and add the following variables:
+
+```bash
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_BACKEND_URL="http://localhost:3000"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
 Then, run the development server:
 
 ```bash
