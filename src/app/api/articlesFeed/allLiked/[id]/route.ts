@@ -1,14 +1,14 @@
 import { db } from "@/db/drizzle";
 import { articles, userSavedArticles } from "@/db/drizzle/schema";
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: NextRequest,{ params }: { params: Promise<{ id: string }> }) {
+export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
 
   const { id } = await params;
   const userId = Number(id);
 
-  if (isNaN(userId)) {return NextResponse.json({ error: "Invalid user ID" }, { status: 400 });}
+  if (isNaN(userId)) { return NextResponse.json({ error: "Invalid user ID" }, { status: 400 }); }
 
   try {
     const savedArticles = await db
@@ -19,11 +19,13 @@ export async function GET(req: NextRequest,{ params }: { params: Promise<{ id: s
         title: articles.title,
         imageUrl: articles.imageUrl,
         description: articles.description,
-        createdAt: articles.createdAt,
+        articleCreatedAt: articles.createdAt,
+        savedAt: userSavedArticles.createdAt,
       })
       .from(userSavedArticles)
       .innerJoin(articles, eq(userSavedArticles.articleId, articles.id))
-      .where(eq(userSavedArticles.userId, userId));
+      .where(eq(userSavedArticles.userId, userId))
+      .orderBy(desc(userSavedArticles.createdAt));
 
     return NextResponse.json(savedArticles);
   } catch (err) {

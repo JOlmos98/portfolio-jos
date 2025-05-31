@@ -174,6 +174,7 @@
     "SettingsText": "Edit your profile fields and adjust your preferences.",
     "SavedArticlesText": "Articles saved from the main feed.",
     "ArticleTitle": "Title",
+    "SavedDate": "Date",
     "NewArticleSection": {
       "SubmitArticle": "Submit a New Article",
       "URL": "Article URL",
