@@ -170,7 +170,7 @@
     "SavedArticleTextHome": "Aquí puedes ver una lista de los artículos que has guardado del feed.",
     "NewArticleTextHome": "Envía propuestas para sugerir nuevos artículos que deberían aparecer en el feed.",
     "SettingsTextHome": "Gestiona aquí tu información de perfil, preferencias y configuración de cuenta.",
-    "NewArticleText": "Propón un nuevo artículo para incluir en el feed de artículos de la web.",
+    "NewArticleText": "Propón un artículo para incluir en el feed de artículos principal de la web.",
     "SettingsText": "Modifica los datos de tu perfil y ajusta tus preferencias.",
     "SavedArticlesText": "Artículos guardados del feed principal.",
     "ArticleTitle": "Título",
@@ -182,15 +182,13 @@
     "Save": "Guardar",
     "Updated": "Configuración actualizada correctamente.",
     "ErrorUpdating": "Error al actualizar la configuración.",
-    "NewArticleSection": {
-      "SubmitArticle": "Proponer un nuevo artículo",
-      "URL": "URL del artículo",
-      "Title": "Título del artículo",
-      "Description": "Descripción (opcional)",
-      "Submit": "Enviar",
-      "ArticleSubmitted": "¡Tu propuesta ha sido enviada!",
-      "ErrorSubmitting": "Hubo un error al enviar tu propuesta."
-    }
+    "SubmitArticle": "Proponer un nuevo artículo",
+    "URL": "URL del artículo",
+    "Title": "Título del artículo",
+    "Description": "Descripción (opcional)",
+    "Submit": "Enviar",
+    "ArticleSubmitted": "¡Tu propuesta ha sido enviada!",
+    "ErrorSubmitting": "Hubo un error al enviar tu propuesta."
   },
   "Metadata": {
     "title": "Portfolio de Jesús Olmos",

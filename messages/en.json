@@ -182,15 +182,13 @@
     "Save": "Save",
     "Updated": "Settings updated successfully.",
     "ErrorUpdating": "Error updating settings.",
-    "NewArticleSection": {
-      "SubmitArticle": "Submit a New Article",
-      "URL": "Article URL",
-      "Title": "Article Title",
-      "Description": "Description (optional)",
-      "Submit": "Submit",
-      "ArticleSubmitted": "Your article request has been submitted!",
-      "ErrorSubmitting": "There was an error submitting your article."
-    }
+    "SubmitArticle": "Submit a New Article",
+    "URL": "Article URL",
+    "Title": "Article Title",
+    "Description": "Description (optional)",
+    "Submit": "Submit",
+    "ArticleSubmitted": "Your article request has been submitted!",
+    "ErrorSubmitting": "There was an error submitting your article."
   },
   "Metadata": {
     "title": "Jesús Olmos' Portfolio",

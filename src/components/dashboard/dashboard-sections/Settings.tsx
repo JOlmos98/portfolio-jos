@@ -17,7 +17,6 @@ export const Settings = () => {
     register,
     handleSubmit,
     formState: { errors },
-    setValue,
     reset,
   } = useForm<z.infer<typeof updateSettingsSchema>>({
     resolver: zodResolver(updateSettingsSchema),
@@ -58,6 +57,7 @@ export const Settings = () => {
 
       toast.success(t("Updated"));
     } catch (error) {
+      console.warn("Error updating settings:", error);
       toast.error(t("ErrorUpdating"));
     }
   };
