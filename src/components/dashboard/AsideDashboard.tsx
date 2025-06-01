@@ -12,8 +12,10 @@ export const AsideDashboard = () => {
   const { data: session } = useSession();
   const t = useTranslations("Dashboard");
   const pathname = usePathname();
-  //   const admin = session !== null ? (session.user?.email !== "soler98@hotmail.es" ? false : true) : false;
+  // const admin = session !== null ? (session.user?.email !== "soler98@hotmail.es" ? false : true) : false;
   // console.warn("==================== admin = ", admin);
+
+  const email = session!.user!.email!.length > 18 ? session!.user!.email!.substring(0, 18) + "..." : session!.user!.email;
 
   return (
     <aside className="w-30 lg:w-64 bg-gray-200 dark:bg-[#1a1a1a] p-2 lg:p-6 flex flex-col gap-4 shadow-xl h-full lg:h-screen fixed top-0 left-0">
@@ -30,7 +32,7 @@ export const AsideDashboard = () => {
           <div className="text-center lg:text-left">
             <p className="font-bold">{session?.user?.name}</p>
             <p className="text-[10px] lg:text-xs text-zinc-500 dark:text-zinc-400">
-              {session?.user?.email}
+              {email}
             </p>
           </div>
         </div>

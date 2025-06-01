@@ -13,24 +13,30 @@ export const Settings = () => {
   const { data: session, status } = useSession();
   const t = useTranslations("Dashboard");
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<z.infer<typeof updateSettingsSchema>>({
-    resolver: zodResolver(updateSettingsSchema),
-    defaultValues: {
-      userId: undefined,
-      avatarUrl: "",
-      phone: "",
-      bio: "",
-      website: "",
-    },
-  });
+const form = useForm<z.infer<typeof updateSettingsSchema>>({
+  resolver: zodResolver(updateSettingsSchema),
+  defaultValues: {
+    userId: undefined,
+    avatarUrl: "",
+    phone: "",
+    bio: "",
+    website: "",
+  },
+});
 
-  useEffect(() => {
-    if (session?.user?.id) {
+const { register, handleSubmit, formState: { errors }, reset } = form;
+
+useEffect(() => {
+  if (session?.user?.id) {
+    const currentValues = form.getValues();
+
+    const isEmpty =
+      !currentValues.avatarUrl &&
+      !currentValues.phone &&
+      !currentValues.bio &&
+      !currentValues.website;
+
+    if (isEmpty) {
       reset({
         userId: session.user.id,
         avatarUrl: session.user.image ?? "",
@@ -39,7 +45,9 @@ export const Settings = () => {
         website: "",
       });
     }
-  }, [session, reset]);
+  }
+}, [session, reset]);
+
 
   const onSubmit = async (values: z.infer<typeof updateSettingsSchema>) => {
     try {
@@ -62,7 +70,7 @@ export const Settings = () => {
     }
   };
 
-  if (status === "loading") return <p className="ml-32 lg:ml-80 p-4">{t("Loading")}...</p>;
+  if (status === "loading") return <p className="ml-36 lg:ml-80 p-4">{t("Loading")}...</p>;
 
   return (
     <main className="flex-1 p-2 pt-28 ml-32 lg:ml-80 pr-2">
