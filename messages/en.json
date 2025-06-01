@@ -175,6 +175,13 @@
     "SavedArticlesText": "Articles saved from the main feed.",
     "ArticleTitle": "Title",
     "SavedDate": "Date",
+    "NewImageUrl": "New profile image URL",
+    "Phone": "Phone number",
+    "Bio": "Bio",
+    "Website": "Website",
+    "Save": "Save",
+    "Updated": "Settings updated successfully.",
+    "ErrorUpdating": "Error updating settings.",
     "NewArticleSection": {
       "SubmitArticle": "Submit a New Article",
       "URL": "Article URL",

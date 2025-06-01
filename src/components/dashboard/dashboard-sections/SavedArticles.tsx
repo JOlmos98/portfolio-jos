@@ -31,8 +31,6 @@ export const SavedArticles = () => {
     fetchSavedArticles();
   }, [session]);
 
-
-
   return (
     <main className="flex-1 p-2 pt-28 ml-32 lg:ml-80">
       <div className="max-w-[1200px] mx-auto">

@@ -7,11 +7,11 @@ import { Link, usePathname } from "@/i18n/navigation";
 import toast from "react-hot-toast";
 
 export const Articles = () => {
+
   const [articles, setArticles] = useState<(ArticleDTO & { currentTags?: TagDTO[] })[]>([]);
   const [tags, setTags] = useState<TagDTO[]>([]);
   const [selectedTags, setSelectedTags] = useState<Record<number, number[]>>({});
   const [imageUrls, setImageUrls] = useState<Record<number, string>>({});
-
 
   const t = useTranslations("Dashboard");
   const pathname = usePathname();
@@ -26,7 +26,7 @@ export const Articles = () => {
         data.map(async (article: ArticleDTO) => {
           const tagRes = await fetch(`/api/admin/articleTags/${article.id}`);
           const tagData = await tagRes.json();
-          return { ...article, currentTags: tagData }; // ← añadimos la propiedad currentTags
+          return { ...article, currentTags: tagData };
         })
       );
 
@@ -93,16 +93,14 @@ export const Articles = () => {
     }
   };
 
-
   return (
     <main className="flex-1 p-2 pt-28 ml-32 lg:ml-80">
       <h1 className="text-4xl font-bold mb-4">{t("Admin")}</h1>
       {/* <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-6">Requests: Solicitudes de artículos. - Users: Usuarios registrados - Articles: Artículos aceptados.</p> */}
 
-      <Link className={pathname.includes("requests") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/requests"}>Solicitudes de artículos</Link>
-      <Link className={pathname.includes("users") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/users"}>Usuarios registrados</Link>
-      <Link className={pathname.includes("articles") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2' : 'text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/articles"}>Artículos aceptados</Link>
-
+      <Link className={pathname.includes("requests") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-200  dark:bg-neutral-600 p-2 m-2' : 'text-black dark:text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-200 dark:bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/requests"}>Solicitudes de artículos</Link>
+      <Link className={pathname.includes("users") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-200  dark:bg-neutral-600 p-2 m-2' : 'text-black dark:text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-200  dark:bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/users"}>Usuarios registrados</Link>
+      <Link className={pathname.includes("articles") ? 'text-blue-cyan text-xl hover:text-blue-cyan rounded-md bg-neutral-200  dark:bg-neutral-600 p-2 m-2' : 'text-black dark:text-white text-xl hover:text-blue-cyan rounded-md bg-neutral-200  dark:bg-neutral-600 p-2 m-2'} href={"/dashboard/admin/articles"}>Artículos aceptados</Link>
       <h2 className="text-3xl font-bold mb-4 mt-6">Artículos aceptados</h2>
 
       <table className="w-full text-left border bg-neutral-100 dark:bg-neutral-900 text-black dark:text-neutral-200 p-2">

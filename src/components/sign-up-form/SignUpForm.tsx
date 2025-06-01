@@ -37,7 +37,6 @@ export const SignUpForm = () => {
 
   const [prefix, setPrefix] = useState(prefixes[0]);
 
-  //! Revisar
   const { register, handleSubmit, formState: { errors }, reset } = form;
 
   const onSubmit = async (values: z.infer<typeof signUpSchema>) => {

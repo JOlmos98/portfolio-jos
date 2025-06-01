@@ -175,6 +175,13 @@
     "SavedArticlesText": "Artikel, die aus dem Hauptfeed gespeichert wurden.",
     "ArticleTitle": "Titel",
     "SavedDate": "Datum",
+    "NewImageUrl": "URL des neuen Profilbildes",
+    "Phone": "Telefonnummer",
+    "Bio": "Biografie",
+    "Website": "Website",
+    "Save": "Speichern",
+    "Updated": "Einstellungen erfolgreich aktualisiert.",
+    "ErrorUpdating": "Fehler beim Aktualisieren der Einstellungen.",
     "NewArticleSection": {
       "SubmitArticle": "Neuen Artikel vorschlagen",
       "URL": "Artikel-URL",
