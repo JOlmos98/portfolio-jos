@@ -18,6 +18,7 @@ export type ArticleDTO = {
   imageUrl?: string | null;
   description?: string | null;
   createdAt?: string | null;
+  savedAt?: string | null; // Para la tabla del dashboard
 };
 
 export type ArticleRequestDTO = {

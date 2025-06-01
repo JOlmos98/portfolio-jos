@@ -174,15 +174,21 @@
     "SettingsText": "Bearbeite die Felder deines Profils und passe deine Einstellungen an.",
     "SavedArticlesText": "Artikel, die aus dem Hauptfeed gespeichert wurden.",
     "ArticleTitle": "Titel",
-    "NewArticleSection": {
-      "SubmitArticle": "Neuen Artikel vorschlagen",
-      "URL": "Artikel-URL",
-      "Title": "Artikeltitel",
-      "Description": "Beschreibung (optional)",
-      "Submit": "Absenden",
-      "ArticleSubmitted": "Dein Artikelvorschlag wurde eingereicht!",
-      "ErrorSubmitting": "Beim Absenden des Vorschlags ist ein Fehler aufgetreten."
-    }
+    "SavedDate": "Datum",
+    "NewImageUrl": "URL des neuen Profilbildes",
+    "Phone": "Telefonnummer",
+    "Bio": "Biografie",
+    "Website": "Website",
+    "Save": "Speichern",
+    "Updated": "Einstellungen erfolgreich aktualisiert.",
+    "ErrorUpdating": "Fehler beim Aktualisieren der Einstellungen.",
+    "SubmitArticle": "Neuen Artikel vorschlagen",
+    "URL": "Artikel-URL",
+    "Title": "Artikeltitel",
+    "Description": "Beschreibung (optional)",
+    "Submit": "Absenden",
+    "ArticleSubmitted": "Dein Artikelvorschlag wurde eingereicht!",
+    "ErrorSubmitting": "Beim Absenden des Vorschlags ist ein Fehler aufgetreten."
   },
   "Metadata": {
     "title": "Portfolio von Jesús Olmos",

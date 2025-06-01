@@ -174,15 +174,21 @@
     "SettingsText": "Edit your profile fields and adjust your preferences.",
     "SavedArticlesText": "Articles saved from the main feed.",
     "ArticleTitle": "Title",
-    "NewArticleSection": {
-      "SubmitArticle": "Submit a New Article",
-      "URL": "Article URL",
-      "Title": "Article Title",
-      "Description": "Description (optional)",
-      "Submit": "Submit",
-      "ArticleSubmitted": "Your article request has been submitted!",
-      "ErrorSubmitting": "There was an error submitting your article."
-    }
+    "SavedDate": "Date",
+    "NewImageUrl": "New profile image URL",
+    "Phone": "Phone number",
+    "Bio": "Bio",
+    "Website": "Website",
+    "Save": "Save",
+    "Updated": "Settings updated successfully.",
+    "ErrorUpdating": "Error updating settings.",
+    "SubmitArticle": "Submit a New Article",
+    "URL": "Article URL",
+    "Title": "Article Title",
+    "Description": "Description (optional)",
+    "Submit": "Submit",
+    "ArticleSubmitted": "Your article request has been submitted!",
+    "ErrorSubmitting": "There was an error submitting your article."
   },
   "Metadata": {
     "title": "Jesús Olmos' Portfolio",
