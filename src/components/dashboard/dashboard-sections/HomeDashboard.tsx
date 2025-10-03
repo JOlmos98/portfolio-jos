@@ -14,11 +14,11 @@ export const HomeDashboard = () => {
                 <h1 className="text-4xl font-bold mb-4">{t("WelcomeDashboard")}</h1>
                 <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-10">{t("IntroText")}</p>
 
-                <h2 className="text-2xl font-bold mb-2"><Link href={"/dashboard/savedArticles"}>· {t("SavedArticles")}</Link></h2>
+                <h2 className="text-2xl font-bold mb-2"><Link className='hover:text-zinc-900 dark:hover:text-zinc-100 transition' href={"/dashboard/savedArticles"}>· {t("SavedArticles")}</Link></h2>
                 <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-10">{t("SavedArticleTextHome")}</p>
-                <h2 className="text-2xl font-bold mb-2"><Link href={"/dashboard/newArticle"}>· {t("NewArticle")}</Link></h2>
+                <h2 className="text-2xl font-bold mb-2"><Link className='hover:text-zinc-900 dark:hover:text-zinc-100 transition' href={"/dashboard/newArticle"}>· {t("NewArticle")}</Link></h2>
                 <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-10">{t("NewArticleTextHome")}</p>
-                <h2 className="text-2xl font-bold mb-2"><Link href={"/dashboard/settings"}>· {t("Settings")}</Link></h2>
+                <h2 className="text-2xl font-bold mb-2"><Link className='hover:text-zinc-900 dark:hover:text-zinc-100 transition' href={"/dashboard/settings"}>· {t("Settings")}</Link></h2>
                 <p className="text-zinc-700 dark:text-zinc-300 text-xl mb-10">{t("SettingsTextHome")}</p>
             </main>
         </div>
