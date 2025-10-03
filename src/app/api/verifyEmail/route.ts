@@ -13,7 +13,7 @@ export async function GET(req: Request) {
   if (!token) return NextResponse.redirect(`${process.env.NEXT_PUBLIC_APP_URL}/${locale}/verifiedError`);
 
   try {
-    const decoded = jwt.verify(token, process.env.SUPABASE_JWT_SECRET!) as { email: string };
+    const decoded = jwt.verify(token, process.env.JWT_SECRET!) as { email: string };
     const email = decoded.email;
 
     await db.update(users)

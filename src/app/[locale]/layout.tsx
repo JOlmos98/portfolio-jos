@@ -7,7 +7,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { NextIntlClientProvider } from "next-intl";
-import { ScrollToTopButton } from '../../components/scroll-to-top-´button/ScrollToTopButton';
+import { ScrollToTopButton } from '../../components/scroll-to-top-button/ScrollToTopButton';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -97,8 +97,6 @@ export default async function RootLayout({
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (

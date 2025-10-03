@@ -41,12 +41,35 @@ export async function POST(req: Request) {
       website: website || null,
     });
 
-    await db.execute(sql`select delete_unverified_users();`);
+    // await db.execute(sql`select delete_unverified_users();`);
+    await db.execute(sql`
+      DELETE FROM users
+      WHERE is_verified = false
+      AND created_at < now() - INTERVAL '1 day';
+    `);
+
+    await db.execute(sql`
+      INSERT INTO public.tags (name)
+      SELECT v.name
+      FROM (VALUES
+    ('Rust'),('Linux'),('Java'),('TypeScript'),('JavaScript'),
+    ('Backend'),('Frontend'),('Fullstack'),('Node'),('Deno'),
+    ('Next.js'),('React'),('Vue'),('Angular'),('Svelte'),
+    ('PostgreSQL'),('MySQL'),('SQLite'),('Prisma'),('Drizzle'),
+    ('Supabase'),('Neon'),('Docker'),('Kubernetes'),('AWS'),
+    ('Fresh'),('Azure'),('DevOps'),('CI/CD'),('Testing'),
+    ('Jest'),('Playwright'),('Cypress'),('GraphQL'),('REST'),
+    ('C#'),('Redis'),('Kafka'),('MarkDown'),('TailwindCSS'),
+    ('CSS'),('HTML'),('Accessibility'),('Security'),('Authentication'),
+    ('Authorization'),('GitHub'),('JWT'),('Git'),('Microservices')
+      ) AS v(name)
+      WHERE NOT EXISTS (SELECT 1 FROM public.tags);
+    `);
 
     //* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ VERIFICACIÓN DE EMAIL ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 
     const verificationToken = jwt.sign(
       { email },                            // Payload, contenido del jwt
-      process.env.SUPABASE_JWT_SECRET!,
+      process.env.JWT_SECRET!,
       { expiresIn: "1d" }                   // Expira en un día
     );
 
