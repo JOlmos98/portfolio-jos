@@ -46,7 +46,7 @@ useEffect(() => {
       });
     }
   }
-}, [session, reset]);
+}, [session, reset, form]);
 
 
   const onSubmit = async (values: z.infer<typeof updateSettingsSchema>) => {
