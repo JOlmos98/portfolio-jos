@@ -15,3 +15,4 @@ transformar el contenido, incluso con fines comerciales, siempre que se reconozc
 adecuadamente la autoría y se mantenga esta misma licencia en cualquier obra derivada. 
 
 Referencia: https://creativecommons.org/licenses/by-sa/4.0/deed.es
+
