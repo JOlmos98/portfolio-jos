@@ -1,18 +1,15 @@
 "use client";
 
-import React from 'react'
-import { IoDownloadOutline, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import { FaGoodreads, FaSquareXTwitter } from 'react-icons/fa6';
+import { IoDownloadOutline } from 'react-icons/io5';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import { NewsletterCard } from '../newsletter-card/NewsletterCard';
+import { BsSubstack, BsLinkedin, BsGithub, BsTwitterX } from "react-icons/bs";
+import { SiGoodreads } from "react-icons/si";
 
 export const Footer = () => {
 
     const t = useTranslations('Footer');
-
-    // const stringToast: string = t("Email sent successfully");
-    // const emailSent = () => { toast.success(stringToast); }
 
     return (
         <footer className="bg-gray-200 dark:bg-zinc-900 py-2 relative z-40">
@@ -37,26 +34,32 @@ export const Footer = () => {
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className='mb-3'>
                                 <Link href="https://github.com/JOlmos98" className="flex items-center hover:text-gray-900 dark:hover:text-gray-100 hover:scale-105 transform origin-left">
-                                    <IoLogoGithub className='mr-2 text-xl' />
+                                    <BsGithub className='mr-2 text-xl' />
                                     <span>Github</span>
                                 </Link>
                             </li>
                             <li className='mb-3'>
                                 <Link href="https://www.linkedin.com/in/jes%C3%BAs-olmos-soler-62549018b/" className="flex items-center hover:text-blue-500 hover:scale-105 transform origin-left">
-                                    <IoLogoLinkedin className='mr-2 text-xl' />
+                                    <BsLinkedin className='mr-2 text-xl' />
                                     <span>LinkedIn</span>
                                 </Link>
                             </li>
                             <li className='mb-3'>
                                 <Link href="https://x.com/yeezusc_" className="flex items-center hover:text-cyan-400 hover:scale-105 transform origin-left">
-                                    <FaSquareXTwitter className='mr-2 text-xl' />
+                                    <BsTwitterX  className='mr-2 text-xl' />
                                     <span>Twitter</span>
                                 </Link>
                             </li>
                             <li className='mb-3'>
                                 <Link href="https://www.goodreads.com/user/show/84061216-jes-s-olmos-soler" className="flex items-center hover:text-yellow-400 hover:scale-105 transform origin-left">
-                                    <FaGoodreads className='mr-2 text-xl' />
+                                    <SiGoodreads className='mr-2 text-xl' />
                                     <span>Goodreads</span>
+                                </Link>
+                            </li>
+                            <li className='mb-3'>
+                                <Link href="https://substack.com/@jesusolmos?" className="flex items-center hover:text-orange-500 hover:scale-105 transform origin-left">
+                                    <BsSubstack className='mr-2 text-xl' />
+                                    <span>Substack</span>
                                 </Link>
                             </li>
                         </ul>

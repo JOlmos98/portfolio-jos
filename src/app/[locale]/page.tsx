@@ -21,16 +21,6 @@ export default async function HomePage() {
         <div>
           <h1 className="text-4xl bg-transparent mt-44 mb-8 font-bold">{t("experienceTitle")}</h1>
 
-          <ExperienceItem
-            dates={t("experience1.dates")}
-            title={t("experience1.title")}
-            description={t("experience1.description")}
-            originDirection="left"
-            tech1="Next.js"
-            tech2="TypeScript"
-            tech3="Tailwind CSS"
-            link="https://www.cticontrol.com/en/"
-          />
 
           <ExperienceItem
             dates={t("experience2.dates")}
@@ -40,9 +30,23 @@ export default async function HomePage() {
             tech1="Unity"
             tech2="C#"
             tech3="Blender"
+            tech4="Phaser"
+            tech5="Aseprite"
           />
 
           <ExperienceItem
+            dates={t("experience1.dates")}
+            title={t("experience1.title")}
+            description={t("experience1.description")}
+            originDirection="left"
+            tech1="Next.js"
+            tech2="TypeScript"
+            tech3="Tailwind CSS"
+            tech4="NestJS"
+            link="https://www.cticontrol.com/en/"
+          />
+
+          {/* <ExperienceItem
             dates={t("experience3.dates")}
             title={t("experience3.title")}
             description={t("experience3.description")}
@@ -50,7 +54,7 @@ export default async function HomePage() {
             tech1="Spring Boot"
             tech2="Java"
             link="https://es.nttdata.com/"
-          />
+          /> */}
         </div>
 
         <h1 className="text-4xl bg-transparent mt-44 mb-8 font-bold">{t("projectsTitle")}</h1>
@@ -62,7 +66,8 @@ export default async function HomePage() {
           tech1="Nextj.js"
           tech2="TypeScript"
           tech3="Tailwind CSS"
-          tech4="Supabase"
+          tech4="Drizzle"
+          tech5="Supabase"
           imgUrl="https://i.imgur.com/omXb83c.png"
           link="https://github.com/JOlmos98/portfolio-jos"
         />
@@ -93,9 +98,9 @@ export default async function HomePage() {
 
         <p className="w-full text-xl mt-5 mb-8 text-center px-4 sm:px-8">
           {t("toMoreAboutMe")}{" "}
-          <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">
-            {t("linkMoreAboutMe")}
-          </Link>
+          <Link href="/projects" className="text-blue-cyan hover:text-cyan-300">
+            {t("linkProjects")}
+          </Link>.
         </p>
       </div>
     </div>

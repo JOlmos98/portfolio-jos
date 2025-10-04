@@ -1,16 +1,16 @@
 {
   "HomePage": {
-    "intro": "Hola, soy Jesús Olmos, desarrollador especializado en Next.js, apasionado por la tecnología, la lógica y la resolución de problemas. Mi enfoque va más allá de escribir código: me fascina construir soluciones eficientes, escalables y bien estructuradas, donde cada línea tenga un propósito claro. Mi viaje en el desarrollo no se limita a JavaScript y TypeScript; Rust es otra de mis grandes pasiones, un lenguaje que me ha enseñado el valor del rendimiento, la seguridad y la gestión eficiente de recursos. Disfruto explorando nuevas tecnologías, optimizando sistemas y enfrentándome a desafíos que requieren pensamiento lógico y estructurado. Aquí encontrarás algunos de mis proyectos, donde combino arquitecturas modernas, rendimiento y buenas prácticas, siempre buscando crear experiencias sólidas y eficientes.",
+    "intro": "Hola, soy Jesús Olmos, desarrollador especializado en Next.js, apasionado por la tecnología, la lógica y la resolución de problemas. Mi enfoque va más allá de escribir código: me fascina construir soluciones eficientes, escalables y bien estructuradas, donde cada línea tenga un propósito claro. Disfruto explorando nuevas tecnologías, optimizando sistemas y enfrentándome a desafíos que requieren pensamiento lógico y estructurado. Aquí encontrarás algunos de mis proyectos, donde combino arquitecturas modernas, rendimiento y buenas prácticas, siempre buscando crear experiencias sólidas y eficientes. Sí quieres saber más, te invito a visitar la sección ",
     "experienceTitle": "Experiencia",
     "404": "Parece que la página que buscas no existe.",
     "experience1": {
       "dates": "2024 - Presente",
-      "title": "Desarrollador backend junior · CTICONTROL",
-      "description": "Desarrollo de software agrícola y ganadero para control de clima basado en modelos antiguos de la propia empresa construidos sobre microcontroladores en C."
+      "title": "Ingeniero de software · CTICONTROL",
+      "description": "Desarrollo de software agrícola y ganadero para control de clima. Lógica y frontend con Next.js y comunicaciones entre dispositivos y servidor (TCP) con NestJS."
     },
     "experience2": {
       "dates": "2024 - Presente",
-      "title": "Desarrollador de videojuegos indie · Wolf King Studios",
+      "title": "Desarrollador de videojuegos indie",
       "description": "Desarrollo de videojuegos indie de corta duración con Unity."
     },
     "experience3": {
@@ -34,14 +34,15 @@
     },
     "project2": {
       "title": "SGBD Galería de Arte",
-      "description": "Sistema gestor de base de datos para una galería de arte. Backend en Rust (Tauri) y frontend con Next.js usando shadcn."
+      "description": "Sistema gestor de base de datos para una galería de arte. Aplicación de escritorio ligera con Tauri. Backend en Rust y frontend con Next.js usando shadcn."
     },
     "project3": {
       "title": "Calculadora",
       "description": "Calculadora funcional básica desarrollada en Android Studio. Proyecto realizado como tarea de una de las asignaturas del Grado Superior en DAM."
     },
-    "toMoreAboutMe": "Para ver todos los proyectos y certificaciones, ",
-    "linkMoreAboutMe": "más sobre mí."
+    "toMoreAboutMe": "Para ver todos los proyectos visita la sección ",
+    "linkProjects": "proyectos",
+    "linkMoreAboutMe": "más sobre mí"
   },
   "Navbar": {
     "moreAboutMe": "Más sobre mí",
@@ -58,7 +59,7 @@
     "Error already subscribed": "Error, ya estás suscrito a la newsletter.",
     "Subscribe to my ": "Suscríbete a mi ",
     "newsletter": "newsletter",
-    "Leave me your email if": "Déjame tu correo electrónico si quieres recibir mi newsletter semanal en la que hablo sobre el mundo del desarrollo y te muestro mis artículos favoritos de la semana:",
+    "Leave me your email if": "Déjame tu correo electrónico si quieres recibir mi newsletter semanal en la que hablo de temas que van desde estoicismo, desarrollo de software, o mis últimas lecturas y aprendizajes, también menciono los mejores artículos que he leído esa semana:",
     "Your email": "Tu email",
     "Subscribe": "Suscribirse",
     "ABOUT THIS WEBSITE": "SOBRE ESTA WEB",
