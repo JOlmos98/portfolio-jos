@@ -1,17 +1,17 @@
 {
   "HomePage": {
-    "intro": "Hi, I'm Jesús Olmos, a developer specialized in Next.js, passionate about technology, logic, and problem-solving. My focus goes beyond just writing code: I'm fascinated by building efficient, scalable, and well-structured solutions, where every line has a clear purpose. My development journey is not limited to JavaScript and TypeScript; Rust is another one of my great passions, a language that has taught me the value of performance, safety, and efficient resource management. I enjoy exploring new technologies, optimizing systems, and facing challenges that require logical and structured thinking. Here you'll find some of my projects, where I combine modern architectures, performance, and best practices, always aiming to create solid and efficient experiences.",
+    "intro": "Hi, I'm Jesús Olmos, a developer specialized in Next.js, passionate about technology, logic and problem solving. My approach goes beyond writing code: I'm fascinated by building efficient, scalable and well-structured solutions, where every line has a clear purpose. I enjoy exploring new technologies, optimizing systems and tackling challenges that require logical and structured thinking. Here you'll find some of my projects, where I combine modern architectures, performance and best practices, always aiming to create solid and efficient experiences. If you want to know more, I invite you to visit the section ",
     "experienceTitle": "Experience",
-    "404": "It seems that the page you're looking for doesn't exist.",
+    "404": "It seems the page you're looking for does not exist.",
     "experience1": {
       "dates": "2024 - Present",
-      "title": "Junior Backend Developer · CTICONTROL",
-      "description": "Development of agricultural and livestock software for climate control based on the company’s legacy models built on C microcontrollers."
+      "title": "Software Engineer · CTICONTROL",
+      "description": "Development of agricultural and livestock software for climate control. Logic and frontend with Next.js and communications between devices and server (TCP) using NestJS."
     },
     "experience2": {
       "dates": "2024 - Present",
-      "title": "Indie Game Developer · Wolf King Studios",
-      "description": "Development of short indie video games using Unity."
+      "title": "Indie Game Developer",
+      "description": "Development of short-form indie games using Unity."
     },
     "experience3": {
       "dates": "2022 - 2024",
@@ -34,14 +34,15 @@
     },
     "project2": {
       "title": "Art Gallery DBMS",
-      "description": "Database management system for an art gallery. Backend in Rust (Tauri) and frontend with Next.js using shadcn."
+      "description": "Database management system for an art gallery. Lightweight desktop application built with Tauri. Backend in Rust and frontend with Next.js using shadcn."
     },
     "project3": {
       "title": "Calculator",
       "description": "Basic functional calculator developed in Android Studio. Project created as a class assignment for the Higher Degree in DAM."
     },
-    "toMoreAboutMe": "To see all the projects and certifications, ",
-    "linkMoreAboutMe": "more about me."
+    "toMoreAboutMe": "To see all projects visit the ",
+    "linkProjects": "projects",
+    "linkMoreAboutMe": "more about me"
   },
   "Navbar": {
     "moreAboutMe": "More about me",
@@ -58,7 +59,7 @@
     "Error already subscribed": "Error, you are already subscribed to the newsletter.",
     "Subscribe to my ": "Subscribe to my ",
     "newsletter": "newsletter",
-    "Leave me your email if": "Leave me your email if you want to receive my weekly newsletter in which I talk about the world of development and I show you my favorite articles of the week:",
+    "Leave me your email if": "Leave your email if you want to receive my weekly newsletter where I talk about topics ranging from stoicism and software development to my latest readings and learnings; I also highlight the best articles I've read that week:",
     "Your email": "Your email",
     "Subscribe": "Subscribe",
     "ABOUT THIS WEBSITE": "ABOUT THIS WEBSITE",

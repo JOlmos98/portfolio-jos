@@ -1,17 +1,17 @@
 {
   "HomePage": {
-    "intro": "Hallo, ich bin Jesús Olmos, ein auf Next.js spezialisierter Entwickler mit einer Leidenschaft für Technologie, Logik und Problemlösung. Mein Fokus geht über das bloße Schreiben von Code hinaus: Ich liebe es, effiziente, skalierbare und gut strukturierte Lösungen zu entwickeln, bei denen jede Zeile einen klaren Zweck hat. Meine Reise in der Entwicklung beschränkt sich nicht nur auf JavaScript und TypeScript; Rust ist eine weitere große Leidenschaft von mir – eine Sprache, die mir den Wert von Leistung, Sicherheit und effizientem Ressourcenmanagement beigebracht hat. Ich genieße es, neue Technologien zu erforschen, Systeme zu optimieren und Herausforderungen zu meistern, die logisches und strukturiertes Denken erfordern. Hier findest du einige meiner Projekte, in denen ich moderne Architekturen, Performance und Best Practices kombiniere, immer mit dem Ziel, solide und effiziente Erfahrungen zu schaffen.",
-    "experienceTitle": "Berufserfahrung",
-    "404": "Es scheint, als ob die Seite, die du suchst, nicht vorhanden ist.",
+    "intro": "Hallo, ich bin Jesús Olmos, ein Entwickler mit Schwerpunkt auf Next.js, leidenschaftlich an Technologie, Logik und Problemlösung interessiert. Mein Ansatz geht über das reine Schreiben von Code hinaus: Ich bin fasziniert davon, effiziente, skalierbare und gut strukturierte Lösungen zu bauen, bei denen jede Zeile einen klaren Zweck hat. Ich erkunde gerne neue Technologien, optimiere Systeme und stelle mich Herausforderungen, die logisches und strukturiertes Denken erfordern. Hier findest du einige meiner Projekte, in denen ich moderne Architekturen, Leistung und Best Practices kombiniere, stets mit dem Ziel, robuste und effiziente Erlebnisse zu schaffen. Wenn du mehr wissen möchtest, lade ich dich ein, den Bereich ",
+    "experienceTitle": "Erfahrung",
+    "404": "Es scheint, als existiere die von dir gesuchte Seite nicht.",
     "experience1": {
-      "dates": "2024 - Heute",
-      "title": "Junior Backend-Entwickler · CTICONTROL",
-      "description": "Entwicklung von landwirtschaftlicher und tierhaltungsbezogener Software zur Klimasteuerung auf Basis firmeneigener älterer Modelle mit C-Mikrocontrollern."
+      "dates": "2024 - Gegenwart",
+      "title": "Softwareentwickler · CTICONTROL",
+      "description": "Entwicklung von Software für Landwirtschaft und Viehzucht zur Klimakontrolle. Logik und Frontend mit Next.js und Kommunikation zwischen Geräten und Server (TCP) mit NestJS."
     },
     "experience2": {
-      "dates": "2024 - Heute",
-      "title": "Indie-Spielentwickler · Wolf King Studios",
-      "description": "Entwicklung von kurzen Indie-Videospielen mit Unity."
+      "dates": "2024 - Gegenwart",
+      "title": "Indie-Spielentwickler",
+      "description": "Entwicklung kurzer Indie-Spiele mit Unity."
     },
     "experience3": {
       "dates": "2022 - 2024",
@@ -34,14 +34,15 @@
     },
     "project2": {
       "title": "Datenbanksystem für Kunstgalerie",
-      "description": "Datenbankmanagementsystem für eine Kunstgalerie. Backend in Rust (Tauri) und Frontend mit Next.js unter Verwendung von shadcn."
+      "description": "Datenbankverwaltungssystem für eine Kunstgalerie. Leichtgewichtige Desktop-Anwendung mit Tauri. Backend in Rust und Frontend mit Next.js unter Verwendung von shadcn."
     },
     "project3": {
       "title": "Taschenrechner",
       "description": "Einfache funktionale Taschenrechner-App, entwickelt mit Android Studio. Projekt im Rahmen einer Unterrichtsaufgabe im höheren DAM-Abschluss."
     },
-    "toMoreAboutMe": "Um alle Projekte und Zertifikate zu sehen, ",
-    "linkMoreAboutMe": "mehr über mich."
+    "toMoreAboutMe": "Um alle Projekte zu sehen, besuche den Bereich ",
+    "linkProjects": "Projekte",
+    "linkMoreAboutMe": "mehr über mich"
   },
   "Navbar": {
     "moreAboutMe": "Mehr über mich",
@@ -58,7 +59,7 @@
     "Error already subscribed": "Fehler, Sie sind bereits für den Newsletter angemeldet.",
     "Subscribe to my ": "Abonniere meinen ",
     "newsletter": "newsletter",
-    "Leave me your email if": "Hinterlasse mir deine E-Mail, wenn du meinen wöchentlichen Newsletter erhalten möchtest, in dem ich über die Welt der Entwicklung spreche und dir meine Lieblingsartikel der Woche zeige:",
+    "Leave me your email if": "Hinterlasse mir deine E-Mail-Adresse, wenn du meinen wöchentlichen Newsletter erhalten möchtest, in dem ich über Themen schreibe, die von Stoizismus und Softwareentwicklung bis zu meinen neuesten Lektüren und Erkenntnissen reichen; außerdem nenne ich die besten Artikel, die ich in jener Woche gelesen habe:",
     "Your email": "Deine E-Mail",
     "Subscribe": "Abonnieren",
     "ABOUT THIS WEBSITE": "ÜBER DIE WEBSITE",

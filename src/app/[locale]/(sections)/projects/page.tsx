@@ -29,7 +29,8 @@ export default async function ProjectsPage() {
             tech1="Nextj.js"
             tech2="TypeScript"
             tech3="Tailwind CSS"
-            tech4="Supabase"
+            tech4="Drizzle"
+            tech5="Supabase"
             imgUrl="https://i.imgur.com/omXb83c.png"
             link="https://github.com/JOlmos98/portfolio-jos"
           />

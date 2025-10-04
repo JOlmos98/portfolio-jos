@@ -4,10 +4,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export const Home = () => {
 
   const t = useTranslations("HomePage");
+  const m = useTranslations("Navbar");
 
   return (
     <div className="flex flex-col sm:flex-row items-center gap-8">
@@ -28,7 +30,7 @@ export const Home = () => {
         viewport={{ once: true, amount: "some" }}
         className="text-lg sm:max-w-2xl break-words disable-motion-sm"
       >
-        {t("intro")}
+        {t("intro")} <Link href="/moreAboutMe" className="text-blue-cyan hover:text-cyan-300">{t("linkMoreAboutMe")}</Link>.
       </motion.p>
     </div>
   );
