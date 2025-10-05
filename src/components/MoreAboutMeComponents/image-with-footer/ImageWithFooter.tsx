@@ -13,11 +13,11 @@ export interface ImageWithFooterProps extends ImageProps {
 export default function ImageWithFooter({
   text,
   wrapperClassName = "inline-block",
-captionClassName = "text-center mt-2 italic text-sm text-gray-400 group-hover:text-gray-200 transition-colors duration-200",
+  captionClassName = "text-center mt-2 italic text-sm text-gray-400 dark:group-hover:text-gray-200 group-hover:text-gray-800 transition-colors duration-200",
   className,
   ...imageProps
 }: ImageWithFooterProps) {
-  // añadimos filtros + transición + la clase para activar en hover del grupo
+
   const imgClass = [
     "rounded-xl",
     "filter grayscale",
