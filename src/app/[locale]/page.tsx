@@ -21,7 +21,6 @@ export default async function HomePage() {
         <div>
           <h1 className="text-4xl bg-transparent mt-44 mb-8 font-bold">{t("experienceTitle")}</h1>
 
-
           <ExperienceItem
             dates={t("experience2.dates")}
             title={t("experience2.title")}
