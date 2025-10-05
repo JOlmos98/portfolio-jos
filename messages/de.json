@@ -11,7 +11,7 @@
     "experience2": {
       "dates": "2024 - Gegenwart",
       "title": "Indie-Spielentwickler",
-      "description": "Entwicklung kurzer Indie-Spiele mit Unity."
+      "description": "Entwicklung kurzer Indie-Spiele mit Unity und Phaser."
     },
     "experience3": {
       "dates": "2022 - 2024",
@@ -195,5 +195,15 @@
     "title": "Portfolio von Jesús Olmos",
     "description": "Fullstack-Entwickler spezialisiert auf Next.js, TypeScript und Rust.",
     "siteName": "portfolio-jos"
+  },
+  "MoreAboutMe": {
+    "p1": "Ich glaube, es gibt zwei Arten von Programmierern: die, die nach Feierabend keine einzige Codezeile mehr sehen wollen, bis sie wieder an den Schreibtisch müssen (vollkommen respektabel, natürlich), und die von uns, die trotzdem viele Wochenenden mit Programmieren verbringen (definitiv ein paar Nerds).",
+    "p2": "Leidenschaftlich für Videospiele—wie die meisten in meinem Metier—verbringe ich einen Großteil meiner Freizeit damit, ein Spiel zu entwickeln (indie; ich bin kein Studio wie Rockstar Games) oder eine Website. Ich schreibe auch auf Substack über meine Erkenntnisse und Reflexionen und versuche demütig, bestimmte Werte zu vermitteln, von denen ich glaube, dass sie langfristig nachhaltige und skalierbare Gesellschaften aufbauen können (fast wie Software, tatsächlich).",
+    "p3": "Meine Vorliebe für das Lösen logischer Probleme und eine Phase, in der ich Science-Fiction-Romane las (wodurch ich einen meiner Lieblingsautoren, Asimov, entdeckte), führten mich zu Mensa (Vereinigung für Hochbegabte), der ich seit 2021 angehöre.",
+    "p4": "Wenn du es bis hierher geschafft hast, könnte ich dich sicherlich als Leser betrachten, also erzähle ich dir etwas über meine Beziehung zum Lesen. Ich habe fast jede Art von Buch geliebt, aber meine Anfänge konzentrierten sich auf klassische und extrem berühmte Romane wie 'Sturmhöhe' (Wuthering Heights), 'Farm der Tiere' (Animal Farm) oder verschiedene Bücher von Stephen King und Ken Follett. In letzter Zeit lese ich mehr Bücher über Wirtschaft, persönliche Weiterentwicklung und Philosophie als alles andere, aber ich würde irgendwann gern zu Autoren wie George R.R. Martin oder meinem geliebten Asimov zurückkehren.",
+    "p5": "Ich betrachte mich auch als ein bisschen besessen von Gesundheit (ja, ich bin dieser Pedant, der dir erklärt, wie schlecht Bier ist, während wir beide gerade eins trinken). Mein Kampf gegen ultraverarbeitete Lebensmittel und Bewegungsmangel ist inzwischen chronisch, und mein Bestreben, so viel Sport wie möglich in meiner Freizeit und entsprechend meiner Energie zu treiben, ist, denke ich, eine meiner besten Gewohnheiten.",
+    "p6": "Kurz gesagt verbringe ich meine Tage damit, meinen Kampf gegen Bewegungsmangel und ultraverarbeitete Lebensmittel mit meinen kreativen Leidenschaften zu verbinden und zu versuchen, ein stabiles Sozialleben und eine Gesundheit zu erhalten, die mich nicht zu sehr leiden lässt, wenn ich die Fünfzig überschreite. Und das alles bei stoischen Werten, mit denen Cato zumindest ein wenig stolz wäre.",
+    "img1": "MadCool 2022, an diesem Abend sangen Imagine Dragons, Deftones und The Killers.",
+    "img2": "Ein winziger Einblick in meine bescheidene persönliche Bibliothek."
   }
 }

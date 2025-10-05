@@ -11,7 +11,7 @@
     "experience2": {
       "dates": "2024 - Present",
       "title": "Indie Game Developer",
-      "description": "Development of short-form indie games using Unity."
+      "description": "Development of indie games using Unity and Phaser."
     },
     "experience3": {
       "dates": "2022 - 2024",
@@ -195,5 +195,15 @@
     "title": "Jesús Olmos' Portfolio",
     "description": "Fullstack Developer specialized in Next.js, TypeScript, and Rust.",
     "siteName": "portfolio-jos"
+  },
+  "MoreAboutMe": {
+    "p1": "I believe there are two types of programmers: those who, after finishing their workday, don't want to see another line of code until they have to sit down again (completely respectable, of course) and those of us who still spend many weekends programming (definitely a bunch of geeks).",
+    "p2": "Passionate about video games—like most people in my field—I spend a large part of my free time developing a game (indie; I'm not Rockstar Games) or a website. I also write about my learnings and reflections on Substack and try to humbly share certain values that I believe can help build sustainable, long-term scalable societies (almost like software, actually).",
+    "p3": "My taste for solving logical problems and a period when I read science fiction novels (where I discovered one of my favorite authors, Asimov) led me to Mensa (an association for people with high abilities), of which I have been a member since 2021.",
+    "p4": "If you've made it this far I could certainly consider you a reader, so I'll tell you about my relationship with reading. I've always loved almost any kind of book, but I started out focused on classic and ultra-famous novels like Wuthering Heights, Animal Farm, and various books by Stephen King and Ken Follett. Lately I read more books about economics, personal development and philosophy than anything else, but I'd like to return at some point to authors like George R.R. Martin or my beloved Asimov.",
+    "p5": "I also consider myself a bit obsessed with health (yes, I'm that annoying person who tells you how bad beer is while we both drink one). My fight against ultra-processed foods and a sedentary lifestyle is by now chronic, and my drive to do as much exercise as my free time and energy allow is, I think, one of my best habits.",
+    "p6": "In short, I spend my days balancing my fight against sedentarism and ultra-processed foods with my creative passions, trying to maintain a stable social life and a level of health that won't make me suffer too much when I pass the half-century mark. All of this while upholding stoic values that would make Cato at least mildly proud.",
+    "img1": "MadCool 2022, that night Imagine Dragons, Deftones and The Killers were singing.",
+    "img2": "A tiny glimpse into my humble personal library."
   }
 }
