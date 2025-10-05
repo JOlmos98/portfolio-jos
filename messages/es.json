@@ -11,7 +11,7 @@
     "experience2": {
       "dates": "2024 - Presente",
       "title": "Desarrollador de videojuegos indie",
-      "description": "Desarrollo de videojuegos indie de corta duración con Unity."
+      "description": "Desarrollo de videojuegos indie con Unity y Phaser."
     },
     "experience3": {
       "dates": "2022 - 2024",
@@ -195,5 +195,15 @@
     "title": "Portfolio de Jesús Olmos",
     "description": "Desarrollador Fullstack especializado en Next.js, TypeScript y Rust.",
     "siteName": "portfolio-jos"
+  },
+  "MoreAboutMe": {
+    "p1": "Creo que hay dos tipos de programadores: los que al terminar su jornada no quieren volver a ver una línea de código hasta que les toque volver a sentarse en la silla (completamente respetable, por supuesto) y los que aun así nos pasamos muchos fines de semana programando (unos frikis, sin duda).",
+    "p2": "Apasionado de los videojuegos, como la gran mayoría de los de mi gremio, paso mucho de mi tiempo libre desarrollando algún juego (indie, no soy Rockstar Games) o alguna web. También escribo sobre mis aprendizajes y reflexiones en Substack e intento divulgar humildemente ciertos valores que creo que pueden construir sociedades sostenibles y escalables a largo plazo (como si de software se tratase, de hecho).",
+    "p3": "Mi gusto por resolver problemas lógicos y mi etapa de lectura de novelas de ciencia ficción (descubriendo así a uno de mis autores favoritos, Asimov) me llevó hasta Mensa (asociación para personas con altas capacidades), de la cual formo parte desde 2021.",
+    "p4": "Si has llegado hasta aquí ya te podría considerar ciertamente lector, así que te hablaré sobre mi relación con la lectura. Siempre he amado casi cualquier tipo de libro, pero mis inicios se centraron en novelas clásicas y ultrafamosas como Cumbres Borrascosas, Rebelión en la Granja o distintos libros de Stephen King y Ken Follett. Últimamente consumo más libros de economía, desarrollo personal y filosofía que cualquier otra cosa, pero me gustaría volver en algún momento a autores como George R.R. Martin o mi querido Asimov.",
+    "p5": "También me considero un poquito obseso de la salud (sí, soy ese pesado que te habla de lo mala que es la cerveza mientras ambos nos bebemos una), mi lucha contra los ultraprocesados y el sedentarismo es ya crónica a estas alturas y mi afán por hacer el máximo deporte que mi tiempo libre y energía me permitan es, creo, uno de mis mejores hábitos.",
+    "p6": "En definitiva, paso mis días compaginando mi lucha contra el sedentarismo y los ultraprocesados con mis pasiones creativas, intentando mantener una vida social estable y una salud que no me haga sufrir de más cuando pase el medio siglo de edad. Todo ello manteniendo unos valores estoicos con los que Catón estuviese mínimamente orgulloso.",
+    "img1": "MadCool 2022, esa noche cantaban Imagine Dragons, Deftones y The Killers.",
+    "img2": "Un minúsculo vistazo a mi humilde biblioteca personal."
   }
 }
