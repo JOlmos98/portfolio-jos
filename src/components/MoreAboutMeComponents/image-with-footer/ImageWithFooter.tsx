@@ -20,8 +20,8 @@ captionClassName = "text-center mt-2 italic text-sm text-gray-400 group-hover:te
   // añadimos filtros + transición + la clase para activar en hover del grupo
   const imgClass = [
     "rounded-xl",
-    "filter grayscale",              // B/N por defecto
-    "group-hover:grayscale-0",       // color al hacer hover sobre el figure (group)
+    "filter grayscale",
+    "group-hover:grayscale-0",
     "transition-all duration-300 ease-out",
     className,
   ]
@@ -31,7 +31,7 @@ captionClassName = "text-center mt-2 italic text-sm text-gray-400 group-hover:te
   return (
     // wrapper tiene la clase "group" para poder usar group-hover en la img
     <figure className={`${wrapperClassName} group`}>
-      <Image {...imageProps} className={imgClass} />
+      <Image {...imageProps} className={imgClass} alt="jos" />
       {text ? <figcaption className={captionClassName}>{text}</figcaption> : null}
     </figure>
   );

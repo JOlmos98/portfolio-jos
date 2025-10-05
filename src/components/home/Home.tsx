@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -9,7 +8,6 @@ import { Link } from "@/i18n/navigation";
 export const Home = () => {
 
   const t = useTranslations("HomePage");
-  const m = useTranslations("Navbar");
 
   return (
     <div className="flex flex-col sm:flex-row items-center gap-8">
