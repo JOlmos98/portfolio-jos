@@ -30,7 +30,7 @@ export const signUpSchema = z.object({
   phone: z
   .string()
   .optional()
-  .transform(val => val?.trim() === "" ? undefined : val?.trim()) // "" → undefined
+  // .transform(val => val?.trim() === "" ? undefined : val?.trim()) // "" → undefined
   .refine(
     val =>
       val === undefined ||

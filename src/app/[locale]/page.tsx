@@ -31,6 +31,7 @@ export default async function HomePage() {
             tech3="Blender"
             tech4="Phaser"
             tech5="Aseprite"
+            tech6="PICO-8"
           />
 
           <ExperienceItem
