@@ -11,7 +11,7 @@ export const updateSettingsSchema = z.object({
   phone: z
     .string()
     .optional()
-    .transform(val => val?.trim() === "" ? undefined : val?.trim())
+    // .transform(val => val?.trim() === "" ? undefined : val?.trim())
     .refine(
       val =>
         val === undefined ||
