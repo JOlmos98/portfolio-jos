@@ -13,7 +13,8 @@ export async function POST(req: Request) {
     const parsed = newsletterSchema.safeParse(body);
     if (!parsed.success) {
       return NextResponse.json(
-        { message: parsed.error.errors[0].message },
+        // { message: parsed.error.errors[0].message },
+        { message: "Error en el servidor." },
         { status: 400 }
       );
     }
